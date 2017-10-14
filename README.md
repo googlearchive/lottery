@@ -8,7 +8,7 @@ of [Dart for the web](https://webdev.dartlang.org).
 
 *Note:* The content of this repository is generated from the
 [Angular docs repository][docs repo] by running the
-[dart-doc-syncer](//github.com/angular/dart-doc-syncer) tool.
+[dart-doc-syncer](//github.com/dart-lang/dart-doc-syncer) tool.
 If you find a problem with this sample's code, please open an [issue][].
 
 [docs repo]: //github.com/dart-lang/site-webdev/tree/master/examples/acx/lottery
