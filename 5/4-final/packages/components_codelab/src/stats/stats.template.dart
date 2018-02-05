@@ -158,8 +158,10 @@ AppView<import2.StatsComponent> viewFactory_StatsComponent2(AppView<dynamic> par
 
 class _ViewStatsComponent3 extends AppView<import2.StatsComponent> {
   import3.Element _el_0;
-  import3.Text _text_1;
+  import3.Text _text_2;
+  import3.Text _text_4;
   var _expr_0;
+  var _expr_1;
   _ViewStatsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewStatsComponent0._renderType;
   }
@@ -168,8 +170,16 @@ class _ViewStatsComponent3 extends AppView<import2.StatsComponent> {
     var doc = import3.document;
     _el_0 = doc.createElement('span');
     addShimE(_el_0);
-    _text_1 = new import3.Text('');
+    import3.Text _text_1 = new import3.Text('Lost —\n      ');
     _el_0.append(_text_1);
+    _text_2 = new import3.Text('');
+    _el_0.append(_text_2);
+    import3.Text _text_3 = new import3.Text(' time');
+    _el_0.append(_text_3);
+    _text_4 = new import3.Text('');
+    _el_0.append(_text_4);
+    import3.Text _text_5 = new import3.Text('.');
+    _el_0.append(_text_5);
     init0(_el_0);
     return null;
   }
@@ -178,10 +188,15 @@ class _ViewStatsComponent3 extends AppView<import2.StatsComponent> {
   void detectChangesInternal() {
     final import2.StatsComponent _ctx = ctx;
     final int local_key = parentView.locals['\$implicit'];
-    final currVal_0 = import10.interpolate2('Lost —      ', _ctx.winningsMap[local_key], ' time', ((_ctx.winningsMap[local_key] > 1) ? 's' : ''), '.');
+    final currVal_0 = import10.interpolate0(_ctx.winningsMap[local_key]);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+    final currVal_1 = import10.interpolate0(((_ctx.winningsMap[local_key] > 1) ? 's' : ''));
+    if (!identical(_expr_1, currVal_1)) {
+      _text_4.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 }
@@ -192,8 +207,12 @@ AppView<import2.StatsComponent> viewFactory_StatsComponent3(AppView<dynamic> par
 
 class _ViewStatsComponent4 extends AppView<import2.StatsComponent> {
   import3.Element _el_0;
-  import3.Text _text_1;
+  import3.Text _text_2;
+  import3.Text _text_4;
+  import3.Text _text_6;
   var _expr_0;
+  var _expr_1;
+  var _expr_2;
   _ViewStatsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewStatsComponent0._renderType;
   }
@@ -202,8 +221,20 @@ class _ViewStatsComponent4 extends AppView<import2.StatsComponent> {
     var doc = import3.document;
     _el_0 = doc.createElement('span');
     addShimE(_el_0);
-    _text_1 = new import3.Text('');
+    import3.Text _text_1 = new import3.Text('Won \$');
     _el_0.append(_text_1);
+    _text_2 = new import3.Text('');
+    _el_0.append(_text_2);
+    import3.Text _text_3 = new import3.Text(' —\n      ');
+    _el_0.append(_text_3);
+    _text_4 = new import3.Text('');
+    _el_0.append(_text_4);
+    import3.Text _text_5 = new import3.Text(' time');
+    _el_0.append(_text_5);
+    _text_6 = new import3.Text('');
+    _el_0.append(_text_6);
+    import3.Text _text_7 = new import3.Text('.');
+    _el_0.append(_text_7);
     init0(_el_0);
     return null;
   }
@@ -212,10 +243,20 @@ class _ViewStatsComponent4 extends AppView<import2.StatsComponent> {
   void detectChangesInternal() {
     final import2.StatsComponent _ctx = ctx;
     final int local_key = parentView.locals['\$implicit'];
-    final currVal_0 = import10.interpolate3('Won \$', local_key, ' —\n      ', _ctx.winningsMap[local_key], ' time', ((_ctx.winningsMap[local_key] > 1) ? 's' : ''), '.');
+    final currVal_0 = import10.interpolate0(local_key);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+    final currVal_1 = import10.interpolate0(_ctx.winningsMap[local_key]);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_4.text = currVal_1;
+      _expr_1 = currVal_1;
+    }
+    final currVal_2 = import10.interpolate0(((_ctx.winningsMap[local_key] > 1) ? 's' : ''));
+    if (!identical(_expr_2, currVal_2)) {
+      _text_6.text = currVal_2;
+      _expr_2 = currVal_2;
     }
   }
 }

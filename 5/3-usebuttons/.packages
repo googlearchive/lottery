@@ -64,12 +64,12 @@ io:packages/io/
 shelf:packages/shelf/
 stream_channel:packages/stream_channel/
 mime:packages/mime/
+build_resolvers:packages/build_resolvers/
 stream_transform:packages/stream_transform/
 build_web_compilers:packages/build_web_compilers/
 bazel_worker:packages/bazel_worker/
 protobuf:packages/protobuf/
 json_annotation:packages/json_annotation/
-browser:packages/browser/
 build_test:packages/build_test/
 test:packages/test/
 shelf_static:packages/shelf_static/

@@ -99,46 +99,40 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   dynamic _Tab_6_5;
   import4.DivElement _el_7;
   import4.Element _el_8;
-  import4.Text _text_9;
-  import4.Element _el_10;
-  import9.ViewScoresComponent0 _compView_10;
-  import10.ScoresComponent _ScoresComponent_10_4;
-  List<dynamic> __defaultPopupPositions_10_5;
-  dynamic __Window_10_6;
-  dynamic __DomService_10_7;
-  import11.AcxImperativeViewUtils __AcxImperativeViewUtils_10_8;
-  dynamic __Document_10_9;
-  import12.DomRuler __DomRuler_10_10;
-  import13.Angular2ManagedZone __ManagedZone_10_11;
-  dynamic __overlayContainerName_10_12;
-  dynamic __overlayContainerParent_10_13;
-  dynamic __overlayContainer_10_14;
-  bool __overlaySyncDom_10_15;
-  bool __overlayRepositionLoop_10_16;
-  import14.OverlayStyleConfig __OverlayStyleConfig_10_17;
-  import15.ZIndexer __ZIndexer_10_18;
-  import16.OverlayDomRenderService __OverlayDomRenderService_10_19;
-  import17.OverlayService __OverlayService_10_20;
-  import18.DomPopupSourceFactory __DomPopupSourceFactory_10_21;
-  import4.DivElement _el_11;
+  import4.Text _text_10;
+  import4.Element _el_11;
+  import9.ViewScoresComponent0 _compView_11;
+  import10.ScoresComponent _ScoresComponent_11_4;
+  List<dynamic> __defaultPopupPositions_11_5;
+  dynamic __Window_11_6;
+  dynamic __DomService_11_7;
+  import11.AcxImperativeViewUtils __AcxImperativeViewUtils_11_8;
+  dynamic __Document_11_9;
+  import12.DomRuler __DomRuler_11_10;
+  import13.Angular2ManagedZone __ManagedZone_11_11;
+  dynamic __overlayContainerName_11_12;
+  dynamic __overlayContainerParent_11_13;
+  dynamic __overlayContainer_11_14;
+  bool __overlaySyncDom_11_15;
+  bool __overlayRepositionLoop_11_16;
+  import14.OverlayStyleConfig __OverlayStyleConfig_11_17;
+  import15.ZIndexer __ZIndexer_11_18;
+  import16.OverlayDomRenderService __OverlayDomRenderService_11_19;
+  import17.OverlayService __OverlayService_11_20;
+  import18.DomPopupSourceFactory __DomPopupSourceFactory_11_21;
   import4.DivElement _el_12;
-  import4.Element _el_13;
-  import4.Text _text_14;
-  import4.DivElement _el_15;
-  import4.Element _el_16;
-  import4.Text _text_17;
-  import4.DivElement _el_18;
-  import4.Element _el_19;
-  import19.ViewMaterialProgressComponent0 _compView_19;
-  import20.MaterialProgressComponent _MaterialProgressComponent_19_4;
+  import4.DivElement _el_13;
+  import4.Element _el_14;
+  import4.Text _text_15;
+  import4.DivElement _el_16;
+  import4.Element _el_17;
+  import4.Text _text_18;
   import4.DivElement _el_20;
-  import4.DivElement _el_21;
-  import4.Element _el_22;
-  import21.ViewMaterialFabComponent0 _compView_22;
-  import22.MaterialFabComponent _MaterialFabComponent_22_4;
-  import4.Element _el_23;
-  import23.ViewMaterialIconComponent0 _compView_23;
-  import24.MaterialIconComponent _MaterialIconComponent_23_4;
+  import4.Element _el_21;
+  import19.ViewMaterialProgressComponent0 _compView_21;
+  import20.MaterialProgressComponent _MaterialProgressComponent_21_4;
+  import4.DivElement _el_22;
+  import4.DivElement _el_23;
   import4.Element _el_24;
   import21.ViewMaterialFabComponent0 _compView_24;
   import22.MaterialFabComponent _MaterialFabComponent_24_4;
@@ -158,45 +152,44 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import23.ViewMaterialIconComponent0 _compView_29;
   import24.MaterialIconComponent _MaterialIconComponent_29_4;
   import4.Element _el_30;
-  import25.ViewMaterialToggleComponent0 _compView_30;
-  import26.MaterialToggleComponent _MaterialToggleComponent_30_4;
-  import4.DivElement _el_31;
-  import4.DivElement _el_32;
-  import4.Element _el_33;
-  import27.ViewStatsComponent0 _compView_33;
-  import28.StatsComponent _StatsComponent_33_4;
-  import4.Element _el_34;
-  import29.ViewVisualizeWinningsComponent0 _compView_34;
-  import30.VisualizeWinningsComponent _VisualizeWinningsComponent_34_4;
-  import4.DivElement _el_35;
+  import21.ViewMaterialFabComponent0 _compView_30;
+  import22.MaterialFabComponent _MaterialFabComponent_30_4;
+  import4.Element _el_31;
+  import23.ViewMaterialIconComponent0 _compView_31;
+  import24.MaterialIconComponent _MaterialIconComponent_31_4;
+  import4.Element _el_32;
+  import25.ViewMaterialToggleComponent0 _compView_32;
+  import26.MaterialToggleComponent _MaterialToggleComponent_32_4;
+  import4.DivElement _el_33;
+  import4.DivElement _el_34;
+  import4.Element _el_35;
+  import27.ViewStatsComponent0 _compView_35;
+  import28.StatsComponent _StatsComponent_35_4;
   import4.Element _el_36;
+  import29.ViewVisualizeWinningsComponent0 _compView_36;
+  import30.VisualizeWinningsComponent _VisualizeWinningsComponent_36_4;
+  import4.DivElement _el_37;
   import4.Element _el_38;
-  import31.ViewSettingsComponent0 _compView_38;
-  import32.SettingsComponent _SettingsComponent_38_4;
-  List<dynamic> __defaultPopupPositions_38_5;
-  dynamic __Window_38_6;
-  dynamic __DomService_38_7;
-  import11.AcxImperativeViewUtils __AcxImperativeViewUtils_38_8;
-  dynamic __Document_38_9;
-  import12.DomRuler __DomRuler_38_10;
-  import13.Angular2ManagedZone __ManagedZone_38_11;
-  dynamic __overlayContainerName_38_12;
-  dynamic __overlayContainerParent_38_13;
-  dynamic __overlayContainer_38_14;
-  bool __overlaySyncDom_38_15;
-  bool __overlayRepositionLoop_38_16;
-  import14.OverlayStyleConfig __OverlayStyleConfig_38_17;
-  import15.ZIndexer __ZIndexer_38_18;
-  import16.OverlayDomRenderService __OverlayDomRenderService_38_19;
-  import17.OverlayService __OverlayService_38_20;
-  import18.DomPopupSourceFactory __DomPopupSourceFactory_38_21;
-  import4.Element _el_39;
-  import7.ViewMaterialTabComponent0 _compView_39;
-  import8.MaterialTabComponent _MaterialTabComponent_39_4;
-  dynamic _Tab_39_5;
   import4.Element _el_40;
-  import33.ViewHelpComponent0 _compView_40;
-  import34.HelpComponent _HelpComponent_40_4;
+  import31.ViewSettingsComponent0 _compView_40;
+  import32.SettingsComponent _SettingsComponent_40_4;
+  List<dynamic> __defaultPopupPositions_40_5;
+  dynamic __Window_40_6;
+  dynamic __DomService_40_7;
+  import11.AcxImperativeViewUtils __AcxImperativeViewUtils_40_8;
+  dynamic __Document_40_9;
+  import12.DomRuler __DomRuler_40_10;
+  import13.Angular2ManagedZone __ManagedZone_40_11;
+  dynamic __overlayContainerName_40_12;
+  dynamic __overlayContainerParent_40_13;
+  dynamic __overlayContainer_40_14;
+  bool __overlaySyncDom_40_15;
+  bool __overlayRepositionLoop_40_16;
+  import14.OverlayStyleConfig __OverlayStyleConfig_40_17;
+  import15.ZIndexer __ZIndexer_40_18;
+  import16.OverlayDomRenderService __OverlayDomRenderService_40_19;
+  import17.OverlayService __OverlayService_40_20;
+  import18.DomPopupSourceFactory __DomPopupSourceFactory_40_21;
   import4.Element _el_41;
   import7.ViewMaterialTabComponent0 _compView_41;
   import8.MaterialTabComponent _MaterialTabComponent_41_4;
@@ -204,6 +197,13 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import4.Element _el_42;
   import33.ViewHelpComponent0 _compView_42;
   import34.HelpComponent _HelpComponent_42_4;
+  import4.Element _el_43;
+  import7.ViewMaterialTabComponent0 _compView_43;
+  import8.MaterialTabComponent _MaterialTabComponent_43_4;
+  dynamic _Tab_43_5;
+  import4.Element _el_44;
+  import33.ViewHelpComponent0 _compView_44;
+  import34.HelpComponent _HelpComponent_44_4;
   var _expr_1;
   int _expr_2;
   int _expr_3;
@@ -221,242 +221,242 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _renderType ??= import38.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
   }
-  List<dynamic> get _defaultPopupPositions_10_5 {
-    if ((this.__defaultPopupPositions_10_5 == null)) {
-      (__defaultPopupPositions_10_5 = const [const import40.RelativePosition(animationOrigin: 'top center'), const import40.RelativePosition(animationOrigin: 'top right', originX: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'top left', originX: const import40.Alignment('Start', 'flex-start')), const import40.RelativePosition(animationOrigin: 'bottom center', originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom right', originX: const import40.Alignment('End', 'flex-end'), originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom left', originX: const import40.Alignment('Start', 'flex-start'), originY: const import40.Alignment('End', 'flex-end'))]);
+  List<dynamic> get _defaultPopupPositions_11_5 {
+    if ((this.__defaultPopupPositions_11_5 == null)) {
+      (__defaultPopupPositions_11_5 = const [const import40.RelativePosition(animationOrigin: 'top center'), const import40.RelativePosition(animationOrigin: 'top right', originX: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'top left', originX: const import40.Alignment('Start', 'flex-start')), const import40.RelativePosition(animationOrigin: 'bottom center', originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom right', originX: const import40.Alignment('End', 'flex-end'), originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom left', originX: const import40.Alignment('Start', 'flex-start'), originY: const import40.Alignment('End', 'flex-end'))]);
     }
-    return this.__defaultPopupPositions_10_5;
+    return this.__defaultPopupPositions_11_5;
   }
 
-  dynamic get _Window_10_6 {
-    if ((this.__Window_10_6 == null)) {
-      (__Window_10_6 = import41.getWindow());
+  dynamic get _Window_11_6 {
+    if ((this.__Window_11_6 == null)) {
+      (__Window_11_6 = import41.getWindow());
     }
-    return this.__Window_10_6;
+    return this.__Window_11_6;
   }
 
-  dynamic get _DomService_10_7 {
-    if ((this.__DomService_10_7 == null)) {
-      (__DomService_10_7 = import42.createDomService(this.parentView.injectorGet(import43.DomService, this.viewData.parentIndex, null), this.parentView.injectorGet(import44.Disposer, this.viewData.parentIndex, null), this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._Window_10_6));
+  dynamic get _DomService_11_7 {
+    if ((this.__DomService_11_7 == null)) {
+      (__DomService_11_7 = import42.createDomService(this.parentView.injectorGet(import43.DomService, this.viewData.parentIndex, null), this.parentView.injectorGet(import44.Disposer, this.viewData.parentIndex, null), this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._Window_11_6));
     }
-    return this.__DomService_10_7;
+    return this.__DomService_11_7;
   }
 
-  import11.AcxImperativeViewUtils get _AcxImperativeViewUtils_10_8 {
-    if ((this.__AcxImperativeViewUtils_10_8 == null)) {
-      (__AcxImperativeViewUtils_10_8 = new import11.AcxImperativeViewUtils(this.parentView.injectorGet(import46.ComponentLoader, this.viewData.parentIndex), this._DomService_10_7));
+  import11.AcxImperativeViewUtils get _AcxImperativeViewUtils_11_8 {
+    if ((this.__AcxImperativeViewUtils_11_8 == null)) {
+      (__AcxImperativeViewUtils_11_8 = new import11.AcxImperativeViewUtils(this.parentView.injectorGet(import46.ComponentLoader, this.viewData.parentIndex), this._DomService_11_7));
     }
-    return this.__AcxImperativeViewUtils_10_8;
+    return this.__AcxImperativeViewUtils_11_8;
   }
 
-  dynamic get _Document_10_9 {
-    if ((this.__Document_10_9 == null)) {
-      (__Document_10_9 = import41.getDocument());
+  dynamic get _Document_11_9 {
+    if ((this.__Document_11_9 == null)) {
+      (__Document_11_9 = import41.getDocument());
     }
-    return this.__Document_10_9;
+    return this.__Document_11_9;
   }
 
-  import12.DomRuler get _DomRuler_10_10 {
-    if ((this.__DomRuler_10_10 == null)) {
-      (__DomRuler_10_10 = new import12.DomRuler(this._Document_10_9, this._DomService_10_7));
+  import12.DomRuler get _DomRuler_11_10 {
+    if ((this.__DomRuler_11_10 == null)) {
+      (__DomRuler_11_10 = new import12.DomRuler(this._Document_11_9, this._DomService_11_7));
     }
-    return this.__DomRuler_10_10;
+    return this.__DomRuler_11_10;
   }
 
-  import13.Angular2ManagedZone get _ManagedZone_10_11 {
-    if ((this.__ManagedZone_10_11 == null)) {
-      (__ManagedZone_10_11 = new import13.Angular2ManagedZone(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex)));
+  import13.Angular2ManagedZone get _ManagedZone_11_11 {
+    if ((this.__ManagedZone_11_11 == null)) {
+      (__ManagedZone_11_11 = new import13.Angular2ManagedZone(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex)));
     }
-    return this.__ManagedZone_10_11;
+    return this.__ManagedZone_11_11;
   }
 
-  dynamic get _overlayContainerName_10_12 {
-    if ((this.__overlayContainerName_10_12 == null)) {
-      (__overlayContainerName_10_12 = import47.getDefaultContainerName(this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainerName_11_12 {
+    if ((this.__overlayContainerName_11_12 == null)) {
+      (__overlayContainerName_11_12 = import47.getDefaultContainerName(this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainerName_10_12;
+    return this.__overlayContainerName_11_12;
   }
 
-  dynamic get _overlayContainerParent_10_13 {
-    if ((this.__overlayContainerParent_10_13 == null)) {
-      (__overlayContainerParent_10_13 = import47.getOverlayContainerParent(this._Document_10_9, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainerParent_11_13 {
+    if ((this.__overlayContainerParent_11_13 == null)) {
+      (__overlayContainerParent_11_13 = import47.getOverlayContainerParent(this._Document_11_9, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainerParent_10_13;
+    return this.__overlayContainerParent_11_13;
   }
 
-  dynamic get _overlayContainer_10_14 {
-    if ((this.__overlayContainer_10_14 == null)) {
-      (__overlayContainer_10_14 = import47.getDefaultContainer(this._overlayContainerName_10_12, this._overlayContainerParent_10_13, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainer_11_14 {
+    if ((this.__overlayContainer_11_14 == null)) {
+      (__overlayContainer_11_14 = import47.getDefaultContainer(this._overlayContainerName_11_12, this._overlayContainerParent_11_13, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainer_10_14;
+    return this.__overlayContainer_11_14;
   }
 
-  bool get _overlaySyncDom_10_15 {
-    if ((this.__overlaySyncDom_10_15 == null)) {
-      (__overlaySyncDom_10_15 = true);
+  bool get _overlaySyncDom_11_15 {
+    if ((this.__overlaySyncDom_11_15 == null)) {
+      (__overlaySyncDom_11_15 = true);
     }
-    return this.__overlaySyncDom_10_15;
+    return this.__overlaySyncDom_11_15;
   }
 
-  bool get _overlayRepositionLoop_10_16 {
-    if ((this.__overlayRepositionLoop_10_16 == null)) {
-      (__overlayRepositionLoop_10_16 = false);
+  bool get _overlayRepositionLoop_11_16 {
+    if ((this.__overlayRepositionLoop_11_16 == null)) {
+      (__overlayRepositionLoop_11_16 = false);
     }
-    return this.__overlayRepositionLoop_10_16;
+    return this.__overlayRepositionLoop_11_16;
   }
 
-  import14.OverlayStyleConfig get _OverlayStyleConfig_10_17 {
-    if ((this.__OverlayStyleConfig_10_17 == null)) {
-      (__OverlayStyleConfig_10_17 = new import14.OverlayStyleConfig(this._Document_10_9));
+  import14.OverlayStyleConfig get _OverlayStyleConfig_11_17 {
+    if ((this.__OverlayStyleConfig_11_17 == null)) {
+      (__OverlayStyleConfig_11_17 = new import14.OverlayStyleConfig(this._Document_11_9));
     }
-    return this.__OverlayStyleConfig_10_17;
+    return this.__OverlayStyleConfig_11_17;
   }
 
-  import15.ZIndexer get _ZIndexer_10_18 {
-    if ((this.__ZIndexer_10_18 == null)) {
-      (__ZIndexer_10_18 = new import15.ZIndexer());
+  import15.ZIndexer get _ZIndexer_11_18 {
+    if ((this.__ZIndexer_11_18 == null)) {
+      (__ZIndexer_11_18 = new import15.ZIndexer());
     }
-    return this.__ZIndexer_10_18;
+    return this.__ZIndexer_11_18;
   }
 
-  import16.OverlayDomRenderService get _OverlayDomRenderService_10_19 {
-    if ((this.__OverlayDomRenderService_10_19 == null)) {
-      (__OverlayDomRenderService_10_19 = new import16.OverlayDomRenderService(this._OverlayStyleConfig_10_17, this._overlayContainer_10_14, this._overlayContainerName_10_12, this._DomRuler_10_10, this._DomService_10_7, this._AcxImperativeViewUtils_10_8, this._overlaySyncDom_10_15, this._overlayRepositionLoop_10_16, this._ZIndexer_10_18));
+  import16.OverlayDomRenderService get _OverlayDomRenderService_11_19 {
+    if ((this.__OverlayDomRenderService_11_19 == null)) {
+      (__OverlayDomRenderService_11_19 = new import16.OverlayDomRenderService(this._OverlayStyleConfig_11_17, this._overlayContainer_11_14, this._overlayContainerName_11_12, this._DomRuler_11_10, this._DomService_11_7, this._AcxImperativeViewUtils_11_8, this._overlaySyncDom_11_15, this._overlayRepositionLoop_11_16, this._ZIndexer_11_18));
     }
-    return this.__OverlayDomRenderService_10_19;
+    return this.__OverlayDomRenderService_11_19;
   }
 
-  import17.OverlayService get _OverlayService_10_20 {
-    if ((this.__OverlayService_10_20 == null)) {
-      (__OverlayService_10_20 = new import17.OverlayService(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._overlaySyncDom_10_15, this._OverlayDomRenderService_10_19, this.parentView.injectorGet(import17.OverlayService, this.viewData.parentIndex, null)));
+  import17.OverlayService get _OverlayService_11_20 {
+    if ((this.__OverlayService_11_20 == null)) {
+      (__OverlayService_11_20 = new import17.OverlayService(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._overlaySyncDom_11_15, this._OverlayDomRenderService_11_19, this.parentView.injectorGet(import17.OverlayService, this.viewData.parentIndex, null)));
     }
-    return this.__OverlayService_10_20;
+    return this.__OverlayService_11_20;
   }
 
-  import18.DomPopupSourceFactory get _DomPopupSourceFactory_10_21 {
-    if ((this.__DomPopupSourceFactory_10_21 == null)) {
-      (__DomPopupSourceFactory_10_21 = new import18.DomPopupSourceFactory(this._DomRuler_10_10));
+  import18.DomPopupSourceFactory get _DomPopupSourceFactory_11_21 {
+    if ((this.__DomPopupSourceFactory_11_21 == null)) {
+      (__DomPopupSourceFactory_11_21 = new import18.DomPopupSourceFactory(this._DomRuler_11_10));
     }
-    return this.__DomPopupSourceFactory_10_21;
+    return this.__DomPopupSourceFactory_11_21;
   }
 
-  List<dynamic> get _defaultPopupPositions_38_5 {
-    if ((this.__defaultPopupPositions_38_5 == null)) {
-      (__defaultPopupPositions_38_5 = const [const import40.RelativePosition(animationOrigin: 'top center'), const import40.RelativePosition(animationOrigin: 'top right', originX: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'top left', originX: const import40.Alignment('Start', 'flex-start')), const import40.RelativePosition(animationOrigin: 'bottom center', originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom right', originX: const import40.Alignment('End', 'flex-end'), originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom left', originX: const import40.Alignment('Start', 'flex-start'), originY: const import40.Alignment('End', 'flex-end'))]);
+  List<dynamic> get _defaultPopupPositions_40_5 {
+    if ((this.__defaultPopupPositions_40_5 == null)) {
+      (__defaultPopupPositions_40_5 = const [const import40.RelativePosition(animationOrigin: 'top center'), const import40.RelativePosition(animationOrigin: 'top right', originX: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'top left', originX: const import40.Alignment('Start', 'flex-start')), const import40.RelativePosition(animationOrigin: 'bottom center', originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom right', originX: const import40.Alignment('End', 'flex-end'), originY: const import40.Alignment('End', 'flex-end')), const import40.RelativePosition(animationOrigin: 'bottom left', originX: const import40.Alignment('Start', 'flex-start'), originY: const import40.Alignment('End', 'flex-end'))]);
     }
-    return this.__defaultPopupPositions_38_5;
+    return this.__defaultPopupPositions_40_5;
   }
 
-  dynamic get _Window_38_6 {
-    if ((this.__Window_38_6 == null)) {
-      (__Window_38_6 = import41.getWindow());
+  dynamic get _Window_40_6 {
+    if ((this.__Window_40_6 == null)) {
+      (__Window_40_6 = import41.getWindow());
     }
-    return this.__Window_38_6;
+    return this.__Window_40_6;
   }
 
-  dynamic get _DomService_38_7 {
-    if ((this.__DomService_38_7 == null)) {
-      (__DomService_38_7 = import42.createDomService(this.parentView.injectorGet(import43.DomService, this.viewData.parentIndex, null), this.parentView.injectorGet(import44.Disposer, this.viewData.parentIndex, null), this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._Window_38_6));
+  dynamic get _DomService_40_7 {
+    if ((this.__DomService_40_7 == null)) {
+      (__DomService_40_7 = import42.createDomService(this.parentView.injectorGet(import43.DomService, this.viewData.parentIndex, null), this.parentView.injectorGet(import44.Disposer, this.viewData.parentIndex, null), this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._Window_40_6));
     }
-    return this.__DomService_38_7;
+    return this.__DomService_40_7;
   }
 
-  import11.AcxImperativeViewUtils get _AcxImperativeViewUtils_38_8 {
-    if ((this.__AcxImperativeViewUtils_38_8 == null)) {
-      (__AcxImperativeViewUtils_38_8 = new import11.AcxImperativeViewUtils(this.parentView.injectorGet(import46.ComponentLoader, this.viewData.parentIndex), this._DomService_38_7));
+  import11.AcxImperativeViewUtils get _AcxImperativeViewUtils_40_8 {
+    if ((this.__AcxImperativeViewUtils_40_8 == null)) {
+      (__AcxImperativeViewUtils_40_8 = new import11.AcxImperativeViewUtils(this.parentView.injectorGet(import46.ComponentLoader, this.viewData.parentIndex), this._DomService_40_7));
     }
-    return this.__AcxImperativeViewUtils_38_8;
+    return this.__AcxImperativeViewUtils_40_8;
   }
 
-  dynamic get _Document_38_9 {
-    if ((this.__Document_38_9 == null)) {
-      (__Document_38_9 = import41.getDocument());
+  dynamic get _Document_40_9 {
+    if ((this.__Document_40_9 == null)) {
+      (__Document_40_9 = import41.getDocument());
     }
-    return this.__Document_38_9;
+    return this.__Document_40_9;
   }
 
-  import12.DomRuler get _DomRuler_38_10 {
-    if ((this.__DomRuler_38_10 == null)) {
-      (__DomRuler_38_10 = new import12.DomRuler(this._Document_38_9, this._DomService_38_7));
+  import12.DomRuler get _DomRuler_40_10 {
+    if ((this.__DomRuler_40_10 == null)) {
+      (__DomRuler_40_10 = new import12.DomRuler(this._Document_40_9, this._DomService_40_7));
     }
-    return this.__DomRuler_38_10;
+    return this.__DomRuler_40_10;
   }
 
-  import13.Angular2ManagedZone get _ManagedZone_38_11 {
-    if ((this.__ManagedZone_38_11 == null)) {
-      (__ManagedZone_38_11 = new import13.Angular2ManagedZone(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex)));
+  import13.Angular2ManagedZone get _ManagedZone_40_11 {
+    if ((this.__ManagedZone_40_11 == null)) {
+      (__ManagedZone_40_11 = new import13.Angular2ManagedZone(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex)));
     }
-    return this.__ManagedZone_38_11;
+    return this.__ManagedZone_40_11;
   }
 
-  dynamic get _overlayContainerName_38_12 {
-    if ((this.__overlayContainerName_38_12 == null)) {
-      (__overlayContainerName_38_12 = import47.getDefaultContainerName(this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainerName_40_12 {
+    if ((this.__overlayContainerName_40_12 == null)) {
+      (__overlayContainerName_40_12 = import47.getDefaultContainerName(this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainerName_38_12;
+    return this.__overlayContainerName_40_12;
   }
 
-  dynamic get _overlayContainerParent_38_13 {
-    if ((this.__overlayContainerParent_38_13 == null)) {
-      (__overlayContainerParent_38_13 = import47.getOverlayContainerParent(this._Document_38_9, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainerParent_40_13 {
+    if ((this.__overlayContainerParent_40_13 == null)) {
+      (__overlayContainerParent_40_13 = import47.getOverlayContainerParent(this._Document_40_9, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainerParent_38_13;
+    return this.__overlayContainerParent_40_13;
   }
 
-  dynamic get _overlayContainer_38_14 {
-    if ((this.__overlayContainer_38_14 == null)) {
-      (__overlayContainer_38_14 = import47.getDefaultContainer(this._overlayContainerName_38_12, this._overlayContainerParent_38_13, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainer_40_14 {
+    if ((this.__overlayContainer_40_14 == null)) {
+      (__overlayContainer_40_14 = import47.getDefaultContainer(this._overlayContainerName_40_12, this._overlayContainerParent_40_13, this.parentView.injectorGet(const import48.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainer_38_14;
+    return this.__overlayContainer_40_14;
   }
 
-  bool get _overlaySyncDom_38_15 {
-    if ((this.__overlaySyncDom_38_15 == null)) {
-      (__overlaySyncDom_38_15 = true);
+  bool get _overlaySyncDom_40_15 {
+    if ((this.__overlaySyncDom_40_15 == null)) {
+      (__overlaySyncDom_40_15 = true);
     }
-    return this.__overlaySyncDom_38_15;
+    return this.__overlaySyncDom_40_15;
   }
 
-  bool get _overlayRepositionLoop_38_16 {
-    if ((this.__overlayRepositionLoop_38_16 == null)) {
-      (__overlayRepositionLoop_38_16 = false);
+  bool get _overlayRepositionLoop_40_16 {
+    if ((this.__overlayRepositionLoop_40_16 == null)) {
+      (__overlayRepositionLoop_40_16 = false);
     }
-    return this.__overlayRepositionLoop_38_16;
+    return this.__overlayRepositionLoop_40_16;
   }
 
-  import14.OverlayStyleConfig get _OverlayStyleConfig_38_17 {
-    if ((this.__OverlayStyleConfig_38_17 == null)) {
-      (__OverlayStyleConfig_38_17 = new import14.OverlayStyleConfig(this._Document_38_9));
+  import14.OverlayStyleConfig get _OverlayStyleConfig_40_17 {
+    if ((this.__OverlayStyleConfig_40_17 == null)) {
+      (__OverlayStyleConfig_40_17 = new import14.OverlayStyleConfig(this._Document_40_9));
     }
-    return this.__OverlayStyleConfig_38_17;
+    return this.__OverlayStyleConfig_40_17;
   }
 
-  import15.ZIndexer get _ZIndexer_38_18 {
-    if ((this.__ZIndexer_38_18 == null)) {
-      (__ZIndexer_38_18 = new import15.ZIndexer());
+  import15.ZIndexer get _ZIndexer_40_18 {
+    if ((this.__ZIndexer_40_18 == null)) {
+      (__ZIndexer_40_18 = new import15.ZIndexer());
     }
-    return this.__ZIndexer_38_18;
+    return this.__ZIndexer_40_18;
   }
 
-  import16.OverlayDomRenderService get _OverlayDomRenderService_38_19 {
-    if ((this.__OverlayDomRenderService_38_19 == null)) {
-      (__OverlayDomRenderService_38_19 = new import16.OverlayDomRenderService(this._OverlayStyleConfig_38_17, this._overlayContainer_38_14, this._overlayContainerName_38_12, this._DomRuler_38_10, this._DomService_38_7, this._AcxImperativeViewUtils_38_8, this._overlaySyncDom_38_15, this._overlayRepositionLoop_38_16, this._ZIndexer_38_18));
+  import16.OverlayDomRenderService get _OverlayDomRenderService_40_19 {
+    if ((this.__OverlayDomRenderService_40_19 == null)) {
+      (__OverlayDomRenderService_40_19 = new import16.OverlayDomRenderService(this._OverlayStyleConfig_40_17, this._overlayContainer_40_14, this._overlayContainerName_40_12, this._DomRuler_40_10, this._DomService_40_7, this._AcxImperativeViewUtils_40_8, this._overlaySyncDom_40_15, this._overlayRepositionLoop_40_16, this._ZIndexer_40_18));
     }
-    return this.__OverlayDomRenderService_38_19;
+    return this.__OverlayDomRenderService_40_19;
   }
 
-  import17.OverlayService get _OverlayService_38_20 {
-    if ((this.__OverlayService_38_20 == null)) {
-      (__OverlayService_38_20 = new import17.OverlayService(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._overlaySyncDom_38_15, this._OverlayDomRenderService_38_19, this.parentView.injectorGet(import17.OverlayService, this.viewData.parentIndex, null)));
+  import17.OverlayService get _OverlayService_40_20 {
+    if ((this.__OverlayService_40_20 == null)) {
+      (__OverlayService_40_20 = new import17.OverlayService(this.parentView.injectorGet(import45.NgZone, this.viewData.parentIndex), this._overlaySyncDom_40_15, this._OverlayDomRenderService_40_19, this.parentView.injectorGet(import17.OverlayService, this.viewData.parentIndex, null)));
     }
-    return this.__OverlayService_38_20;
+    return this.__OverlayService_40_20;
   }
 
-  import18.DomPopupSourceFactory get _DomPopupSourceFactory_38_21 {
-    if ((this.__DomPopupSourceFactory_38_21 == null)) {
-      (__DomPopupSourceFactory_38_21 = new import18.DomPopupSourceFactory(this._DomRuler_38_10));
+  import18.DomPopupSourceFactory get _DomPopupSourceFactory_40_21 {
+    if ((this.__DomPopupSourceFactory_40_21 == null)) {
+      (__DomPopupSourceFactory_40_21 = new import18.DomPopupSourceFactory(this._DomRuler_40_10));
     }
-    return this.__DomPopupSourceFactory_38_21;
+    return this.__DomPopupSourceFactory_40_21;
   }
 
   @override
@@ -489,76 +489,63 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_7);
     _el_8 = createAndAppend(doc, 'h2', _el_7);
     addShimE(_el_8);
-    _text_9 = new import4.Text('');
+    import4.Text _text_9 = new import4.Text('Playing ');
     _el_8.append(_text_9);
-    _compView_10 = new import9.ViewScoresComponent0(this, 10);
-    _el_10 = _compView_10.rootEl;
-    _el_7.append(_el_10);
-    _el_10.className = 'scores-component';
-    addShimC(_el_10);
-    _ScoresComponent_10_4 = new import10.ScoresComponent();
-    _compView_10.create(_ScoresComponent_10_4, []);
-    _el_11 = createDivAndAppend(doc, _el_7);
-    _el_11.className = 'days';
+    _text_10 = new import4.Text('');
+    _el_8.append(_text_10);
+    _compView_11 = new import9.ViewScoresComponent0(this, 11);
+    _el_11 = _compView_11.rootEl;
+    _el_7.append(_el_11);
+    _el_11.className = 'scores-component';
     addShimC(_el_11);
-    _el_12 = createDivAndAppend(doc, _el_11);
-    _el_12.className = 'days__start-day';
+    _ScoresComponent_11_4 = new import10.ScoresComponent();
+    _compView_11.create(_ScoresComponent_11_4, []);
+    _el_12 = createDivAndAppend(doc, _el_7);
+    _el_12.className = 'days';
     addShimC(_el_12);
-    _el_13 = createSpanAndAppend(doc, _el_12);
-    addShimE(_el_13);
-    _text_14 = new import4.Text('');
-    _el_13.append(_text_14);
-    _el_15 = createDivAndAppend(doc, _el_11);
-    _el_15.className = 'days__end-day';
-    addShimC(_el_15);
-    _el_16 = createSpanAndAppend(doc, _el_15);
-    addShimE(_el_16);
-    _text_17 = new import4.Text('');
-    _el_16.append(_text_17);
-    _el_18 = createDivAndAppend(doc, _el_11);
-    _el_18.className = 'clear-floats';
-    addShimC(_el_18);
-    _compView_19 = new import19.ViewMaterialProgressComponent0(this, 19);
-    _el_19 = _compView_19.rootEl;
-    _el_7.append(_el_19);
-    _el_19.className = 'life-progress';
-    addShimC(_el_19);
-    _MaterialProgressComponent_19_4 = new import20.MaterialProgressComponent(null, _compView_19.ref, _el_19);
-    _compView_19.create(_MaterialProgressComponent_19_4, []);
-    _el_20 = createDivAndAppend(doc, _el_7);
-    _el_20.className = 'controls';
+    _el_13 = createDivAndAppend(doc, _el_12);
+    _el_13.className = 'days__start-day';
+    addShimC(_el_13);
+    _el_14 = createSpanAndAppend(doc, _el_13);
+    addShimE(_el_14);
+    _text_15 = new import4.Text('');
+    _el_14.append(_text_15);
+    _el_16 = createDivAndAppend(doc, _el_12);
+    _el_16.className = 'days__end-day';
+    addShimC(_el_16);
+    _el_17 = createSpanAndAppend(doc, _el_16);
+    addShimE(_el_17);
+    _text_18 = new import4.Text('');
+    _el_17.append(_text_18);
+    import4.Text _text_19 = new import4.Text(' years from now');
+    _el_17.append(_text_19);
+    _el_20 = createDivAndAppend(doc, _el_12);
+    _el_20.className = 'clear-floats';
     addShimC(_el_20);
-    _el_21 = createDivAndAppend(doc, _el_20);
-    _el_21.className = 'controls__fabs';
+    _compView_21 = new import19.ViewMaterialProgressComponent0(this, 21);
+    _el_21 = _compView_21.rootEl;
+    _el_7.append(_el_21);
+    _el_21.className = 'life-progress';
     addShimC(_el_21);
-    _compView_22 = new import21.ViewMaterialFabComponent0(this, 22);
-    _el_22 = _compView_22.rootEl;
-    _el_21.append(_el_22);
-    createAttr(_el_22, 'aria-label', 'Play');
-    createAttr(_el_22, 'id', 'play-button');
-    createAttr(_el_22, 'raised', '');
+    _MaterialProgressComponent_21_4 = new import20.MaterialProgressComponent(null, _compView_21.ref, _el_21);
+    _compView_21.create(_MaterialProgressComponent_21_4, []);
+    _el_22 = createDivAndAppend(doc, _el_7);
+    _el_22.className = 'controls';
     addShimC(_el_22);
-    _MaterialFabComponent_22_4 = new import22.MaterialFabComponent(_el_22, _compView_22.ref);
-    _compView_23 = new import23.ViewMaterialIconComponent0(this, 23);
-    _el_23 = _compView_23.rootEl;
-    createAttr(_el_23, 'icon', 'play_arrow');
+    _el_23 = createDivAndAppend(doc, _el_22);
+    _el_23.className = 'controls__fabs';
     addShimC(_el_23);
-    _MaterialIconComponent_23_4 = new import24.MaterialIconComponent(_el_23);
-    _compView_23.create(_MaterialIconComponent_23_4, []);
-    _compView_22.create(_MaterialFabComponent_22_4, [
-      [_el_23]
-    ]);
     _compView_24 = new import21.ViewMaterialFabComponent0(this, 24);
     _el_24 = _compView_24.rootEl;
-    _el_21.append(_el_24);
-    createAttr(_el_24, 'aria-label', 'Step');
-    createAttr(_el_24, 'mini', '');
+    _el_23.append(_el_24);
+    createAttr(_el_24, 'aria-label', 'Play');
+    createAttr(_el_24, 'id', 'play-button');
     createAttr(_el_24, 'raised', '');
     addShimC(_el_24);
     _MaterialFabComponent_24_4 = new import22.MaterialFabComponent(_el_24, _compView_24.ref);
     _compView_25 = new import23.ViewMaterialIconComponent0(this, 25);
     _el_25 = _compView_25.rootEl;
-    createAttr(_el_25, 'icon', 'skip_next');
+    createAttr(_el_25, 'icon', 'play_arrow');
     addShimC(_el_25);
     _MaterialIconComponent_25_4 = new import24.MaterialIconComponent(_el_25);
     _compView_25.create(_MaterialIconComponent_25_4, []);
@@ -567,15 +554,15 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     ]);
     _compView_26 = new import21.ViewMaterialFabComponent0(this, 26);
     _el_26 = _compView_26.rootEl;
-    _el_21.append(_el_26);
-    createAttr(_el_26, 'aria-label', 'Pause');
+    _el_23.append(_el_26);
+    createAttr(_el_26, 'aria-label', 'Step');
     createAttr(_el_26, 'mini', '');
     createAttr(_el_26, 'raised', '');
     addShimC(_el_26);
     _MaterialFabComponent_26_4 = new import22.MaterialFabComponent(_el_26, _compView_26.ref);
     _compView_27 = new import23.ViewMaterialIconComponent0(this, 27);
     _el_27 = _compView_27.rootEl;
-    createAttr(_el_27, 'icon', 'pause');
+    createAttr(_el_27, 'icon', 'skip_next');
     addShimC(_el_27);
     _MaterialIconComponent_27_4 = new import24.MaterialIconComponent(_el_27);
     _compView_27.create(_MaterialIconComponent_27_4, []);
@@ -584,105 +571,122 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     ]);
     _compView_28 = new import21.ViewMaterialFabComponent0(this, 28);
     _el_28 = _compView_28.rootEl;
-    _el_21.append(_el_28);
-    createAttr(_el_28, 'aria-label', 'Reset');
+    _el_23.append(_el_28);
+    createAttr(_el_28, 'aria-label', 'Pause');
     createAttr(_el_28, 'mini', '');
     createAttr(_el_28, 'raised', '');
     addShimC(_el_28);
     _MaterialFabComponent_28_4 = new import22.MaterialFabComponent(_el_28, _compView_28.ref);
     _compView_29 = new import23.ViewMaterialIconComponent0(this, 29);
     _el_29 = _compView_29.rootEl;
-    createAttr(_el_29, 'icon', 'replay');
+    createAttr(_el_29, 'icon', 'pause');
     addShimC(_el_29);
     _MaterialIconComponent_29_4 = new import24.MaterialIconComponent(_el_29);
     _compView_29.create(_MaterialIconComponent_29_4, []);
     _compView_28.create(_MaterialFabComponent_28_4, [
       [_el_29]
     ]);
-    _compView_30 = new import25.ViewMaterialToggleComponent0(this, 30);
+    _compView_30 = new import21.ViewMaterialFabComponent0(this, 30);
     _el_30 = _compView_30.rootEl;
-    _el_20.append(_el_30);
-    _el_30.className = 'controls__faster-button themeable';
-    createAttr(_el_30, 'label', 'Go faster');
+    _el_23.append(_el_30);
+    createAttr(_el_30, 'aria-label', 'Reset');
+    createAttr(_el_30, 'mini', '');
+    createAttr(_el_30, 'raised', '');
     addShimC(_el_30);
-    _MaterialToggleComponent_30_4 = new import26.MaterialToggleComponent();
-    _compView_30.create(_MaterialToggleComponent_30_4, [const []]);
-    _el_31 = createDivAndAppend(doc, _el_20);
-    _el_31.className = 'clear-floats';
+    _MaterialFabComponent_30_4 = new import22.MaterialFabComponent(_el_30, _compView_30.ref);
+    _compView_31 = new import23.ViewMaterialIconComponent0(this, 31);
+    _el_31 = _compView_31.rootEl;
+    createAttr(_el_31, 'icon', 'replay');
     addShimC(_el_31);
-    _el_32 = createDivAndAppend(doc, _el_7);
-    _el_32.className = 'history';
+    _MaterialIconComponent_31_4 = new import24.MaterialIconComponent(_el_31);
+    _compView_31.create(_MaterialIconComponent_31_4, []);
+    _compView_30.create(_MaterialFabComponent_30_4, [
+      [_el_31]
+    ]);
+    _compView_32 = new import25.ViewMaterialToggleComponent0(this, 32);
+    _el_32 = _compView_32.rootEl;
+    _el_22.append(_el_32);
+    _el_32.className = 'controls__faster-button themeable';
+    createAttr(_el_32, 'label', 'Go faster');
     addShimC(_el_32);
-    _compView_33 = new import27.ViewStatsComponent0(this, 33);
-    _el_33 = _compView_33.rootEl;
-    _el_32.append(_el_33);
-    _el_33.className = 'history__stats';
+    _MaterialToggleComponent_32_4 = new import26.MaterialToggleComponent();
+    _compView_32.create(_MaterialToggleComponent_32_4, [const []]);
+    _el_33 = createDivAndAppend(doc, _el_22);
+    _el_33.className = 'clear-floats';
     addShimC(_el_33);
-    _StatsComponent_33_4 = new import28.StatsComponent();
-    _compView_33.create(_StatsComponent_33_4, []);
-    _compView_34 = new import29.ViewVisualizeWinningsComponent0(this, 34);
-    _el_34 = _compView_34.rootEl;
-    _el_32.append(_el_34);
-    _el_34.className = 'history__vis';
+    _el_34 = createDivAndAppend(doc, _el_7);
+    _el_34.className = 'history';
     addShimC(_el_34);
-    _VisualizeWinningsComponent_34_4 = new import30.VisualizeWinningsComponent();
-    _compView_34.create(_VisualizeWinningsComponent_34_4, []);
-    _el_35 = createDivAndAppend(doc, _el_32);
-    _el_35.className = 'clear-floats';
+    _compView_35 = new import27.ViewStatsComponent0(this, 35);
+    _el_35 = _compView_35.rootEl;
+    _el_34.append(_el_35);
+    _el_35.className = 'history__stats';
     addShimC(_el_35);
-    _el_36 = createAndAppend(doc, 'h2', _el_7);
-    addShimE(_el_36);
-    import4.Text _text_37 = new import4.Text('Settings');
-    _el_36.append(_text_37);
-    _compView_38 = new import31.ViewSettingsComponent0(this, 38);
-    _el_38 = _compView_38.rootEl;
-    _el_7.append(_el_38);
-    addShimC(_el_38);
-    _SettingsComponent_38_4 = new import32.SettingsComponent();
-    _compView_38.create(_SettingsComponent_38_4, []);
+    _StatsComponent_35_4 = new import28.StatsComponent();
+    _compView_35.create(_StatsComponent_35_4, []);
+    _compView_36 = new import29.ViewVisualizeWinningsComponent0(this, 36);
+    _el_36 = _compView_36.rootEl;
+    _el_34.append(_el_36);
+    _el_36.className = 'history__vis';
+    addShimC(_el_36);
+    _VisualizeWinningsComponent_36_4 = new import30.VisualizeWinningsComponent();
+    _compView_36.create(_VisualizeWinningsComponent_36_4, []);
+    _el_37 = createDivAndAppend(doc, _el_34);
+    _el_37.className = 'clear-floats';
+    addShimC(_el_37);
+    _el_38 = createAndAppend(doc, 'h2', _el_7);
+    addShimE(_el_38);
+    import4.Text _text_39 = new import4.Text('Settings');
+    _el_38.append(_text_39);
+    _compView_40 = new import31.ViewSettingsComponent0(this, 40);
+    _el_40 = _compView_40.rootEl;
+    _el_7.append(_el_40);
+    addShimC(_el_40);
+    _SettingsComponent_40_4 = new import32.SettingsComponent();
+    _compView_40.create(_SettingsComponent_40_4, []);
     _compView_6.create(_MaterialTabComponent_6_4, [
       [_el_7]
     ]);
-    _compView_39 = new import7.ViewMaterialTabComponent0(this, 39);
-    _el_39 = _compView_39.rootEl;
-    createAttr(_el_39, 'label', 'Help');
-    addShimC(_el_39);
-    _MaterialTabComponent_39_4 = new import8.MaterialTabComponent(_el_39, parentView.injectorGet(import49.IdGenerator, viewData.parentIndex, null));
-    _Tab_39_5 = _MaterialTabComponent_39_4;
-    _compView_40 = new import33.ViewHelpComponent0(this, 40);
-    _el_40 = _compView_40.rootEl;
-    createAttr(_el_40, 'content', 'help');
-    addShimC(_el_40);
-    _HelpComponent_40_4 = new import34.HelpComponent();
-    _compView_40.create(_HelpComponent_40_4, []);
-    _compView_39.create(_MaterialTabComponent_39_4, [
-      [_el_40]
-    ]);
     _compView_41 = new import7.ViewMaterialTabComponent0(this, 41);
     _el_41 = _compView_41.rootEl;
-    createAttr(_el_41, 'label', 'About');
+    createAttr(_el_41, 'label', 'Help');
     addShimC(_el_41);
     _MaterialTabComponent_41_4 = new import8.MaterialTabComponent(_el_41, parentView.injectorGet(import49.IdGenerator, viewData.parentIndex, null));
     _Tab_41_5 = _MaterialTabComponent_41_4;
     _compView_42 = new import33.ViewHelpComponent0(this, 42);
     _el_42 = _compView_42.rootEl;
-    createAttr(_el_42, 'content', 'about');
+    createAttr(_el_42, 'content', 'help');
     addShimC(_el_42);
     _HelpComponent_42_4 = new import34.HelpComponent();
     _compView_42.create(_HelpComponent_42_4, []);
     _compView_41.create(_MaterialTabComponent_41_4, [
       [_el_42]
     ]);
-    _compView_5.create(_MaterialTabPanelComponent_5_4, [
-      [_el_6, _el_39, _el_41]
+    _compView_43 = new import7.ViewMaterialTabComponent0(this, 43);
+    _el_43 = _compView_43.rootEl;
+    createAttr(_el_43, 'label', 'About');
+    addShimC(_el_43);
+    _MaterialTabComponent_43_4 = new import8.MaterialTabComponent(_el_43, parentView.injectorGet(import49.IdGenerator, viewData.parentIndex, null));
+    _Tab_43_5 = _MaterialTabComponent_43_4;
+    _compView_44 = new import33.ViewHelpComponent0(this, 44);
+    _el_44 = _compView_44.rootEl;
+    createAttr(_el_44, 'content', 'about');
+    addShimC(_el_44);
+    _HelpComponent_44_4 = new import34.HelpComponent();
+    _compView_44.create(_HelpComponent_44_4, []);
+    _compView_43.create(_MaterialTabComponent_43_4, [
+      [_el_44]
     ]);
-    final subscription_0 = _MaterialFabComponent_22_4.trigger.listen(eventHandler0(ctx.play));
-    final subscription_1 = _MaterialFabComponent_24_4.trigger.listen(eventHandler0(ctx.step));
-    final subscription_2 = _MaterialFabComponent_26_4.trigger.listen(eventHandler0(ctx.pause));
-    final subscription_3 = _MaterialFabComponent_28_4.trigger.listen(eventHandler0(ctx.reset));
-    final subscription_4 = _MaterialToggleComponent_30_4.onChecked.listen(eventHandler1(_handle_checkedChange_30_0));
-    final subscription_5 = _SettingsComponent_38_4.settingsChanged.listen(eventHandler0(ctx.updateFromSettings));
-    _viewQuery_vis_0.reset([_VisualizeWinningsComponent_34_4]);
+    _compView_5.create(_MaterialTabPanelComponent_5_4, [
+      [_el_6, _el_41, _el_43]
+    ]);
+    final subscription_0 = _MaterialFabComponent_24_4.trigger.listen(eventHandler0(ctx.play));
+    final subscription_1 = _MaterialFabComponent_26_4.trigger.listen(eventHandler0(ctx.step));
+    final subscription_2 = _MaterialFabComponent_28_4.trigger.listen(eventHandler0(ctx.pause));
+    final subscription_3 = _MaterialFabComponent_30_4.trigger.listen(eventHandler0(ctx.reset));
+    final subscription_4 = _MaterialToggleComponent_32_4.onChecked.listen(eventHandler1(_handle_checkedChange_32_0));
+    final subscription_5 = _SettingsComponent_40_4.settingsChanged.listen(eventHandler0(ctx.updateFromSettings));
+    _viewQuery_vis_0.reset([_VisualizeWinningsComponent_36_4]);
     ctx.vis = _viewQuery_vis_0.first;
     init(const [], [subscription_0, subscription_1, subscription_2, subscription_3, subscription_4, subscription_5]);
     return null;
@@ -690,137 +694,128 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import10.ScoresComponent) && (10 == nodeIndex))) {
-      return _ScoresComponent_10_4;
+    if ((identical(token, import10.ScoresComponent) && (11 == nodeIndex))) {
+      return _ScoresComponent_11_4;
     }
-    if ((identical(token, const import48.OpaqueToken('defaultPopupPositions')) && (10 == nodeIndex))) {
-      return _defaultPopupPositions_10_5;
+    if ((identical(token, const import48.OpaqueToken('defaultPopupPositions')) && (11 == nodeIndex))) {
+      return _defaultPopupPositions_11_5;
     }
-    if ((identical(token, import4.Window) && (10 == nodeIndex))) {
-      return _Window_10_6;
+    if ((identical(token, import4.Window) && (11 == nodeIndex))) {
+      return _Window_11_6;
     }
-    if ((identical(token, import43.DomService) && (10 == nodeIndex))) {
-      return _DomService_10_7;
+    if ((identical(token, import43.DomService) && (11 == nodeIndex))) {
+      return _DomService_11_7;
     }
-    if ((identical(token, import11.AcxImperativeViewUtils) && (10 == nodeIndex))) {
-      return _AcxImperativeViewUtils_10_8;
+    if ((identical(token, import11.AcxImperativeViewUtils) && (11 == nodeIndex))) {
+      return _AcxImperativeViewUtils_11_8;
     }
-    if ((identical(token, import4.Document) && (10 == nodeIndex))) {
-      return _Document_10_9;
+    if ((identical(token, import4.Document) && (11 == nodeIndex))) {
+      return _Document_11_9;
     }
-    if ((identical(token, import12.DomRuler) && (10 == nodeIndex))) {
-      return _DomRuler_10_10;
+    if ((identical(token, import12.DomRuler) && (11 == nodeIndex))) {
+      return _DomRuler_11_10;
     }
-    if ((identical(token, import50.ManagedZone) && (10 == nodeIndex))) {
-      return _ManagedZone_10_11;
+    if ((identical(token, import50.ManagedZone) && (11 == nodeIndex))) {
+      return _ManagedZone_11_11;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayContainerName')) && (10 == nodeIndex))) {
-      return _overlayContainerName_10_12;
+    if ((identical(token, const import48.OpaqueToken('overlayContainerName')) && (11 == nodeIndex))) {
+      return _overlayContainerName_11_12;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayContainerParent')) && (10 == nodeIndex))) {
-      return _overlayContainerParent_10_13;
+    if ((identical(token, const import48.OpaqueToken('overlayContainerParent')) && (11 == nodeIndex))) {
+      return _overlayContainerParent_11_13;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayContainer')) && (10 == nodeIndex))) {
-      return _overlayContainer_10_14;
+    if ((identical(token, const import48.OpaqueToken('overlayContainer')) && (11 == nodeIndex))) {
+      return _overlayContainer_11_14;
     }
-    if ((identical(token, const import48.OpaqueToken('overlaySyncDom')) && (10 == nodeIndex))) {
-      return _overlaySyncDom_10_15;
+    if ((identical(token, const import48.OpaqueToken('overlaySyncDom')) && (11 == nodeIndex))) {
+      return _overlaySyncDom_11_15;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayRepositionLoop')) && (10 == nodeIndex))) {
-      return _overlayRepositionLoop_10_16;
+    if ((identical(token, const import48.OpaqueToken('overlayRepositionLoop')) && (11 == nodeIndex))) {
+      return _overlayRepositionLoop_11_16;
     }
-    if ((identical(token, import14.OverlayStyleConfig) && (10 == nodeIndex))) {
-      return _OverlayStyleConfig_10_17;
+    if ((identical(token, import14.OverlayStyleConfig) && (11 == nodeIndex))) {
+      return _OverlayStyleConfig_11_17;
     }
-    if ((identical(token, import15.ZIndexer) && (10 == nodeIndex))) {
-      return _ZIndexer_10_18;
+    if ((identical(token, import15.ZIndexer) && (11 == nodeIndex))) {
+      return _ZIndexer_11_18;
     }
-    if ((identical(token, import16.OverlayDomRenderService) && (10 == nodeIndex))) {
-      return _OverlayDomRenderService_10_19;
+    if ((identical(token, import16.OverlayDomRenderService) && (11 == nodeIndex))) {
+      return _OverlayDomRenderService_11_19;
     }
-    if ((identical(token, import17.OverlayService) && (10 == nodeIndex))) {
-      return _OverlayService_10_20;
+    if ((identical(token, import17.OverlayService) && (11 == nodeIndex))) {
+      return _OverlayService_11_20;
     }
-    if ((identical(token, import18.DomPopupSourceFactory) && (10 == nodeIndex))) {
-      return _DomPopupSourceFactory_10_21;
+    if ((identical(token, import18.DomPopupSourceFactory) && (11 == nodeIndex))) {
+      return _DomPopupSourceFactory_11_21;
     }
-    if ((identical(token, import20.MaterialProgressComponent) && (19 == nodeIndex))) {
-      return _MaterialProgressComponent_19_4;
+    if ((identical(token, import20.MaterialProgressComponent) && (21 == nodeIndex))) {
+      return _MaterialProgressComponent_21_4;
     }
-    if ((identical(token, import28.StatsComponent) && (33 == nodeIndex))) {
-      return _StatsComponent_33_4;
+    if ((identical(token, import28.StatsComponent) && (35 == nodeIndex))) {
+      return _StatsComponent_35_4;
     }
-    if ((identical(token, import30.VisualizeWinningsComponent) && (34 == nodeIndex))) {
-      return _VisualizeWinningsComponent_34_4;
+    if ((identical(token, import30.VisualizeWinningsComponent) && (36 == nodeIndex))) {
+      return _VisualizeWinningsComponent_36_4;
     }
-    if ((identical(token, import32.SettingsComponent) && (38 == nodeIndex))) {
-      return _SettingsComponent_38_4;
+    if ((identical(token, import32.SettingsComponent) && (40 == nodeIndex))) {
+      return _SettingsComponent_40_4;
     }
-    if ((identical(token, const import48.OpaqueToken('defaultPopupPositions')) && (38 == nodeIndex))) {
-      return _defaultPopupPositions_38_5;
+    if ((identical(token, const import48.OpaqueToken('defaultPopupPositions')) && (40 == nodeIndex))) {
+      return _defaultPopupPositions_40_5;
     }
-    if ((identical(token, import4.Window) && (38 == nodeIndex))) {
-      return _Window_38_6;
+    if ((identical(token, import4.Window) && (40 == nodeIndex))) {
+      return _Window_40_6;
     }
-    if ((identical(token, import43.DomService) && (38 == nodeIndex))) {
-      return _DomService_38_7;
+    if ((identical(token, import43.DomService) && (40 == nodeIndex))) {
+      return _DomService_40_7;
     }
-    if ((identical(token, import11.AcxImperativeViewUtils) && (38 == nodeIndex))) {
-      return _AcxImperativeViewUtils_38_8;
+    if ((identical(token, import11.AcxImperativeViewUtils) && (40 == nodeIndex))) {
+      return _AcxImperativeViewUtils_40_8;
     }
-    if ((identical(token, import4.Document) && (38 == nodeIndex))) {
-      return _Document_38_9;
+    if ((identical(token, import4.Document) && (40 == nodeIndex))) {
+      return _Document_40_9;
     }
-    if ((identical(token, import12.DomRuler) && (38 == nodeIndex))) {
-      return _DomRuler_38_10;
+    if ((identical(token, import12.DomRuler) && (40 == nodeIndex))) {
+      return _DomRuler_40_10;
     }
-    if ((identical(token, import50.ManagedZone) && (38 == nodeIndex))) {
-      return _ManagedZone_38_11;
+    if ((identical(token, import50.ManagedZone) && (40 == nodeIndex))) {
+      return _ManagedZone_40_11;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayContainerName')) && (38 == nodeIndex))) {
-      return _overlayContainerName_38_12;
+    if ((identical(token, const import48.OpaqueToken('overlayContainerName')) && (40 == nodeIndex))) {
+      return _overlayContainerName_40_12;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayContainerParent')) && (38 == nodeIndex))) {
-      return _overlayContainerParent_38_13;
+    if ((identical(token, const import48.OpaqueToken('overlayContainerParent')) && (40 == nodeIndex))) {
+      return _overlayContainerParent_40_13;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayContainer')) && (38 == nodeIndex))) {
-      return _overlayContainer_38_14;
+    if ((identical(token, const import48.OpaqueToken('overlayContainer')) && (40 == nodeIndex))) {
+      return _overlayContainer_40_14;
     }
-    if ((identical(token, const import48.OpaqueToken('overlaySyncDom')) && (38 == nodeIndex))) {
-      return _overlaySyncDom_38_15;
+    if ((identical(token, const import48.OpaqueToken('overlaySyncDom')) && (40 == nodeIndex))) {
+      return _overlaySyncDom_40_15;
     }
-    if ((identical(token, const import48.OpaqueToken('overlayRepositionLoop')) && (38 == nodeIndex))) {
-      return _overlayRepositionLoop_38_16;
+    if ((identical(token, const import48.OpaqueToken('overlayRepositionLoop')) && (40 == nodeIndex))) {
+      return _overlayRepositionLoop_40_16;
     }
-    if ((identical(token, import14.OverlayStyleConfig) && (38 == nodeIndex))) {
-      return _OverlayStyleConfig_38_17;
+    if ((identical(token, import14.OverlayStyleConfig) && (40 == nodeIndex))) {
+      return _OverlayStyleConfig_40_17;
     }
-    if ((identical(token, import15.ZIndexer) && (38 == nodeIndex))) {
-      return _ZIndexer_38_18;
+    if ((identical(token, import15.ZIndexer) && (40 == nodeIndex))) {
+      return _ZIndexer_40_18;
     }
-    if ((identical(token, import16.OverlayDomRenderService) && (38 == nodeIndex))) {
-      return _OverlayDomRenderService_38_19;
+    if ((identical(token, import16.OverlayDomRenderService) && (40 == nodeIndex))) {
+      return _OverlayDomRenderService_40_19;
     }
-    if ((identical(token, import17.OverlayService) && (38 == nodeIndex))) {
-      return _OverlayService_38_20;
+    if ((identical(token, import17.OverlayService) && (40 == nodeIndex))) {
+      return _OverlayService_40_20;
     }
-    if ((identical(token, import18.DomPopupSourceFactory) && (38 == nodeIndex))) {
-      return _DomPopupSourceFactory_38_21;
+    if ((identical(token, import18.DomPopupSourceFactory) && (40 == nodeIndex))) {
+      return _DomPopupSourceFactory_40_21;
     }
-    if (((identical(token, import8.MaterialTabComponent) || identical(token, import51.DeferredContentAware)) && ((6 <= nodeIndex) && (nodeIndex <= 38)))) {
+    if (((identical(token, import8.MaterialTabComponent) || identical(token, import51.DeferredContentAware)) && ((6 <= nodeIndex) && (nodeIndex <= 40)))) {
       return _MaterialTabComponent_6_4;
     }
-    if ((identical(token, import8.Tab) && ((6 <= nodeIndex) && (nodeIndex <= 38)))) {
+    if ((identical(token, import8.Tab) && ((6 <= nodeIndex) && (nodeIndex <= 40)))) {
       return _Tab_6_5;
-    }
-    if ((identical(token, import34.HelpComponent) && (40 == nodeIndex))) {
-      return _HelpComponent_40_4;
-    }
-    if (((identical(token, import8.MaterialTabComponent) || identical(token, import51.DeferredContentAware)) && ((39 <= nodeIndex) && (nodeIndex <= 40)))) {
-      return _MaterialTabComponent_39_4;
-    }
-    if ((identical(token, import8.Tab) && ((39 <= nodeIndex) && (nodeIndex <= 40)))) {
-      return _Tab_39_5;
     }
     if ((identical(token, import34.HelpComponent) && (42 == nodeIndex))) {
       return _HelpComponent_42_4;
@@ -831,7 +826,16 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if ((identical(token, import8.Tab) && ((41 <= nodeIndex) && (nodeIndex <= 42)))) {
       return _Tab_41_5;
     }
-    if ((identical(token, import6.MaterialTabPanelComponent) && ((5 <= nodeIndex) && (nodeIndex <= 42)))) {
+    if ((identical(token, import34.HelpComponent) && (44 == nodeIndex))) {
+      return _HelpComponent_44_4;
+    }
+    if (((identical(token, import8.MaterialTabComponent) || identical(token, import51.DeferredContentAware)) && ((43 <= nodeIndex) && (nodeIndex <= 44)))) {
+      return _MaterialTabComponent_43_4;
+    }
+    if ((identical(token, import8.Tab) && ((43 <= nodeIndex) && (nodeIndex <= 44)))) {
+      return _Tab_43_5;
+    }
+    if ((identical(token, import6.MaterialTabPanelComponent) && ((5 <= nodeIndex) && (nodeIndex <= 44)))) {
       return _MaterialTabPanelComponent_5_4;
     }
     return notFoundResult;
@@ -851,63 +855,41 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     }
     final currVal_2 = _ctx.altCash;
     if (!identical(_expr_2, currVal_2)) {
-      _ScoresComponent_10_4.altCash = currVal_2;
+      _ScoresComponent_11_4.altCash = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.cash;
     if (!identical(_expr_3, currVal_3)) {
-      _ScoresComponent_10_4.cash = currVal_3;
+      _ScoresComponent_11_4.cash = currVal_3;
       _expr_3 = currVal_3;
     }
     changed = false;
     final currVal_6 = _ctx.progress;
     if (!identical(_expr_6, currVal_6)) {
-      _MaterialProgressComponent_19_4.activeProgress = currVal_6;
+      _MaterialProgressComponent_21_4.activeProgress = currVal_6;
       changed = true;
       _expr_6 = currVal_6;
     }
     if (changed) {
-      _compView_19.markAsCheckOnce();
-    }
-    changed = false;
-    if (firstCheck) {
-      _MaterialFabComponent_22_4.raised = true;
-      changed = true;
-    }
-    final currVal_7 = (_ctx.endOfDays || _ctx.inProgress);
-    if (!identical(_expr_7, currVal_7)) {
-      _MaterialFabComponent_22_4.disabled = currVal_7;
-      changed = true;
-      _expr_7 = currVal_7;
-    }
-    if (changed) {
-      _compView_22.markAsCheckOnce();
-    }
-    changed = false;
-    if (firstCheck) {
-      _MaterialIconComponent_23_4.icon = 'play_arrow';
-      changed = true;
-    }
-    if (changed) {
-      _compView_23.markAsCheckOnce();
+      _compView_21.markAsCheckOnce();
     }
     changed = false;
     if (firstCheck) {
       _MaterialFabComponent_24_4.raised = true;
       changed = true;
     }
-    final currVal_10 = (_ctx.endOfDays || _ctx.inProgress);
-    if (!identical(_expr_10, currVal_10)) {
-      _MaterialFabComponent_24_4.disabled = currVal_10;
+    final currVal_7 = (_ctx.endOfDays || _ctx.inProgress);
+    if (!identical(_expr_7, currVal_7)) {
+      _MaterialFabComponent_24_4.disabled = currVal_7;
       changed = true;
-      _expr_10 = currVal_10;
+      _expr_7 = currVal_7;
     }
     if (changed) {
       _compView_24.markAsCheckOnce();
     }
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_25_4.icon = 'skip_next';
+      _MaterialIconComponent_25_4.icon = 'play_arrow';
       changed = true;
     }
     if (changed) {
@@ -918,18 +900,18 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       _MaterialFabComponent_26_4.raised = true;
       changed = true;
     }
-    final bool currVal_13 = !_ctx.inProgress;
-    if (!identical(_expr_13, currVal_13)) {
-      _MaterialFabComponent_26_4.disabled = currVal_13;
+    final currVal_10 = (_ctx.endOfDays || _ctx.inProgress);
+    if (!identical(_expr_10, currVal_10)) {
+      _MaterialFabComponent_26_4.disabled = currVal_10;
       changed = true;
-      _expr_13 = currVal_13;
+      _expr_10 = currVal_10;
     }
     if (changed) {
       _compView_26.markAsCheckOnce();
     }
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_27_4.icon = 'pause';
+      _MaterialIconComponent_27_4.icon = 'skip_next';
       changed = true;
     }
     if (changed) {
@@ -940,12 +922,18 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       _MaterialFabComponent_28_4.raised = true;
       changed = true;
     }
+    final bool currVal_13 = !_ctx.inProgress;
+    if (!identical(_expr_13, currVal_13)) {
+      _MaterialFabComponent_28_4.disabled = currVal_13;
+      changed = true;
+      _expr_13 = currVal_13;
+    }
     if (changed) {
       _compView_28.markAsCheckOnce();
     }
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_29_4.icon = 'replay';
+      _MaterialIconComponent_29_4.icon = 'pause';
       changed = true;
     }
     if (changed) {
@@ -953,79 +941,93 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     }
     changed = false;
     if (firstCheck) {
-      _MaterialToggleComponent_30_4.label = 'Go faster';
+      _MaterialFabComponent_30_4.raised = true;
       changed = true;
-    }
-    final currVal_18 = _ctx.fastEnabled;
-    if (!identical(_expr_18, currVal_18)) {
-      _MaterialToggleComponent_30_4.checked = currVal_18;
-      changed = true;
-      _expr_18 = currVal_18;
     }
     if (changed) {
       _compView_30.markAsCheckOnce();
     }
+    changed = false;
+    if (firstCheck) {
+      _MaterialIconComponent_31_4.icon = 'replay';
+      changed = true;
+    }
+    if (changed) {
+      _compView_31.markAsCheckOnce();
+    }
+    changed = false;
+    if (firstCheck) {
+      _MaterialToggleComponent_32_4.label = 'Go faster';
+      changed = true;
+    }
+    final currVal_18 = _ctx.fastEnabled;
+    if (!identical(_expr_18, currVal_18)) {
+      _MaterialToggleComponent_32_4.checked = currVal_18;
+      changed = true;
+      _expr_18 = currVal_18;
+    }
+    if (changed) {
+      _compView_32.markAsCheckOnce();
+    }
     if (firstCheck) {
       if (!identical(_ctx.winningsMap, null)) {
-        (_StatsComponent_33_4.winningsMap = _ctx.winningsMap);
+        (_StatsComponent_35_4.winningsMap = _ctx.winningsMap);
       }
     }
     if (firstCheck) {
-      _VisualizeWinningsComponent_34_4.ngOnInit();
+      _VisualizeWinningsComponent_36_4.ngOnInit();
     }
     final currVal_21 = _ctx.settings;
     if (!identical(_expr_21, currVal_21)) {
-      _SettingsComponent_38_4.settings = currVal_21;
+      _SettingsComponent_40_4.settings = currVal_21;
       _expr_21 = currVal_21;
     }
     if (firstCheck) {
-      _SettingsComponent_38_4.ngOnInit();
+      _SettingsComponent_40_4.ngOnInit();
     }
     if (firstCheck) {
-      (_MaterialTabComponent_39_4.label = 'Help');
+      (_MaterialTabComponent_41_4.label = 'Help');
     }
     if (firstCheck) {
-      (_HelpComponent_40_4.content = 'help');
+      (_HelpComponent_42_4.content = 'help');
     }
     if (firstCheck) {
-      (_MaterialTabComponent_41_4.label = 'About');
+      (_MaterialTabComponent_43_4.label = 'About');
     }
     if (firstCheck) {
-      (_HelpComponent_42_4.content = 'about');
+      (_HelpComponent_44_4.content = 'about');
     }
     if (_query_Tab_5_0.dirty) {
-      _query_Tab_5_0.reset([_Tab_6_5, _Tab_39_5, _Tab_41_5]);
+      _query_Tab_5_0.reset([_Tab_6_5, _Tab_41_5, _Tab_43_5]);
       _MaterialTabPanelComponent_5_4.tabs = _query_Tab_5_0;
       _query_Tab_5_0.notifyOnChanges();
     }
     _compView_6.detectHostChanges(firstCheck);
-    final currVal_1 = import38.interpolate1('Playing ', _ctx.settings.lottery.shortName, '');
+    final currVal_1 = import38.interpolate0(_ctx.settings.lottery.shortName);
     if (!identical(_expr_1, currVal_1)) {
-      _text_9.text = currVal_1;
+      _text_10.text = currVal_1;
       _expr_1 = currVal_1;
     }
     final currVal_4 = (_ctx.currentDay ?? '');
     if (!identical(_expr_4, currVal_4)) {
-      _text_14.text = currVal_4;
+      _text_15.text = currVal_4;
       _expr_4 = currVal_4;
     }
-    final currVal_5 = import38.interpolate1('', _ctx.settings.years, ' years from now');
+    final currVal_5 = import38.interpolate0(_ctx.settings.years);
     if (!identical(_expr_5, currVal_5)) {
-      _text_17.text = currVal_5;
+      _text_18.text = currVal_5;
       _expr_5 = currVal_5;
     }
-    _compView_22.detectHostChanges(firstCheck);
     _compView_24.detectHostChanges(firstCheck);
     _compView_26.detectHostChanges(firstCheck);
     _compView_28.detectHostChanges(firstCheck);
-    _compView_39.detectHostChanges(firstCheck);
+    _compView_30.detectHostChanges(firstCheck);
     _compView_41.detectHostChanges(firstCheck);
+    _compView_43.detectHostChanges(firstCheck);
     _compView_5.detectChanges();
     _compView_6.detectChanges();
-    _compView_10.detectChanges();
-    _compView_19.detectChanges();
-    _compView_22.detectChanges();
-    _compView_23.detectChanges();
+    _compView_11.detectChanges();
+    _compView_21.detectChanges();
     _compView_24.detectChanges();
     _compView_25.detectChanges();
     _compView_26.detectChanges();
@@ -1033,15 +1035,17 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _compView_28.detectChanges();
     _compView_29.detectChanges();
     _compView_30.detectChanges();
-    _compView_33.detectChanges();
-    _compView_34.detectChanges();
-    _compView_38.detectChanges();
-    _compView_39.detectChanges();
+    _compView_31.detectChanges();
+    _compView_32.detectChanges();
+    _compView_35.detectChanges();
+    _compView_36.detectChanges();
     _compView_40.detectChanges();
     _compView_41.detectChanges();
     _compView_42.detectChanges();
+    _compView_43.detectChanges();
+    _compView_44.detectChanges();
     if (firstCheck) {
-      _MaterialProgressComponent_19_4.ngAfterViewInit();
+      _MaterialProgressComponent_21_4.ngAfterViewInit();
     }
   }
 
@@ -1049,10 +1053,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   void destroyInternal() {
     _compView_5?.destroy();
     _compView_6?.destroy();
-    _compView_10?.destroy();
-    _compView_19?.destroy();
-    _compView_22?.destroy();
-    _compView_23?.destroy();
+    _compView_11?.destroy();
+    _compView_21?.destroy();
     _compView_24?.destroy();
     _compView_25?.destroy();
     _compView_26?.destroy();
@@ -1060,17 +1062,19 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _compView_28?.destroy();
     _compView_29?.destroy();
     _compView_30?.destroy();
-    _compView_33?.destroy();
-    _compView_34?.destroy();
-    _compView_38?.destroy();
-    _compView_39?.destroy();
+    _compView_31?.destroy();
+    _compView_32?.destroy();
+    _compView_35?.destroy();
+    _compView_36?.destroy();
     _compView_40?.destroy();
     _compView_41?.destroy();
     _compView_42?.destroy();
-    _MaterialProgressComponent_19_4.ngOnDestroy();
+    _compView_43?.destroy();
+    _compView_44?.destroy();
+    _MaterialProgressComponent_21_4.ngOnDestroy();
   }
 
-  void _handle_checkedChange_30_0($event) {
+  void _handle_checkedChange_32_0($event) {
     ctx.fastEnabled = $event;
   }
 }

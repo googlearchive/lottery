@@ -67,15 +67,9 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.DivElement _el_1;
   import3.Element _el_2;
   import3.Element _el_4;
-  import3.Text _text_5;
-  import3.DivElement _el_6;
-  import3.Element _el_7;
-  import3.Element _el_9;
-  import4.ViewMaterialRadioGroupComponent0 _compView_9;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_9_4;
-  final import6.QueryList _query_MaterialRadioComponent_9_0 = new import6.QueryList();
-  ViewContainer _appEl_10;
-  import8.NgFor _NgFor_10_7;
+  import3.Text _text_6;
+  import3.Text _text_8;
+  import3.DivElement _el_10;
   import3.Element _el_11;
   import3.Element _el_13;
   import4.ViewMaterialRadioGroupComponent0 _compView_13;
@@ -83,23 +77,21 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   final import6.QueryList _query_MaterialRadioComponent_13_0 = new import6.QueryList();
   ViewContainer _appEl_14;
   import8.NgFor _NgFor_14_7;
-  import3.ButtonElement _el_15;
-  import3.ButtonElement _el_17;
-  import3.DivElement _el_19;
-  import3.Element _el_20;
-  import3.Element _el_22;
-  import3.Text _text_23;
-  import3.DivElement _el_24;
-  import3.Element _el_25;
-  import3.Element _el_27;
-  import4.ViewMaterialRadioGroupComponent0 _compView_27;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_27_4;
-  final import6.QueryList _query_MaterialRadioComponent_27_0 = new import6.QueryList();
-  ViewContainer _appEl_28;
-  import8.NgFor _NgFor_28_7;
-  import3.Element _el_29;
-  import3.Element _el_30;
-  import3.Text _text_32;
+  import3.Element _el_15;
+  import3.Element _el_17;
+  import4.ViewMaterialRadioGroupComponent0 _compView_17;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_17_4;
+  final import6.QueryList _query_MaterialRadioComponent_17_0 = new import6.QueryList();
+  ViewContainer _appEl_18;
+  import8.NgFor _NgFor_18_7;
+  import3.ButtonElement _el_19;
+  import3.ButtonElement _el_21;
+  import3.DivElement _el_23;
+  import3.Element _el_24;
+  import3.Element _el_26;
+  import3.Text _text_28;
+  import3.Text _text_30;
+  import3.DivElement _el_32;
   import3.Element _el_33;
   import3.Element _el_35;
   import4.ViewMaterialRadioGroupComponent0 _compView_35;
@@ -109,42 +101,56 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import8.NgFor _NgFor_36_7;
   import3.Element _el_37;
   import3.Element _el_38;
-  import3.Text _text_40;
-  import3.ButtonElement _el_41;
-  import3.ButtonElement _el_43;
-  import3.DivElement _el_45;
+  import3.Text _text_41;
+  import3.Element _el_42;
+  import3.Element _el_44;
+  import4.ViewMaterialRadioGroupComponent0 _compView_44;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_44_4;
+  final import6.QueryList _query_MaterialRadioComponent_44_0 = new import6.QueryList();
+  ViewContainer _appEl_45;
+  import8.NgFor _NgFor_45_7;
   import3.Element _el_46;
-  import3.Element _el_48;
-  import3.Text _text_49;
-  import3.DivElement _el_50;
-  import3.Element _el_51;
-  import3.Element _el_53;
-  import9.ViewMaterialCheckboxComponent0 _compView_53;
-  import10.MaterialCheckboxComponent _MaterialCheckboxComponent_53_4;
-  import3.Element _el_54;
-  import3.Element _el_55;
-  import4.ViewMaterialRadioGroupComponent0 _compView_55;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_55_4;
-  final import6.QueryList _query_MaterialRadioComponent_55_0 = new import6.QueryList();
-  ViewContainer _appEl_56;
-  import8.NgFor _NgFor_56_7;
-  import3.Element _el_57;
-  import3.Element _el_59;
-  import4.ViewMaterialRadioGroupComponent0 _compView_59;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_59_4;
-  final import6.QueryList _query_MaterialRadioComponent_59_0 = new import6.QueryList();
-  ViewContainer _appEl_60;
-  import8.NgFor _NgFor_60_7;
-  import3.ButtonElement _el_61;
-  import3.ButtonElement _el_63;
+  import3.Element _el_47;
+  import3.Text _text_50;
+  import3.ButtonElement _el_51;
+  import3.ButtonElement _el_53;
+  import3.DivElement _el_55;
+  import3.Element _el_56;
+  import3.Element _el_58;
+  import3.Text _text_60;
+  import3.Text _text_62;
+  import3.DivElement _el_64;
+  import3.Element _el_65;
+  import3.Element _el_67;
+  import9.ViewMaterialCheckboxComponent0 _compView_67;
+  import10.MaterialCheckboxComponent _MaterialCheckboxComponent_67_4;
+  import3.Element _el_68;
+  import3.Element _el_69;
+  import4.ViewMaterialRadioGroupComponent0 _compView_69;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_69_4;
+  final import6.QueryList _query_MaterialRadioComponent_69_0 = new import6.QueryList();
+  ViewContainer _appEl_70;
+  import8.NgFor _NgFor_70_7;
+  import3.Element _el_71;
+  import3.Element _el_73;
+  import4.ViewMaterialRadioGroupComponent0 _compView_73;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_73_4;
+  final import6.QueryList _query_MaterialRadioComponent_73_0 = new import6.QueryList();
+  ViewContainer _appEl_74;
+  import8.NgFor _NgFor_74_7;
+  import3.ButtonElement _el_75;
+  import3.ButtonElement _el_77;
   var _expr_0;
-  var _expr_3;
+  var _expr_1;
   var _expr_4;
   var _expr_5;
   var _expr_6;
   var _expr_7;
   var _expr_8;
-  bool _expr_10;
+  var _expr_9;
+  var _expr_10;
+  var _expr_11;
+  bool _expr_13;
   static RenderComponentType _renderType;
   ViewSettingsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('settings-component');
@@ -165,210 +171,238 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_2.append(_text_3);
     _el_4 = createAndAppend(doc, 'p', _el_1);
     addShimE(_el_4);
-    _text_5 = new import3.Text('');
+    import3.Text _text_5 = new import3.Text('Initial: \$');
     _el_4.append(_text_5);
-    _el_6 = createDivAndAppend(doc, _el_1);
-    addShimC(_el_6);
-    _el_7 = createAndAppend(doc, 'h3', _el_6);
-    addShimE(_el_7);
-    import3.Text _text_8 = new import3.Text('Initial cash');
-    _el_7.append(_text_8);
-    _compView_9 = new import4.ViewMaterialRadioGroupComponent0(this, 9);
-    _el_9 = _compView_9.rootEl;
-    _el_6.append(_el_9);
-    addShimC(_el_9);
-    _MaterialRadioGroupComponent_9_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
-    var _anchor_10 = ngAnchor.clone(false);
-    _appEl_10 = new ViewContainer(10, 9, this, _anchor_10);
-    TemplateRef _TemplateRef_10_6 = new TemplateRef(_appEl_10, viewFactory_SettingsComponent1);
-    _NgFor_10_7 = new import8.NgFor(_appEl_10, _TemplateRef_10_6);
-    _compView_9.create(_MaterialRadioGroupComponent_9_4, [
-      [_appEl_10]
-    ]);
-    _el_11 = createAndAppend(doc, 'h3', _el_6);
+    _text_6 = new import3.Text('');
+    _el_4.append(_text_6);
+    import3.Text _text_7 = new import3.Text('. Daily disposable income: \$');
+    _el_4.append(_text_7);
+    _text_8 = new import3.Text('');
+    _el_4.append(_text_8);
+    import3.Text _text_9 = new import3.Text('.');
+    _el_4.append(_text_9);
+    _el_10 = createDivAndAppend(doc, _el_1);
+    addShimC(_el_10);
+    _el_11 = createAndAppend(doc, 'h3', _el_10);
     addShimE(_el_11);
-    import3.Text _text_12 = new import3.Text('Daily disposable income');
+    import3.Text _text_12 = new import3.Text('Initial cash');
     _el_11.append(_text_12);
     _compView_13 = new import4.ViewMaterialRadioGroupComponent0(this, 13);
     _el_13 = _compView_13.rootEl;
-    _el_6.append(_el_13);
+    _el_10.append(_el_13);
     addShimC(_el_13);
     _MaterialRadioGroupComponent_13_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
     var _anchor_14 = ngAnchor.clone(false);
     _appEl_14 = new ViewContainer(14, 13, this, _anchor_14);
-    TemplateRef _TemplateRef_14_6 = new TemplateRef(_appEl_14, viewFactory_SettingsComponent2);
+    TemplateRef _TemplateRef_14_6 = new TemplateRef(_appEl_14, viewFactory_SettingsComponent1);
     _NgFor_14_7 = new import8.NgFor(_appEl_14, _TemplateRef_14_6);
     _compView_13.create(_MaterialRadioGroupComponent_13_4, [
       [_appEl_14]
     ]);
-    _el_15 = createAndAppend(doc, 'button', _el_1);
-    addShimC(_el_15);
-    import3.Text _text_16 = new import3.Text('Save');
+    _el_15 = createAndAppend(doc, 'h3', _el_10);
+    addShimE(_el_15);
+    import3.Text _text_16 = new import3.Text('Daily disposable income');
     _el_15.append(_text_16);
-    _el_17 = createAndAppend(doc, 'button', _el_1);
+    _compView_17 = new import4.ViewMaterialRadioGroupComponent0(this, 17);
+    _el_17 = _compView_17.rootEl;
+    _el_10.append(_el_17);
     addShimC(_el_17);
-    import3.Text _text_18 = new import3.Text('Cancel');
-    _el_17.append(_text_18);
-    _el_19 = createDivAndAppend(doc, _el_0);
-    _el_19.className = 'betting-panel';
-    addShimC(_el_19);
-    _el_20 = createAndAppend(doc, 'h2', _el_19);
-    addShimE(_el_20);
-    import3.Text _text_21 = new import3.Text('Betting');
-    _el_20.append(_text_21);
-    _el_22 = createAndAppend(doc, 'p', _el_19);
-    addShimE(_el_22);
-    _text_23 = new import3.Text('');
-    _el_22.append(_text_23);
-    _el_24 = createDivAndAppend(doc, _el_19);
-    addShimC(_el_24);
-    _el_25 = createAndAppend(doc, 'h3', _el_24);
-    addShimE(_el_25);
-    import3.Text _text_26 = new import3.Text('Lottery');
-    _el_25.append(_text_26);
-    _compView_27 = new import4.ViewMaterialRadioGroupComponent0(this, 27);
-    _el_27 = _compView_27.rootEl;
-    _el_24.append(_el_27);
-    addShimC(_el_27);
-    _MaterialRadioGroupComponent_27_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
-    var _anchor_28 = ngAnchor.clone(false);
-    _appEl_28 = new ViewContainer(28, 27, this, _anchor_28);
-    TemplateRef _TemplateRef_28_6 = new TemplateRef(_appEl_28, viewFactory_SettingsComponent3);
-    _NgFor_28_7 = new import8.NgFor(_appEl_28, _TemplateRef_28_6);
-    _compView_27.create(_MaterialRadioGroupComponent_27_4, [
-      [_appEl_28]
+    _MaterialRadioGroupComponent_17_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    var _anchor_18 = ngAnchor.clone(false);
+    _appEl_18 = new ViewContainer(18, 17, this, _anchor_18);
+    TemplateRef _TemplateRef_18_6 = new TemplateRef(_appEl_18, viewFactory_SettingsComponent2);
+    _NgFor_18_7 = new import8.NgFor(_appEl_18, _TemplateRef_18_6);
+    _compView_17.create(_MaterialRadioGroupComponent_17_4, [
+      [_appEl_18]
     ]);
-    _el_29 = createAndAppend(doc, 'p', _el_24);
-    addShimE(_el_29);
-    _el_30 = createAndAppend(doc, 'strong', _el_29);
-    addShimE(_el_30);
-    import3.Text _text_31 = new import3.Text('Description:');
-    _el_30.append(_text_31);
-    _text_32 = new import3.Text('');
-    _el_29.append(_text_32);
-    _el_33 = createAndAppend(doc, 'h3', _el_24);
+    _el_19 = createAndAppend(doc, 'button', _el_1);
+    addShimC(_el_19);
+    import3.Text _text_20 = new import3.Text('Save');
+    _el_19.append(_text_20);
+    _el_21 = createAndAppend(doc, 'button', _el_1);
+    addShimC(_el_21);
+    import3.Text _text_22 = new import3.Text('Cancel');
+    _el_21.append(_text_22);
+    _el_23 = createDivAndAppend(doc, _el_0);
+    _el_23.className = 'betting-panel';
+    addShimC(_el_23);
+    _el_24 = createAndAppend(doc, 'h2', _el_23);
+    addShimE(_el_24);
+    import3.Text _text_25 = new import3.Text('Betting');
+    _el_24.append(_text_25);
+    _el_26 = createAndAppend(doc, 'p', _el_23);
+    addShimE(_el_26);
+    import3.Text _text_27 = new import3.Text('Lottery: ');
+    _el_26.append(_text_27);
+    _text_28 = new import3.Text('');
+    _el_26.append(_text_28);
+    import3.Text _text_29 = new import3.Text('. Strategy: ');
+    _el_26.append(_text_29);
+    _text_30 = new import3.Text('');
+    _el_26.append(_text_30);
+    import3.Text _text_31 = new import3.Text('.');
+    _el_26.append(_text_31);
+    _el_32 = createDivAndAppend(doc, _el_23);
+    addShimC(_el_32);
+    _el_33 = createAndAppend(doc, 'h3', _el_32);
     addShimE(_el_33);
-    import3.Text _text_34 = new import3.Text('Strategy');
+    import3.Text _text_34 = new import3.Text('Lottery');
     _el_33.append(_text_34);
     _compView_35 = new import4.ViewMaterialRadioGroupComponent0(this, 35);
     _el_35 = _compView_35.rootEl;
-    _el_24.append(_el_35);
+    _el_32.append(_el_35);
     addShimC(_el_35);
     _MaterialRadioGroupComponent_35_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
     var _anchor_36 = ngAnchor.clone(false);
     _appEl_36 = new ViewContainer(36, 35, this, _anchor_36);
-    TemplateRef _TemplateRef_36_6 = new TemplateRef(_appEl_36, viewFactory_SettingsComponent4);
+    TemplateRef _TemplateRef_36_6 = new TemplateRef(_appEl_36, viewFactory_SettingsComponent3);
     _NgFor_36_7 = new import8.NgFor(_appEl_36, _TemplateRef_36_6);
     _compView_35.create(_MaterialRadioGroupComponent_35_4, [
       [_appEl_36]
     ]);
-    _el_37 = createAndAppend(doc, 'p', _el_24);
+    _el_37 = createAndAppend(doc, 'p', _el_32);
     addShimE(_el_37);
     _el_38 = createAndAppend(doc, 'strong', _el_37);
     addShimE(_el_38);
     import3.Text _text_39 = new import3.Text('Description:');
     _el_38.append(_text_39);
-    _text_40 = new import3.Text('');
+    import3.Text _text_40 = new import3.Text(' ');
     _el_37.append(_text_40);
-    _el_41 = createAndAppend(doc, 'button', _el_19);
-    addShimC(_el_41);
-    import3.Text _text_42 = new import3.Text('Save');
-    _el_41.append(_text_42);
-    _el_43 = createAndAppend(doc, 'button', _el_19);
-    addShimC(_el_43);
-    import3.Text _text_44 = new import3.Text('Cancel');
-    _el_43.append(_text_44);
-    _el_45 = createDivAndAppend(doc, _el_0);
-    addShimC(_el_45);
-    _el_46 = createAndAppend(doc, 'h2', _el_45);
+    _text_41 = new import3.Text('');
+    _el_37.append(_text_41);
+    _el_42 = createAndAppend(doc, 'h3', _el_32);
+    addShimE(_el_42);
+    import3.Text _text_43 = new import3.Text('Strategy');
+    _el_42.append(_text_43);
+    _compView_44 = new import4.ViewMaterialRadioGroupComponent0(this, 44);
+    _el_44 = _compView_44.rootEl;
+    _el_32.append(_el_44);
+    addShimC(_el_44);
+    _MaterialRadioGroupComponent_44_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    var _anchor_45 = ngAnchor.clone(false);
+    _appEl_45 = new ViewContainer(45, 44, this, _anchor_45);
+    TemplateRef _TemplateRef_45_6 = new TemplateRef(_appEl_45, viewFactory_SettingsComponent4);
+    _NgFor_45_7 = new import8.NgFor(_appEl_45, _TemplateRef_45_6);
+    _compView_44.create(_MaterialRadioGroupComponent_44_4, [
+      [_appEl_45]
+    ]);
+    _el_46 = createAndAppend(doc, 'p', _el_32);
     addShimE(_el_46);
-    import3.Text _text_47 = new import3.Text('Other');
-    _el_46.append(_text_47);
-    _el_48 = createAndAppend(doc, 'p', _el_45);
-    addShimE(_el_48);
-    _text_49 = new import3.Text('');
-    _el_48.append(_text_49);
-    _el_50 = createDivAndAppend(doc, _el_45);
-    addShimC(_el_50);
-    _el_51 = createAndAppend(doc, 'h3', _el_50);
-    addShimE(_el_51);
-    import3.Text _text_52 = new import3.Text('Annual interest rate');
+    _el_47 = createAndAppend(doc, 'strong', _el_46);
+    addShimE(_el_47);
+    import3.Text _text_48 = new import3.Text('Description:');
+    _el_47.append(_text_48);
+    import3.Text _text_49 = new import3.Text(' ');
+    _el_46.append(_text_49);
+    _text_50 = new import3.Text('');
+    _el_46.append(_text_50);
+    _el_51 = createAndAppend(doc, 'button', _el_23);
+    addShimC(_el_51);
+    import3.Text _text_52 = new import3.Text('Save');
     _el_51.append(_text_52);
-    _compView_53 = new import9.ViewMaterialCheckboxComponent0(this, 53);
-    _el_53 = _compView_53.rootEl;
-    _el_50.append(_el_53);
-    createAttr(_el_53, 'label', 'Investing');
+    _el_53 = createAndAppend(doc, 'button', _el_23);
     addShimC(_el_53);
-    _MaterialCheckboxComponent_53_4 = new import10.MaterialCheckboxComponent(_el_53, _compView_53.ref, null, null, null);
-    _compView_53.create(_MaterialCheckboxComponent_53_4, [const []]);
-    _el_54 = createAndAppend(doc, 'br', _el_50);
-    addShimE(_el_54);
-    _compView_55 = new import4.ViewMaterialRadioGroupComponent0(this, 55);
-    _el_55 = _compView_55.rootEl;
-    _el_50.append(_el_55);
+    import3.Text _text_54 = new import3.Text('Cancel');
+    _el_53.append(_text_54);
+    _el_55 = createDivAndAppend(doc, _el_0);
     addShimC(_el_55);
-    _MaterialRadioGroupComponent_55_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
-    var _anchor_56 = ngAnchor.clone(false);
-    _appEl_56 = new ViewContainer(56, 55, this, _anchor_56);
-    TemplateRef _TemplateRef_56_6 = new TemplateRef(_appEl_56, viewFactory_SettingsComponent5);
-    _NgFor_56_7 = new import8.NgFor(_appEl_56, _TemplateRef_56_6);
-    _compView_55.create(_MaterialRadioGroupComponent_55_4, [
-      [_appEl_56]
+    _el_56 = createAndAppend(doc, 'h2', _el_55);
+    addShimE(_el_56);
+    import3.Text _text_57 = new import3.Text('Other');
+    _el_56.append(_text_57);
+    _el_58 = createAndAppend(doc, 'p', _el_55);
+    addShimE(_el_58);
+    import3.Text _text_59 = new import3.Text('Interest rate: ');
+    _el_58.append(_text_59);
+    _text_60 = new import3.Text('');
+    _el_58.append(_text_60);
+    import3.Text _text_61 = new import3.Text('%. Years: ');
+    _el_58.append(_text_61);
+    _text_62 = new import3.Text('');
+    _el_58.append(_text_62);
+    import3.Text _text_63 = new import3.Text('.');
+    _el_58.append(_text_63);
+    _el_64 = createDivAndAppend(doc, _el_55);
+    addShimC(_el_64);
+    _el_65 = createAndAppend(doc, 'h3', _el_64);
+    addShimE(_el_65);
+    import3.Text _text_66 = new import3.Text('Annual interest rate');
+    _el_65.append(_text_66);
+    _compView_67 = new import9.ViewMaterialCheckboxComponent0(this, 67);
+    _el_67 = _compView_67.rootEl;
+    _el_64.append(_el_67);
+    createAttr(_el_67, 'label', 'Investing');
+    addShimC(_el_67);
+    _MaterialCheckboxComponent_67_4 = new import10.MaterialCheckboxComponent(_el_67, _compView_67.ref, null, null, null);
+    _compView_67.create(_MaterialCheckboxComponent_67_4, [const []]);
+    _el_68 = createAndAppend(doc, 'br', _el_64);
+    addShimE(_el_68);
+    _compView_69 = new import4.ViewMaterialRadioGroupComponent0(this, 69);
+    _el_69 = _compView_69.rootEl;
+    _el_64.append(_el_69);
+    addShimC(_el_69);
+    _MaterialRadioGroupComponent_69_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    var _anchor_70 = ngAnchor.clone(false);
+    _appEl_70 = new ViewContainer(70, 69, this, _anchor_70);
+    TemplateRef _TemplateRef_70_6 = new TemplateRef(_appEl_70, viewFactory_SettingsComponent5);
+    _NgFor_70_7 = new import8.NgFor(_appEl_70, _TemplateRef_70_6);
+    _compView_69.create(_MaterialRadioGroupComponent_69_4, [
+      [_appEl_70]
     ]);
-    _el_57 = createAndAppend(doc, 'h3', _el_50);
-    addShimE(_el_57);
-    import3.Text _text_58 = new import3.Text('Length of simulation');
-    _el_57.append(_text_58);
-    _compView_59 = new import4.ViewMaterialRadioGroupComponent0(this, 59);
-    _el_59 = _compView_59.rootEl;
-    _el_50.append(_el_59);
-    addShimC(_el_59);
-    _MaterialRadioGroupComponent_59_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
-    var _anchor_60 = ngAnchor.clone(false);
-    _appEl_60 = new ViewContainer(60, 59, this, _anchor_60);
-    TemplateRef _TemplateRef_60_6 = new TemplateRef(_appEl_60, viewFactory_SettingsComponent6);
-    _NgFor_60_7 = new import8.NgFor(_appEl_60, _TemplateRef_60_6);
-    _compView_59.create(_MaterialRadioGroupComponent_59_4, [
-      [_appEl_60]
+    _el_71 = createAndAppend(doc, 'h3', _el_64);
+    addShimE(_el_71);
+    import3.Text _text_72 = new import3.Text('Length of simulation');
+    _el_71.append(_text_72);
+    _compView_73 = new import4.ViewMaterialRadioGroupComponent0(this, 73);
+    _el_73 = _compView_73.rootEl;
+    _el_64.append(_el_73);
+    addShimC(_el_73);
+    _MaterialRadioGroupComponent_73_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    var _anchor_74 = ngAnchor.clone(false);
+    _appEl_74 = new ViewContainer(74, 73, this, _anchor_74);
+    TemplateRef _TemplateRef_74_6 = new TemplateRef(_appEl_74, viewFactory_SettingsComponent6);
+    _NgFor_74_7 = new import8.NgFor(_appEl_74, _TemplateRef_74_6);
+    _compView_73.create(_MaterialRadioGroupComponent_73_4, [
+      [_appEl_74]
     ]);
-    _el_61 = createAndAppend(doc, 'button', _el_45);
-    addShimC(_el_61);
-    import3.Text _text_62 = new import3.Text('Save');
-    _el_61.append(_text_62);
-    _el_63 = createAndAppend(doc, 'button', _el_45);
-    addShimC(_el_63);
-    import3.Text _text_64 = new import3.Text('Cancel');
-    _el_63.append(_text_64);
-    _el_15.addEventListener('click', eventHandler0(ctx.settingsUpdated));
-    _el_17.addEventListener('click', eventHandler0(ctx.resetWallet));
-    _el_41.addEventListener('click', eventHandler0(ctx.settingsUpdated));
-    _el_43.addEventListener('click', eventHandler0(ctx.resetBetting));
-    final subscription_0 = _MaterialCheckboxComponent_53_4.onChecked.listen(eventHandler1(_handle_checkedChange_53_0));
-    _el_61.addEventListener('click', eventHandler0(ctx.settingsUpdated));
-    _el_63.addEventListener('click', eventHandler0(ctx.resetOther));
+    _el_75 = createAndAppend(doc, 'button', _el_55);
+    addShimC(_el_75);
+    import3.Text _text_76 = new import3.Text('Save');
+    _el_75.append(_text_76);
+    _el_77 = createAndAppend(doc, 'button', _el_55);
+    addShimC(_el_77);
+    import3.Text _text_78 = new import3.Text('Cancel');
+    _el_77.append(_text_78);
+    _el_19.addEventListener('click', eventHandler0(ctx.settingsUpdated));
+    _el_21.addEventListener('click', eventHandler0(ctx.resetWallet));
+    _el_51.addEventListener('click', eventHandler0(ctx.settingsUpdated));
+    _el_53.addEventListener('click', eventHandler0(ctx.resetBetting));
+    final subscription_0 = _MaterialCheckboxComponent_67_4.onChecked.listen(eventHandler1(_handle_checkedChange_67_0));
+    _el_75.addEventListener('click', eventHandler0(ctx.settingsUpdated));
+    _el_77.addEventListener('click', eventHandler0(ctx.resetOther));
     init(const [], [subscription_0]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.MaterialRadioGroupComponent) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
-      return _MaterialRadioGroupComponent_9_4;
-    }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((13 <= nodeIndex) && (nodeIndex <= 14)))) {
       return _MaterialRadioGroupComponent_13_4;
     }
-    if ((identical(token, import5.MaterialRadioGroupComponent) && ((27 <= nodeIndex) && (nodeIndex <= 28)))) {
-      return _MaterialRadioGroupComponent_27_4;
+    if ((identical(token, import5.MaterialRadioGroupComponent) && ((17 <= nodeIndex) && (nodeIndex <= 18)))) {
+      return _MaterialRadioGroupComponent_17_4;
     }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((35 <= nodeIndex) && (nodeIndex <= 36)))) {
       return _MaterialRadioGroupComponent_35_4;
     }
-    if ((identical(token, import5.MaterialRadioGroupComponent) && ((55 <= nodeIndex) && (nodeIndex <= 56)))) {
-      return _MaterialRadioGroupComponent_55_4;
+    if ((identical(token, import5.MaterialRadioGroupComponent) && ((44 <= nodeIndex) && (nodeIndex <= 45)))) {
+      return _MaterialRadioGroupComponent_44_4;
     }
-    if ((identical(token, import5.MaterialRadioGroupComponent) && ((59 <= nodeIndex) && (nodeIndex <= 60)))) {
-      return _MaterialRadioGroupComponent_59_4;
+    if ((identical(token, import5.MaterialRadioGroupComponent) && ((69 <= nodeIndex) && (nodeIndex <= 70)))) {
+      return _MaterialRadioGroupComponent_69_4;
+    }
+    if ((identical(token, import5.MaterialRadioGroupComponent) && ((73 <= nodeIndex) && (nodeIndex <= 74)))) {
+      return _MaterialRadioGroupComponent_73_4;
     }
     return notFoundResult;
   }
@@ -380,197 +414,212 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     bool firstCheck = (this.cdState == 0);
     changed = false;
     if (changed) {
-      _compView_9.markAsCheckOnce();
-    }
-    if (firstCheck) {
-      if (!identical(_ctx.initialCashOptions, null)) {
-        (_NgFor_10_7.ngForOf = _ctx.initialCashOptions);
-      }
-    }
-    _NgFor_10_7.ngDoCheck();
-    changed = false;
-    if (changed) {
       _compView_13.markAsCheckOnce();
     }
     if (firstCheck) {
-      if (!identical(_ctx.dailyDisposableOptions, null)) {
-        (_NgFor_14_7.ngForOf = _ctx.dailyDisposableOptions);
+      if (!identical(_ctx.initialCashOptions, null)) {
+        (_NgFor_14_7.ngForOf = _ctx.initialCashOptions);
       }
     }
     _NgFor_14_7.ngDoCheck();
     changed = false;
     if (changed) {
-      _compView_27.markAsCheckOnce();
+      _compView_17.markAsCheckOnce();
     }
-    final currVal_4 = _ctx.settings.lotteries;
-    if (!identical(_expr_4, currVal_4)) {
-      _NgFor_28_7.ngForOf = currVal_4;
-      _expr_4 = currVal_4;
+    if (firstCheck) {
+      if (!identical(_ctx.dailyDisposableOptions, null)) {
+        (_NgFor_18_7.ngForOf = _ctx.dailyDisposableOptions);
+      }
     }
-    _NgFor_28_7.ngDoCheck();
+    _NgFor_18_7.ngDoCheck();
     changed = false;
     if (changed) {
       _compView_35.markAsCheckOnce();
     }
-    final currVal_6 = _ctx.settings.strategies;
+    final currVal_6 = _ctx.settings.lotteries;
     if (!identical(_expr_6, currVal_6)) {
       _NgFor_36_7.ngForOf = currVal_6;
       _expr_6 = currVal_6;
     }
     _NgFor_36_7.ngDoCheck();
     changed = false;
+    if (changed) {
+      _compView_44.markAsCheckOnce();
+    }
+    final currVal_8 = _ctx.settings.strategies;
+    if (!identical(_expr_8, currVal_8)) {
+      _NgFor_45_7.ngForOf = currVal_8;
+      _expr_8 = currVal_8;
+    }
+    _NgFor_45_7.ngDoCheck();
+    changed = false;
     if (firstCheck) {
-      _MaterialCheckboxComponent_53_4.label = 'Investing';
+      _MaterialCheckboxComponent_67_4.label = 'Investing';
       changed = true;
     }
-    final currVal_10 = _ctx.isInvesting;
-    if (!identical(_expr_10, currVal_10)) {
-      _MaterialCheckboxComponent_53_4.checked = currVal_10;
+    final currVal_13 = _ctx.isInvesting;
+    if (!identical(_expr_13, currVal_13)) {
+      _MaterialCheckboxComponent_67_4.checked = currVal_13;
       changed = true;
-      _expr_10 = currVal_10;
+      _expr_13 = currVal_13;
     }
     if (changed) {
-      _compView_53.markAsCheckOnce();
+      _compView_67.markAsCheckOnce();
     }
     changed = false;
     if (changed) {
-      _compView_55.markAsCheckOnce();
+      _compView_69.markAsCheckOnce();
     }
     if (firstCheck) {
       if (!identical(_ctx.interestRateOptions, null)) {
-        (_NgFor_56_7.ngForOf = _ctx.interestRateOptions);
+        (_NgFor_70_7.ngForOf = _ctx.interestRateOptions);
       }
     }
-    _NgFor_56_7.ngDoCheck();
+    _NgFor_70_7.ngDoCheck();
     changed = false;
     if (changed) {
-      _compView_59.markAsCheckOnce();
+      _compView_73.markAsCheckOnce();
     }
     if (firstCheck) {
       if (!identical(_ctx.yearsOptions, null)) {
-        (_NgFor_60_7.ngForOf = _ctx.yearsOptions);
+        (_NgFor_74_7.ngForOf = _ctx.yearsOptions);
       }
     }
-    _NgFor_60_7.ngDoCheck();
-    _appEl_10.detectChangesInNestedViews();
+    _NgFor_74_7.ngDoCheck();
     _appEl_14.detectChangesInNestedViews();
-    _appEl_28.detectChangesInNestedViews();
+    _appEl_18.detectChangesInNestedViews();
     _appEl_36.detectChangesInNestedViews();
-    _appEl_56.detectChangesInNestedViews();
-    _appEl_60.detectChangesInNestedViews();
-    if (_query_MaterialRadioComponent_9_0.dirty) {
-      _query_MaterialRadioComponent_9_0.reset([
-        _appEl_10.mapNestedViews((_ViewSettingsComponent1 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_9_4.list = _query_MaterialRadioComponent_9_0;
-      _query_MaterialRadioComponent_9_0.notifyOnChanges();
-    }
+    _appEl_45.detectChangesInNestedViews();
+    _appEl_70.detectChangesInNestedViews();
+    _appEl_74.detectChangesInNestedViews();
     if (_query_MaterialRadioComponent_13_0.dirty) {
       _query_MaterialRadioComponent_13_0.reset([
-        _appEl_14.mapNestedViews((_ViewSettingsComponent2 nestedView) {
+        _appEl_14.mapNestedViews((_ViewSettingsComponent1 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         })
       ]);
       _MaterialRadioGroupComponent_13_4.list = _query_MaterialRadioComponent_13_0;
       _query_MaterialRadioComponent_13_0.notifyOnChanges();
     }
-    if (_query_MaterialRadioComponent_27_0.dirty) {
-      _query_MaterialRadioComponent_27_0.reset([
-        _appEl_28.mapNestedViews((_ViewSettingsComponent3 nestedView) {
+    if (_query_MaterialRadioComponent_17_0.dirty) {
+      _query_MaterialRadioComponent_17_0.reset([
+        _appEl_18.mapNestedViews((_ViewSettingsComponent2 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         })
       ]);
-      _MaterialRadioGroupComponent_27_4.list = _query_MaterialRadioComponent_27_0;
-      _query_MaterialRadioComponent_27_0.notifyOnChanges();
+      _MaterialRadioGroupComponent_17_4.list = _query_MaterialRadioComponent_17_0;
+      _query_MaterialRadioComponent_17_0.notifyOnChanges();
     }
     if (_query_MaterialRadioComponent_35_0.dirty) {
       _query_MaterialRadioComponent_35_0.reset([
-        _appEl_36.mapNestedViews((_ViewSettingsComponent4 nestedView) {
+        _appEl_36.mapNestedViews((_ViewSettingsComponent3 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         })
       ]);
       _MaterialRadioGroupComponent_35_4.list = _query_MaterialRadioComponent_35_0;
       _query_MaterialRadioComponent_35_0.notifyOnChanges();
     }
-    if (_query_MaterialRadioComponent_55_0.dirty) {
-      _query_MaterialRadioComponent_55_0.reset([
-        _appEl_56.mapNestedViews((_ViewSettingsComponent5 nestedView) {
+    if (_query_MaterialRadioComponent_44_0.dirty) {
+      _query_MaterialRadioComponent_44_0.reset([
+        _appEl_45.mapNestedViews((_ViewSettingsComponent4 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         })
       ]);
-      _MaterialRadioGroupComponent_55_4.list = _query_MaterialRadioComponent_55_0;
-      _query_MaterialRadioComponent_55_0.notifyOnChanges();
+      _MaterialRadioGroupComponent_44_4.list = _query_MaterialRadioComponent_44_0;
+      _query_MaterialRadioComponent_44_0.notifyOnChanges();
     }
-    if (_query_MaterialRadioComponent_59_0.dirty) {
-      _query_MaterialRadioComponent_59_0.reset([
-        _appEl_60.mapNestedViews((_ViewSettingsComponent6 nestedView) {
+    if (_query_MaterialRadioComponent_69_0.dirty) {
+      _query_MaterialRadioComponent_69_0.reset([
+        _appEl_70.mapNestedViews((_ViewSettingsComponent5 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         })
       ]);
-      _MaterialRadioGroupComponent_59_4.list = _query_MaterialRadioComponent_59_0;
-      _query_MaterialRadioComponent_59_0.notifyOnChanges();
+      _MaterialRadioGroupComponent_69_4.list = _query_MaterialRadioComponent_69_0;
+      _query_MaterialRadioComponent_69_0.notifyOnChanges();
     }
-    final currVal_0 = import14.interpolate2('Initial: \$', _ctx.settings.initialCash, '. Daily disposable income: \$', _ctx.settings.dailyDisposable, '.');
+    if (_query_MaterialRadioComponent_73_0.dirty) {
+      _query_MaterialRadioComponent_73_0.reset([
+        _appEl_74.mapNestedViews((_ViewSettingsComponent6 nestedView) {
+          return [nestedView._MaterialRadioComponent_0_4];
+        })
+      ]);
+      _MaterialRadioGroupComponent_73_4.list = _query_MaterialRadioComponent_73_0;
+      _query_MaterialRadioComponent_73_0.notifyOnChanges();
+    }
+    final currVal_0 = import14.interpolate0(_ctx.settings.initialCash);
     if (!identical(_expr_0, currVal_0)) {
-      _text_5.text = currVal_0;
+      _text_6.text = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_3 = import14.interpolate2('Lottery: ', _ctx.settings.lottery.shortName, '. Strategy: ', _ctx.settings.strategy.shortName, '.');
-    if (!identical(_expr_3, currVal_3)) {
-      _text_23.text = currVal_3;
-      _expr_3 = currVal_3;
+    final currVal_1 = import14.interpolate0(_ctx.settings.dailyDisposable);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_8.text = currVal_1;
+      _expr_1 = currVal_1;
     }
-    final currVal_5 = import14.interpolate1(' ', _ctx.lottery.description, '');
+    final currVal_4 = import14.interpolate0(_ctx.settings.lottery.shortName);
+    if (!identical(_expr_4, currVal_4)) {
+      _text_28.text = currVal_4;
+      _expr_4 = currVal_4;
+    }
+    final currVal_5 = import14.interpolate0(_ctx.settings.strategy.shortName);
     if (!identical(_expr_5, currVal_5)) {
-      _text_32.text = currVal_5;
+      _text_30.text = currVal_5;
       _expr_5 = currVal_5;
     }
-    final currVal_7 = import14.interpolate1(' ', _ctx.strategy.description, '');
+    final currVal_7 = import14.interpolate0(_ctx.lottery.description);
     if (!identical(_expr_7, currVal_7)) {
-      _text_40.text = currVal_7;
+      _text_41.text = currVal_7;
       _expr_7 = currVal_7;
     }
-    final currVal_8 = import14.interpolate2('Interest rate: ', _ctx.settings.interestRate, '%. Years: ', _ctx.settings.years, '.');
-    if (!identical(_expr_8, currVal_8)) {
-      _text_49.text = currVal_8;
-      _expr_8 = currVal_8;
+    final currVal_9 = import14.interpolate0(_ctx.strategy.description);
+    if (!identical(_expr_9, currVal_9)) {
+      _text_50.text = currVal_9;
+      _expr_9 = currVal_9;
     }
-    _compView_53.detectHostChanges(firstCheck);
-    _compView_9.detectChanges();
+    final currVal_10 = import14.interpolate0(_ctx.settings.interestRate);
+    if (!identical(_expr_10, currVal_10)) {
+      _text_60.text = currVal_10;
+      _expr_10 = currVal_10;
+    }
+    final currVal_11 = import14.interpolate0(_ctx.settings.years);
+    if (!identical(_expr_11, currVal_11)) {
+      _text_62.text = currVal_11;
+      _expr_11 = currVal_11;
+    }
+    _compView_67.detectHostChanges(firstCheck);
     _compView_13.detectChanges();
-    _compView_27.detectChanges();
+    _compView_17.detectChanges();
     _compView_35.detectChanges();
-    _compView_53.detectChanges();
-    _compView_55.detectChanges();
-    _compView_59.detectChanges();
+    _compView_44.detectChanges();
+    _compView_67.detectChanges();
+    _compView_69.detectChanges();
+    _compView_73.detectChanges();
   }
 
   @override
   void destroyInternal() {
-    _appEl_10?.destroyNestedViews();
     _appEl_14?.destroyNestedViews();
-    _appEl_28?.destroyNestedViews();
+    _appEl_18?.destroyNestedViews();
     _appEl_36?.destroyNestedViews();
-    _appEl_56?.destroyNestedViews();
-    _appEl_60?.destroyNestedViews();
-    _compView_9?.destroy();
+    _appEl_45?.destroyNestedViews();
+    _appEl_70?.destroyNestedViews();
+    _appEl_74?.destroyNestedViews();
     _compView_13?.destroy();
-    _compView_27?.destroy();
+    _compView_17?.destroy();
     _compView_35?.destroy();
-    _compView_53?.destroy();
-    _compView_55?.destroy();
-    _compView_59?.destroy();
-    _MaterialRadioGroupComponent_9_4.ngOnDestroy();
+    _compView_44?.destroy();
+    _compView_67?.destroy();
+    _compView_69?.destroy();
+    _compView_73?.destroy();
     _MaterialRadioGroupComponent_13_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_27_4.ngOnDestroy();
+    _MaterialRadioGroupComponent_17_4.ngOnDestroy();
     _MaterialRadioGroupComponent_35_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_55_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_59_4.ngOnDestroy();
+    _MaterialRadioGroupComponent_44_4.ngOnDestroy();
+    _MaterialRadioGroupComponent_69_4.ngOnDestroy();
+    _MaterialRadioGroupComponent_73_4.ngOnDestroy();
   }
 
-  void _handle_checkedChange_53_0($event) {
+  void _handle_checkedChange_67_0($event) {
     ctx.isInvesting = $event;
   }
 }
@@ -583,7 +632,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import18.ViewMaterialRadioComponent0 _compView_0;
   import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
-  import3.Text _text_1;
+  import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
   _ViewSettingsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -594,10 +643,11 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_9_4, null, null);
-    _text_1 = new import3.Text('');
+    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_13_4, null, null);
+    import3.Text _text_1 = new import3.Text('\$');
+    _text_2 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
-      [_text_1]
+      [_text_1, _text_2]
     ]);
     final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
@@ -621,9 +671,9 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate1('\$', local_item, '');
+    final currVal_1 = import14.interpolate0(local_item);
     if (!identical(_expr_1, currVal_1)) {
-      _text_1.text = currVal_1;
+      _text_2.text = currVal_1;
       _expr_1 = currVal_1;
     }
     _compView_0.detectChanges();
@@ -631,7 +681,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_9_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_13_0.setDirty();
   }
 
   @override
@@ -654,7 +704,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import18.ViewMaterialRadioComponent0 _compView_0;
   import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
-  import3.Text _text_1;
+  import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
   _ViewSettingsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -665,10 +715,11 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_13_4, null, null);
-    _text_1 = new import3.Text('');
+    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_17_4, null, null);
+    import3.Text _text_1 = new import3.Text('\$');
+    _text_2 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
-      [_text_1]
+      [_text_1, _text_2]
     ]);
     final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
@@ -692,9 +743,9 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate1('\$', local_item, '');
+    final currVal_1 = import14.interpolate0(local_item);
     if (!identical(_expr_1, currVal_1)) {
-      _text_1.text = currVal_1;
+      _text_2.text = currVal_1;
       _expr_1 = currVal_1;
     }
     _compView_0.detectChanges();
@@ -702,7 +753,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_13_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_17_0.setDirty();
   }
 
   @override
@@ -736,7 +787,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_27_4, null, null);
+    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_35_4, null, null);
     _text_1 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
       [_text_1]
@@ -773,7 +824,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_27_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_35_0.setDirty();
   }
 
   @override
@@ -797,8 +848,10 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   import18.ViewMaterialRadioComponent0 _compView_0;
   import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
+  import3.Text _text_3;
   bool _expr_0;
   var _expr_1;
+  var _expr_2;
   _ViewSettingsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
@@ -807,10 +860,13 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_35_4, null, null);
+    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_44_4, null, null);
     _text_1 = new import3.Text('');
+    import3.Text _text_2 = new import3.Text(' (');
+    _text_3 = new import3.Text('');
+    import3.Text _text_4 = new import3.Text(')');
     _compView_0.create(_MaterialRadioComponent_0_4, [
-      [_text_1]
+      [_text_1, _text_2, _text_3, _text_4]
     ]);
     final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
@@ -834,17 +890,22 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate2('', local_item.shortName, ' (', local_item.name, ')');
+    final currVal_1 = import14.interpolate0(local_item.shortName);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
+    }
+    final currVal_2 = import14.interpolate0(local_item.name);
+    if (!identical(_expr_2, currVal_2)) {
+      _text_3.text = currVal_2;
+      _expr_2 = currVal_2;
     }
     _compView_0.detectChanges();
   }
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_35_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_44_0.setDirty();
   }
 
   @override
@@ -879,10 +940,11 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_55_4, null, null);
+    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_69_4, null, null);
     _text_1 = new import3.Text('');
+    import3.Text _text_2 = new import3.Text('%');
     _compView_0.create(_MaterialRadioComponent_0_4, [
-      [_text_1]
+      [_text_1, _text_2]
     ]);
     final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
@@ -912,7 +974,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_2 = import14.interpolate1('', local_value, '%');
+    final currVal_2 = import14.interpolate0(local_value);
     if (!identical(_expr_2, currVal_2)) {
       _text_1.text = currVal_2;
       _expr_2 = currVal_2;
@@ -922,7 +984,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_55_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_69_0.setDirty();
   }
 
   @override
@@ -946,8 +1008,10 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
   import18.ViewMaterialRadioComponent0 _compView_0;
   import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
+  import3.Text _text_3;
   bool _expr_0;
   var _expr_1;
+  var _expr_2;
   _ViewSettingsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
@@ -956,10 +1020,12 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_59_4, null, null);
+    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_73_4, null, null);
     _text_1 = new import3.Text('');
+    import3.Text _text_2 = new import3.Text(' year');
+    _text_3 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
-      [_text_1]
+      [_text_1, _text_2, _text_3]
     ]);
     final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
@@ -983,17 +1049,22 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate2('', local_value, ' year', ((local_value > 1) ? 's' : ''), '');
+    final currVal_1 = import14.interpolate0(local_value);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
+    }
+    final currVal_2 = import14.interpolate0(((local_value > 1) ? 's' : ''));
+    if (!identical(_expr_2, currVal_2)) {
+      _text_3.text = currVal_2;
+      _expr_2 = currVal_2;
     }
     _compView_0.detectChanges();
   }
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_59_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_73_0.setDirty();
   }
 
   @override

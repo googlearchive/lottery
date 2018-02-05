@@ -54,13 +54,13 @@ shelf:packages/shelf/
 http_parser:packages/http_parser/
 stream_channel:packages/stream_channel/
 mime:packages/mime/
+build_resolvers:packages/build_resolvers/
 stream_transform:packages/stream_transform/
 build_web_compilers:packages/build_web_compilers/
 scratch_space:packages/scratch_space/
 bazel_worker:packages/bazel_worker/
 protobuf:packages/protobuf/
 json_annotation:packages/json_annotation/
-browser:packages/browser/
 build_test:packages/build_test/
 package_resolver:packages/package_resolver/
 http:packages/http/

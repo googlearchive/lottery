@@ -29,13 +29,13 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
   import3.Element _el_1;
   import3.Element _el_3;
   import3.Element _el_4;
-  import3.Text _text_5;
   import3.Text _text_6;
-  import3.DivElement _el_7;
-  import3.Element _el_8;
-  import3.Element _el_10;
+  import3.Text _text_7;
+  import3.DivElement _el_8;
+  import3.Element _el_9;
   import3.Element _el_11;
-  import3.Text _text_12;
+  import3.Element _el_12;
+  import3.Text _text_14;
   String _expr_0;
   var _expr_1;
   var _expr_2;
@@ -60,24 +60,28 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
     addShimE(_el_3);
     _el_4 = createAndAppend(doc, 'strong', _el_3);
     addShimE(_el_4);
-    _text_5 = new import3.Text('');
+    import3.Text _text_5 = new import3.Text('\$');
     _el_4.append(_text_5);
     _text_6 = new import3.Text('');
-    _el_3.append(_text_6);
-    _el_7 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_7);
-    _el_8 = createAndAppend(doc, 'h4', _el_7);
-    addShimE(_el_8);
-    import3.Text _text_9 = new import3.Text('Investing');
-    _el_8.append(_text_9);
-    _el_10 = createAndAppend(doc, 'p', _el_7);
-    addShimE(_el_10);
-    _el_11 = createAndAppend(doc, 'strong', _el_10);
+    _el_4.append(_text_6);
+    _text_7 = new import3.Text('');
+    _el_3.append(_text_7);
+    _el_8 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_8);
+    _el_9 = createAndAppend(doc, 'h4', _el_8);
+    addShimE(_el_9);
+    import3.Text _text_10 = new import3.Text('Investing');
+    _el_9.append(_text_10);
+    _el_11 = createAndAppend(doc, 'p', _el_8);
     addShimE(_el_11);
-    _text_12 = new import3.Text('');
-    _el_11.append(_text_12);
-    import3.Text _text_13 = new import3.Text('...');
-    _el_10.append(_text_13);
+    _el_12 = createAndAppend(doc, 'strong', _el_11);
+    addShimE(_el_12);
+    import3.Text _text_13 = new import3.Text('\$');
+    _el_12.append(_text_13);
+    _text_14 = new import3.Text('');
+    _el_12.append(_text_14);
+    import3.Text _text_15 = new import3.Text('...');
+    _el_11.append(_text_15);
     init(const [], null);
     return null;
   }
@@ -90,19 +94,19 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
       this.updateChildClass(_el_4, currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import7.interpolate1('\$', _ctx.cash, '');
+    final currVal_1 = import7.interpolate0(_ctx.cash);
     if (!identical(_expr_1, currVal_1)) {
-      _text_5.text = currVal_1;
+      _text_6.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import7.interpolate0(_ctx.outcomeDescription);
+    final currVal_2 = (_ctx.outcomeDescription ?? '');
     if (!identical(_expr_2, currVal_2)) {
-      _text_6.text = currVal_2;
+      _text_7.text = currVal_2;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import7.interpolate1('\$', _ctx.altCash, '');
+    final currVal_3 = import7.interpolate0(_ctx.altCash);
     if (!identical(_expr_3, currVal_3)) {
-      _text_12.text = currVal_3;
+      _text_14.text = currVal_3;
       _expr_3 = currVal_3;
     }
   }

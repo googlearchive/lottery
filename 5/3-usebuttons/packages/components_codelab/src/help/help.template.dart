@@ -475,7 +475,7 @@ AppView<import2.HelpComponent> viewFactory_HelpComponent2(AppView<dynamic> paren
 
 class _ViewHelpComponent3 extends AppView<import2.HelpComponent> {
   import3.DivElement _el_0;
-  import3.Text _text_1;
+  import3.Text _text_2;
   var _expr_0;
   _ViewHelpComponent3(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
@@ -485,8 +485,12 @@ class _ViewHelpComponent3 extends AppView<import2.HelpComponent> {
     var doc = import3.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import3.Text('');
+    import3.Text _text_1 = new import3.Text(' Uh oh. You\'ve found a bug. No content available for ');
     _el_0.append(_text_1);
+    _text_2 = new import3.Text('');
+    _el_0.append(_text_2);
+    import3.Text _text_3 = new import3.Text('. ');
+    _el_0.append(_text_3);
     init0(_el_0);
     return null;
   }
@@ -494,9 +498,9 @@ class _ViewHelpComponent3 extends AppView<import2.HelpComponent> {
   @override
   void detectChangesInternal() {
     final import2.HelpComponent _ctx = ctx;
-    final currVal_0 = import9.interpolate1(' Uh oh. You\'ve found a bug. No content available for ', _ctx.content, '. ');
+    final currVal_0 = (_ctx.content ?? '');
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
