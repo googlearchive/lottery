@@ -12,13 +12,11 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:components_codelab/src/lottery/lottery.dart';
 import 'package:components_codelab/src/settings/settings.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/angular_components.template.dart' as _ref1;
 import 'package:components_codelab/src/lottery/lottery.template.dart' as _ref2;
 import 'package:components_codelab/src/settings/settings.template.dart' as _ref3;
-
 import 'package:components_codelab/src/settings/settings_component.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'settings_component.dart' as import2;
@@ -79,14 +77,14 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_5;
   import8.ViewMaterialRadioGroupComponent0 _compView_5;
   import9.MaterialRadioGroupComponent _MaterialRadioGroupComponent_5_4;
-  final import5.QueryList _query_MaterialRadioComponent_5_0 = new import5.QueryList();
+  bool _query_MaterialRadioComponent_5_0_isDirty = true;
   ViewContainer _appEl_6;
   import11.NgFor _NgFor_6_7;
   import3.Element _el_7;
   import3.Element _el_9;
   import8.ViewMaterialRadioGroupComponent0 _compView_9;
   import9.MaterialRadioGroupComponent _MaterialRadioGroupComponent_9_4;
-  final import5.QueryList _query_MaterialRadioComponent_9_0 = new import5.QueryList();
+  bool _query_MaterialRadioComponent_9_0_isDirty = true;
   ViewContainer _appEl_10;
   import11.NgFor _NgFor_10_7;
   import3.Element _el_11;
@@ -98,7 +96,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_15;
   import8.ViewMaterialRadioGroupComponent0 _compView_15;
   import9.MaterialRadioGroupComponent _MaterialRadioGroupComponent_15_4;
-  final import5.QueryList _query_MaterialRadioComponent_15_0 = new import5.QueryList();
+  bool _query_MaterialRadioComponent_15_0_isDirty = true;
   ViewContainer _appEl_16;
   import11.NgFor _NgFor_16_7;
   import3.Element _el_17;
@@ -108,7 +106,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_24;
   import8.ViewMaterialRadioGroupComponent0 _compView_24;
   import9.MaterialRadioGroupComponent _MaterialRadioGroupComponent_24_4;
-  final import5.QueryList _query_MaterialRadioComponent_24_0 = new import5.QueryList();
+  bool _query_MaterialRadioComponent_24_0_isDirty = true;
   ViewContainer _appEl_25;
   import11.NgFor _NgFor_25_7;
   import3.Element _el_26;
@@ -127,14 +125,14 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_37;
   import8.ViewMaterialRadioGroupComponent0 _compView_37;
   import9.MaterialRadioGroupComponent _MaterialRadioGroupComponent_37_4;
-  final import5.QueryList _query_MaterialRadioComponent_37_0 = new import5.QueryList();
+  bool _query_MaterialRadioComponent_37_0_isDirty = true;
   ViewContainer _appEl_38;
   import11.NgFor _NgFor_38_7;
   import3.Element _el_39;
   import3.Element _el_41;
   import8.ViewMaterialRadioGroupComponent0 _compView_41;
   import9.MaterialRadioGroupComponent _MaterialRadioGroupComponent_41_4;
-  final import5.QueryList _query_MaterialRadioComponent_41_0 = new import5.QueryList();
+  bool _query_MaterialRadioComponent_41_0_isDirty = true;
   ViewContainer _appEl_42;
   import11.NgFor _NgFor_42_7;
   String _expr_1;
@@ -514,64 +512,64 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _appEl_25.detectChangesInNestedViews();
     _appEl_38.detectChangesInNestedViews();
     _appEl_42.detectChangesInNestedViews();
-    if (_query_MaterialRadioComponent_5_0.dirty) {
-      _query_MaterialRadioComponent_5_0.reset([
-        _appEl_6.mapNestedViews((_ViewSettingsComponent1 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_5_4.list = _query_MaterialRadioComponent_5_0;
-      _query_MaterialRadioComponent_5_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_5_0_isDirty) {
+      _MaterialRadioGroupComponent_5_4.list = _appEl_6.mapNestedViews((_ViewSettingsComponent1 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_5_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_9_0.dirty) {
-      _query_MaterialRadioComponent_9_0.reset([
-        _appEl_10.mapNestedViews((_ViewSettingsComponent2 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_9_4.list = _query_MaterialRadioComponent_9_0;
-      _query_MaterialRadioComponent_9_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_9_0_isDirty) {
+      _MaterialRadioGroupComponent_9_4.list = _appEl_10.mapNestedViews((_ViewSettingsComponent2 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_9_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_15_0.dirty) {
-      _query_MaterialRadioComponent_15_0.reset([
-        _appEl_16.mapNestedViews((_ViewSettingsComponent3 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_15_4.list = _query_MaterialRadioComponent_15_0;
-      _query_MaterialRadioComponent_15_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_15_0_isDirty) {
+      _MaterialRadioGroupComponent_15_4.list = _appEl_16.mapNestedViews((_ViewSettingsComponent3 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_15_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_24_0.dirty) {
-      _query_MaterialRadioComponent_24_0.reset([
-        _appEl_25.mapNestedViews((_ViewSettingsComponent4 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_24_4.list = _query_MaterialRadioComponent_24_0;
-      _query_MaterialRadioComponent_24_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_24_0_isDirty) {
+      _MaterialRadioGroupComponent_24_4.list = _appEl_25.mapNestedViews((_ViewSettingsComponent4 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_24_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_37_0.dirty) {
-      _query_MaterialRadioComponent_37_0.reset([
-        _appEl_38.mapNestedViews((_ViewSettingsComponent5 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_37_4.list = _query_MaterialRadioComponent_37_0;
-      _query_MaterialRadioComponent_37_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_37_0_isDirty) {
+      _MaterialRadioGroupComponent_37_4.list = _appEl_38.mapNestedViews((_ViewSettingsComponent5 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_37_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_41_0.dirty) {
-      _query_MaterialRadioComponent_41_0.reset([
-        _appEl_42.mapNestedViews((_ViewSettingsComponent6 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_41_4.list = _query_MaterialRadioComponent_41_0;
-      _query_MaterialRadioComponent_41_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_41_0_isDirty) {
+      _MaterialRadioGroupComponent_41_4.list = _appEl_42.mapNestedViews((_ViewSettingsComponent6 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_41_0_isDirty = false;
     }
     if (_query_MaterialExpansionPanel_0_0.dirty) {
       _query_MaterialExpansionPanel_0_0.reset([_MaterialExpansionPanel_1_4, _MaterialExpansionPanel_11_4, _MaterialExpansionPanel_31_4]);
       _MaterialExpansionPanelSet_0_4.panels = _query_MaterialExpansionPanel_0_0;
       _query_MaterialExpansionPanel_0_0.notifyOnChanges();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_5_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_9_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_15_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_24_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_37_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_41_4.ngAfterContentInit();
     }
     final currVal_7 = import17.interpolate0(_ctx.lottery.description);
     if (!identical(_expr_7, currVal_7)) {
@@ -688,7 +686,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_5_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_5_0_isDirty = true;
   }
 
   @override
@@ -760,7 +758,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_9_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_9_0_isDirty = true;
   }
 
   @override
@@ -831,7 +829,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_15_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_15_0_isDirty = true;
   }
 
   @override
@@ -912,7 +910,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_24_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_24_0_isDirty = true;
   }
 
   @override
@@ -991,7 +989,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_37_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_37_0_isDirty = true;
   }
 
   @override
@@ -1071,7 +1069,7 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_41_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_41_0_isDirty = true;
   }
 
   @override
@@ -1192,7 +1190,7 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
 
   bool get _overlayRepositionLoop_0_16 {
     if ((this.__overlayRepositionLoop_0_16 == null)) {
-      (__overlayRepositionLoop_0_16 = false);
+      (__overlayRepositionLoop_0_16 = true);
     }
     return this.__overlayRepositionLoop_0_16;
   }
@@ -1247,7 +1245,7 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import2.SettingsComponent) && (0 == nodeIndex))) {
       return _SettingsComponent_0_4;
     }
-    if ((identical(token, const import42.OpaqueToken('defaultPopupPositions')) && (0 == nodeIndex))) {
+    if ((identical(token, const import42.OpaqueToken<List<import36.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
       return _defaultPopupPositions_0_5;
     }
     if ((identical(token, import3.Window) && (0 == nodeIndex))) {
@@ -1328,12 +1326,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(SettingsComponent, SettingsComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    SettingsComponent,
-    SettingsComponentNgFactory,
-  );
 }

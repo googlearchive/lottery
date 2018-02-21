@@ -8,10 +8,8 @@
 import 'help.dart';
 export 'help.dart';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
-
 import 'package:components_codelab/src/help/help.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'help.dart' as import2;
@@ -495,9 +493,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(HelpComponent, HelpComponentNgFactory);
   _ref0.initReflector();
-  _ngRef.registerComponent(
-    HelpComponent,
-    HelpComponentNgFactory,
-  );
 }

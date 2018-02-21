@@ -8,7 +8,6 @@
 import 'lottery.dart';
 export 'lottery.dart';
 import 'dart:math';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

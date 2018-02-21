@@ -11,12 +11,10 @@ import 'dart:async';
 import 'package:angular/angular.dart';
 import 'package:components_codelab/src/lottery/lottery.dart';
 import 'package:components_codelab/src/settings/settings.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:components_codelab/src/lottery/lottery.template.dart' as _ref1;
 import 'package:components_codelab/src/settings/settings.template.dart' as _ref2;
-
 import 'package:components_codelab/src/settings/settings_component.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'settings_component.dart' as import2;
@@ -814,11 +812,9 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(SettingsComponent, SettingsComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
-  _ngRef.registerComponent(
-    SettingsComponent,
-    SettingsComponentNgFactory,
-  );
 }

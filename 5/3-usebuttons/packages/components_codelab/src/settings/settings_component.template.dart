@@ -12,53 +12,50 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:components_codelab/src/lottery/lottery.dart';
 import 'package:components_codelab/src/settings/settings.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/angular_components.template.dart' as _ref1;
 import 'package:components_codelab/src/lottery/lottery.template.dart' as _ref2;
 import 'package:components_codelab/src/settings/settings.template.dart' as _ref3;
-
 import 'package:components_codelab/src/settings/settings_component.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'settings_component.dart' as import2;
 import 'dart:html' as import3;
 import 'package:angular_components/material_radio/material_radio_group.template.dart' as import4;
 import 'package:angular_components/material_radio/material_radio_group.dart' as import5;
-import 'package:angular/src/core/linker/query_list.dart' as import6;
 import 'package:angular/src/core/linker/view_container.dart';
-import 'package:angular/src/common/directives/ng_for.dart' as import8;
-import 'package:angular_components/material_checkbox/material_checkbox.template.dart' as import9;
-import 'package:angular_components/material_checkbox/material_checkbox.dart' as import10;
+import 'package:angular/src/common/directives/ng_for.dart' as import7;
+import 'package:angular_components/material_checkbox/material_checkbox.template.dart' as import8;
+import 'package:angular_components/material_checkbox/material_checkbox.dart' as import9;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import12;
+import 'package:angular/src/core/linker/view_type.dart' as import11;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import14;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import13;
 import 'package:angular/angular.dart';
-import 'package:angular/src/core/zone/ng_zone.dart' as import16;
+import 'package:angular/src/core/zone/ng_zone.dart' as import15;
 import 'package:angular/src/core/linker/template_ref.dart';
-import 'package:angular_components/material_radio/material_radio.template.dart' as import18;
-import 'package:angular_components/material_radio/material_radio.dart' as import19;
+import 'package:angular_components/material_radio/material_radio.template.dart' as import17;
+import 'package:angular_components/material_radio/material_radio.dart' as import18;
 import 'dart:core';
-import '../lottery/lottery.dart' as import21;
-import 'settings.dart' as import22;
-import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import23;
-import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import24;
-import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import25;
-import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import26;
-import 'package:angular_components/laminate/overlay/zindexer.dart' as import27;
-import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import28;
-import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import29;
-import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import30;
-import 'package:angular_components/laminate/enums/alignment.dart' as import31;
-import 'package:angular_components/utils/browser/window/module.dart' as import32;
-import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import33;
-import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import34;
-import 'package:angular_components/utils/disposer/disposer.dart' as import35;
-import 'package:angular/src/core/linker/component_loader.dart' as import36;
-import 'package:angular_components/laminate/overlay/module.dart' as import37;
-import 'package:angular/src/core/di/opaque_token.dart' as import38;
-import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import39;
+import '../lottery/lottery.dart' as import20;
+import 'settings.dart' as import21;
+import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import22;
+import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import23;
+import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import24;
+import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import25;
+import 'package:angular_components/laminate/overlay/zindexer.dart' as import26;
+import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import27;
+import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import28;
+import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import29;
+import 'package:angular_components/laminate/enums/alignment.dart' as import30;
+import 'package:angular_components/utils/browser/window/module.dart' as import31;
+import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import32;
+import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import33;
+import 'package:angular_components/utils/disposer/disposer.dart' as import34;
+import 'package:angular/src/core/linker/component_loader.dart' as import35;
+import 'package:angular_components/laminate/overlay/module.dart' as import36;
+import 'package:angular/src/core/di/opaque_token.dart' as import37;
+import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import38;
 
 const List<dynamic> styles$SettingsComponent = const [import0.styles];
 
@@ -74,16 +71,16 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_13;
   import4.ViewMaterialRadioGroupComponent0 _compView_13;
   import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_13_4;
-  final import6.QueryList _query_MaterialRadioComponent_13_0 = new import6.QueryList();
+  bool _query_MaterialRadioComponent_13_0_isDirty = true;
   ViewContainer _appEl_14;
-  import8.NgFor _NgFor_14_7;
+  import7.NgFor _NgFor_14_7;
   import3.Element _el_15;
   import3.Element _el_17;
   import4.ViewMaterialRadioGroupComponent0 _compView_17;
   import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_17_4;
-  final import6.QueryList _query_MaterialRadioComponent_17_0 = new import6.QueryList();
+  bool _query_MaterialRadioComponent_17_0_isDirty = true;
   ViewContainer _appEl_18;
-  import8.NgFor _NgFor_18_7;
+  import7.NgFor _NgFor_18_7;
   import3.ButtonElement _el_19;
   import3.ButtonElement _el_21;
   import3.DivElement _el_23;
@@ -96,9 +93,9 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_35;
   import4.ViewMaterialRadioGroupComponent0 _compView_35;
   import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_35_4;
-  final import6.QueryList _query_MaterialRadioComponent_35_0 = new import6.QueryList();
+  bool _query_MaterialRadioComponent_35_0_isDirty = true;
   ViewContainer _appEl_36;
-  import8.NgFor _NgFor_36_7;
+  import7.NgFor _NgFor_36_7;
   import3.Element _el_37;
   import3.Element _el_38;
   import3.Text _text_41;
@@ -106,9 +103,9 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_44;
   import4.ViewMaterialRadioGroupComponent0 _compView_44;
   import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_44_4;
-  final import6.QueryList _query_MaterialRadioComponent_44_0 = new import6.QueryList();
+  bool _query_MaterialRadioComponent_44_0_isDirty = true;
   ViewContainer _appEl_45;
-  import8.NgFor _NgFor_45_7;
+  import7.NgFor _NgFor_45_7;
   import3.Element _el_46;
   import3.Element _el_47;
   import3.Text _text_50;
@@ -122,22 +119,22 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.DivElement _el_64;
   import3.Element _el_65;
   import3.Element _el_67;
-  import9.ViewMaterialCheckboxComponent0 _compView_67;
-  import10.MaterialCheckboxComponent _MaterialCheckboxComponent_67_4;
+  import8.ViewMaterialCheckboxComponent0 _compView_67;
+  import9.MaterialCheckboxComponent _MaterialCheckboxComponent_67_4;
   import3.Element _el_68;
   import3.Element _el_69;
   import4.ViewMaterialRadioGroupComponent0 _compView_69;
   import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_69_4;
-  final import6.QueryList _query_MaterialRadioComponent_69_0 = new import6.QueryList();
+  bool _query_MaterialRadioComponent_69_0_isDirty = true;
   ViewContainer _appEl_70;
-  import8.NgFor _NgFor_70_7;
+  import7.NgFor _NgFor_70_7;
   import3.Element _el_71;
   import3.Element _el_73;
   import4.ViewMaterialRadioGroupComponent0 _compView_73;
   import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_73_4;
-  final import6.QueryList _query_MaterialRadioComponent_73_0 = new import6.QueryList();
+  bool _query_MaterialRadioComponent_73_0_isDirty = true;
   ViewContainer _appEl_74;
-  import8.NgFor _NgFor_74_7;
+  import7.NgFor _NgFor_74_7;
   import3.ButtonElement _el_75;
   import3.ButtonElement _el_77;
   var _expr_0;
@@ -152,9 +149,9 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   var _expr_11;
   bool _expr_13;
   static RenderComponentType _renderType;
-  ViewSettingsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSettingsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('settings-component');
-    _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$SettingsComponent);
+    _renderType ??= import13.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$SettingsComponent);
     setupComponentType(_renderType);
   }
   @override
@@ -191,11 +188,11 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_13 = _compView_13.rootEl;
     _el_10.append(_el_13);
     addShimC(_el_13);
-    _MaterialRadioGroupComponent_13_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_13_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_14 = ngAnchor.clone(false);
     _appEl_14 = new ViewContainer(14, 13, this, _anchor_14);
     TemplateRef _TemplateRef_14_6 = new TemplateRef(_appEl_14, viewFactory_SettingsComponent1);
-    _NgFor_14_7 = new import8.NgFor(_appEl_14, _TemplateRef_14_6);
+    _NgFor_14_7 = new import7.NgFor(_appEl_14, _TemplateRef_14_6);
     _compView_13.create(_MaterialRadioGroupComponent_13_4, [
       [_appEl_14]
     ]);
@@ -207,11 +204,11 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_17 = _compView_17.rootEl;
     _el_10.append(_el_17);
     addShimC(_el_17);
-    _MaterialRadioGroupComponent_17_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_17_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_18 = ngAnchor.clone(false);
     _appEl_18 = new ViewContainer(18, 17, this, _anchor_18);
     TemplateRef _TemplateRef_18_6 = new TemplateRef(_appEl_18, viewFactory_SettingsComponent2);
-    _NgFor_18_7 = new import8.NgFor(_appEl_18, _TemplateRef_18_6);
+    _NgFor_18_7 = new import7.NgFor(_appEl_18, _TemplateRef_18_6);
     _compView_17.create(_MaterialRadioGroupComponent_17_4, [
       [_appEl_18]
     ]);
@@ -252,11 +249,11 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_35 = _compView_35.rootEl;
     _el_32.append(_el_35);
     addShimC(_el_35);
-    _MaterialRadioGroupComponent_35_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_35_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_36 = ngAnchor.clone(false);
     _appEl_36 = new ViewContainer(36, 35, this, _anchor_36);
     TemplateRef _TemplateRef_36_6 = new TemplateRef(_appEl_36, viewFactory_SettingsComponent3);
-    _NgFor_36_7 = new import8.NgFor(_appEl_36, _TemplateRef_36_6);
+    _NgFor_36_7 = new import7.NgFor(_appEl_36, _TemplateRef_36_6);
     _compView_35.create(_MaterialRadioGroupComponent_35_4, [
       [_appEl_36]
     ]);
@@ -278,11 +275,11 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_44 = _compView_44.rootEl;
     _el_32.append(_el_44);
     addShimC(_el_44);
-    _MaterialRadioGroupComponent_44_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_44_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_45 = ngAnchor.clone(false);
     _appEl_45 = new ViewContainer(45, 44, this, _anchor_45);
     TemplateRef _TemplateRef_45_6 = new TemplateRef(_appEl_45, viewFactory_SettingsComponent4);
-    _NgFor_45_7 = new import8.NgFor(_appEl_45, _TemplateRef_45_6);
+    _NgFor_45_7 = new import7.NgFor(_appEl_45, _TemplateRef_45_6);
     _compView_44.create(_MaterialRadioGroupComponent_44_4, [
       [_appEl_45]
     ]);
@@ -328,12 +325,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     addShimE(_el_65);
     import3.Text _text_66 = new import3.Text('Annual interest rate');
     _el_65.append(_text_66);
-    _compView_67 = new import9.ViewMaterialCheckboxComponent0(this, 67);
+    _compView_67 = new import8.ViewMaterialCheckboxComponent0(this, 67);
     _el_67 = _compView_67.rootEl;
     _el_64.append(_el_67);
     createAttr(_el_67, 'label', 'Investing');
     addShimC(_el_67);
-    _MaterialCheckboxComponent_67_4 = new import10.MaterialCheckboxComponent(_el_67, _compView_67.ref, null, null, null);
+    _MaterialCheckboxComponent_67_4 = new import9.MaterialCheckboxComponent(_el_67, _compView_67.ref, null, null, null);
     _compView_67.create(_MaterialCheckboxComponent_67_4, [const []]);
     _el_68 = createAndAppend(doc, 'br', _el_64);
     addShimE(_el_68);
@@ -341,11 +338,11 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_69 = _compView_69.rootEl;
     _el_64.append(_el_69);
     addShimC(_el_69);
-    _MaterialRadioGroupComponent_69_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_69_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_70 = ngAnchor.clone(false);
     _appEl_70 = new ViewContainer(70, 69, this, _anchor_70);
     TemplateRef _TemplateRef_70_6 = new TemplateRef(_appEl_70, viewFactory_SettingsComponent5);
-    _NgFor_70_7 = new import8.NgFor(_appEl_70, _TemplateRef_70_6);
+    _NgFor_70_7 = new import7.NgFor(_appEl_70, _TemplateRef_70_6);
     _compView_69.create(_MaterialRadioGroupComponent_69_4, [
       [_appEl_70]
     ]);
@@ -357,11 +354,11 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_73 = _compView_73.rootEl;
     _el_64.append(_el_73);
     addShimC(_el_73);
-    _MaterialRadioGroupComponent_73_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import16.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_73_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_74 = ngAnchor.clone(false);
     _appEl_74 = new ViewContainer(74, 73, this, _anchor_74);
     TemplateRef _TemplateRef_74_6 = new TemplateRef(_appEl_74, viewFactory_SettingsComponent6);
-    _NgFor_74_7 = new import8.NgFor(_appEl_74, _TemplateRef_74_6);
+    _NgFor_74_7 = new import7.NgFor(_appEl_74, _TemplateRef_74_6);
     _compView_73.create(_MaterialRadioGroupComponent_73_4, [
       [_appEl_74]
     ]);
@@ -492,96 +489,96 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _appEl_45.detectChangesInNestedViews();
     _appEl_70.detectChangesInNestedViews();
     _appEl_74.detectChangesInNestedViews();
-    if (_query_MaterialRadioComponent_13_0.dirty) {
-      _query_MaterialRadioComponent_13_0.reset([
-        _appEl_14.mapNestedViews((_ViewSettingsComponent1 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_13_4.list = _query_MaterialRadioComponent_13_0;
-      _query_MaterialRadioComponent_13_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_13_0_isDirty) {
+      _MaterialRadioGroupComponent_13_4.list = _appEl_14.mapNestedViews((_ViewSettingsComponent1 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_13_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_17_0.dirty) {
-      _query_MaterialRadioComponent_17_0.reset([
-        _appEl_18.mapNestedViews((_ViewSettingsComponent2 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_17_4.list = _query_MaterialRadioComponent_17_0;
-      _query_MaterialRadioComponent_17_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_17_0_isDirty) {
+      _MaterialRadioGroupComponent_17_4.list = _appEl_18.mapNestedViews((_ViewSettingsComponent2 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_17_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_35_0.dirty) {
-      _query_MaterialRadioComponent_35_0.reset([
-        _appEl_36.mapNestedViews((_ViewSettingsComponent3 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_35_4.list = _query_MaterialRadioComponent_35_0;
-      _query_MaterialRadioComponent_35_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_35_0_isDirty) {
+      _MaterialRadioGroupComponent_35_4.list = _appEl_36.mapNestedViews((_ViewSettingsComponent3 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_35_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_44_0.dirty) {
-      _query_MaterialRadioComponent_44_0.reset([
-        _appEl_45.mapNestedViews((_ViewSettingsComponent4 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_44_4.list = _query_MaterialRadioComponent_44_0;
-      _query_MaterialRadioComponent_44_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_44_0_isDirty) {
+      _MaterialRadioGroupComponent_44_4.list = _appEl_45.mapNestedViews((_ViewSettingsComponent4 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_44_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_69_0.dirty) {
-      _query_MaterialRadioComponent_69_0.reset([
-        _appEl_70.mapNestedViews((_ViewSettingsComponent5 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_69_4.list = _query_MaterialRadioComponent_69_0;
-      _query_MaterialRadioComponent_69_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_69_0_isDirty) {
+      _MaterialRadioGroupComponent_69_4.list = _appEl_70.mapNestedViews((_ViewSettingsComponent5 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_69_0_isDirty = false;
     }
-    if (_query_MaterialRadioComponent_73_0.dirty) {
-      _query_MaterialRadioComponent_73_0.reset([
-        _appEl_74.mapNestedViews((_ViewSettingsComponent6 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_73_4.list = _query_MaterialRadioComponent_73_0;
-      _query_MaterialRadioComponent_73_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_73_0_isDirty) {
+      _MaterialRadioGroupComponent_73_4.list = _appEl_74.mapNestedViews((_ViewSettingsComponent6 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_73_0_isDirty = false;
     }
-    final currVal_0 = import14.interpolate0(_ctx.settings.initialCash);
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_13_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_17_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_35_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_44_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_69_4.ngAfterContentInit();
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_73_4.ngAfterContentInit();
+    }
+    final currVal_0 = import13.interpolate0(_ctx.settings.initialCash);
     if (!identical(_expr_0, currVal_0)) {
       _text_6.text = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import14.interpolate0(_ctx.settings.dailyDisposable);
+    final currVal_1 = import13.interpolate0(_ctx.settings.dailyDisposable);
     if (!identical(_expr_1, currVal_1)) {
       _text_8.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_4 = import14.interpolate0(_ctx.settings.lottery.shortName);
+    final currVal_4 = import13.interpolate0(_ctx.settings.lottery.shortName);
     if (!identical(_expr_4, currVal_4)) {
       _text_28.text = currVal_4;
       _expr_4 = currVal_4;
     }
-    final currVal_5 = import14.interpolate0(_ctx.settings.strategy.shortName);
+    final currVal_5 = import13.interpolate0(_ctx.settings.strategy.shortName);
     if (!identical(_expr_5, currVal_5)) {
       _text_30.text = currVal_5;
       _expr_5 = currVal_5;
     }
-    final currVal_7 = import14.interpolate0(_ctx.lottery.description);
+    final currVal_7 = import13.interpolate0(_ctx.lottery.description);
     if (!identical(_expr_7, currVal_7)) {
       _text_41.text = currVal_7;
       _expr_7 = currVal_7;
     }
-    final currVal_9 = import14.interpolate0(_ctx.strategy.description);
+    final currVal_9 = import13.interpolate0(_ctx.strategy.description);
     if (!identical(_expr_9, currVal_9)) {
       _text_50.text = currVal_9;
       _expr_9 = currVal_9;
     }
-    final currVal_10 = import14.interpolate0(_ctx.settings.interestRate);
+    final currVal_10 = import13.interpolate0(_ctx.settings.interestRate);
     if (!identical(_expr_10, currVal_10)) {
       _text_60.text = currVal_10;
       _expr_10 = currVal_10;
     }
-    final currVal_11 = import14.interpolate0(_ctx.settings.years);
+    final currVal_11 = import13.interpolate0(_ctx.settings.years);
     if (!identical(_expr_11, currVal_11)) {
       _text_62.text = currVal_11;
       _expr_11 = currVal_11;
@@ -630,20 +627,20 @@ AppView<import2.SettingsComponent> viewFactory_SettingsComponent0(AppView<dynami
 
 class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
-  import18.ViewMaterialRadioComponent0 _compView_0;
-  import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import17.ViewMaterialRadioComponent0 _compView_0;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_13_4, null, null);
+    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_13_4, null, null);
     import3.Text _text_1 = new import3.Text('\$');
     _text_2 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
@@ -671,7 +668,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate0(local_item);
+    final currVal_1 = import13.interpolate0(local_item);
     if (!identical(_expr_1, currVal_1)) {
       _text_2.text = currVal_1;
       _expr_1 = currVal_1;
@@ -681,7 +678,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_13_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_13_0_isDirty = true;
   }
 
   @override
@@ -702,20 +699,20 @@ AppView<import2.SettingsComponent> viewFactory_SettingsComponent1(AppView<dynami
 
 class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
-  import18.ViewMaterialRadioComponent0 _compView_0;
-  import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import17.ViewMaterialRadioComponent0 _compView_0;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_17_4, null, null);
+    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_17_4, null, null);
     import3.Text _text_1 = new import3.Text('\$');
     _text_2 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
@@ -743,7 +740,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate0(local_item);
+    final currVal_1 = import13.interpolate0(local_item);
     if (!identical(_expr_1, currVal_1)) {
       _text_2.text = currVal_1;
       _expr_1 = currVal_1;
@@ -753,7 +750,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_17_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_17_0_isDirty = true;
   }
 
   @override
@@ -774,20 +771,20 @@ AppView<import2.SettingsComponent> viewFactory_SettingsComponent2(AppView<dynami
 
 class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
-  import18.ViewMaterialRadioComponent0 _compView_0;
-  import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import17.ViewMaterialRadioComponent0 _compView_0;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_35_4, null, null);
+    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_35_4, null, null);
     _text_1 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
       [_text_1]
@@ -802,7 +799,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
     final import2.SettingsComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final import21.Lottery local_item = locals['\$implicit'];
+    final import20.Lottery local_item = locals['\$implicit'];
     changed = false;
     final currVal_0 = (local_item == _ctx.lottery);
     if (!identical(_expr_0, currVal_0)) {
@@ -814,7 +811,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate0(local_item.name);
+    final currVal_1 = import13.interpolate0(local_item.name);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
@@ -824,7 +821,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_35_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_35_0_isDirty = true;
   }
 
   @override
@@ -834,7 +831,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
   }
 
   void _handle_checkedChange_0_0($event) {
-    final import21.Lottery local_item = locals['\$implicit'];
+    final import20.Lottery local_item = locals['\$implicit'];
     ctx.lottery = ($event ? local_item : ctx.lottery);
   }
 }
@@ -845,22 +842,22 @@ AppView<import2.SettingsComponent> viewFactory_SettingsComponent3(AppView<dynami
 
 class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
-  import18.ViewMaterialRadioComponent0 _compView_0;
-  import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import17.ViewMaterialRadioComponent0 _compView_0;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
   import3.Text _text_3;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewSettingsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_44_4, null, null);
+    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_44_4, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text(' (');
     _text_3 = new import3.Text('');
@@ -878,7 +875,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
     final import2.SettingsComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final import22.Strategy local_item = locals['\$implicit'];
+    final import21.Strategy local_item = locals['\$implicit'];
     changed = false;
     final currVal_0 = (local_item == _ctx.strategy);
     if (!identical(_expr_0, currVal_0)) {
@@ -890,12 +887,12 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate0(local_item.shortName);
+    final currVal_1 = import13.interpolate0(local_item.shortName);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import14.interpolate0(local_item.name);
+    final currVal_2 = import13.interpolate0(local_item.name);
     if (!identical(_expr_2, currVal_2)) {
       _text_3.text = currVal_2;
       _expr_2 = currVal_2;
@@ -905,7 +902,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_44_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_44_0_isDirty = true;
   }
 
   @override
@@ -915,7 +912,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   }
 
   void _handle_checkedChange_0_0($event) {
-    final import22.Strategy local_item = locals['\$implicit'];
+    final import21.Strategy local_item = locals['\$implicit'];
     ctx.strategy = ($event ? local_item : ctx.strategy);
   }
 }
@@ -926,21 +923,21 @@ AppView<import2.SettingsComponent> viewFactory_SettingsComponent4(AppView<dynami
 
 class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
-  import18.ViewMaterialRadioComponent0 _compView_0;
-  import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import17.ViewMaterialRadioComponent0 _compView_0;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
-  _ViewSettingsComponent5(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent5(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_69_4, null, null);
+    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_69_4, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text('%');
     _compView_0.create(_MaterialRadioComponent_0_4, [
@@ -974,7 +971,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_2 = import14.interpolate0(local_value);
+    final currVal_2 = import13.interpolate0(local_value);
     if (!identical(_expr_2, currVal_2)) {
       _text_1.text = currVal_2;
       _expr_2 = currVal_2;
@@ -984,7 +981,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_69_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_69_0_isDirty = true;
   }
 
   @override
@@ -1005,22 +1002,22 @@ AppView<import2.SettingsComponent> viewFactory_SettingsComponent5(AppView<dynami
 
 class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
-  import18.ViewMaterialRadioComponent0 _compView_0;
-  import19.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import17.ViewMaterialRadioComponent0 _compView_0;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
   import3.Text _text_3;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewSettingsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    _compView_0 = new import18.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import19.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_73_4, null, null);
+    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_73_4, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text(' year');
     _text_3 = new import3.Text('');
@@ -1049,12 +1046,12 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import14.interpolate0(local_value);
+    final currVal_1 = import13.interpolate0(local_value);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import14.interpolate0(((local_value > 1) ? 's' : ''));
+    final currVal_2 = import13.interpolate0(((local_value > 1) ? 's' : ''));
     if (!identical(_expr_2, currVal_2)) {
       _text_3.text = currVal_2;
       _expr_2 = currVal_2;
@@ -1064,7 +1061,7 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_73_0.setDirty();
+    (parentView as ViewSettingsComponent0)._query_MaterialRadioComponent_73_0_isDirty = true;
   }
 
   @override
@@ -1091,87 +1088,87 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
   List<dynamic> __defaultPopupPositions_0_5;
   dynamic __Window_0_6;
   dynamic __DomService_0_7;
-  import23.AcxImperativeViewUtils __AcxImperativeViewUtils_0_8;
+  import22.AcxImperativeViewUtils __AcxImperativeViewUtils_0_8;
   dynamic __Document_0_9;
-  import24.DomRuler __DomRuler_0_10;
-  import25.Angular2ManagedZone __ManagedZone_0_11;
+  import23.DomRuler __DomRuler_0_10;
+  import24.Angular2ManagedZone __ManagedZone_0_11;
   dynamic __overlayContainerName_0_12;
   dynamic __overlayContainerParent_0_13;
   dynamic __overlayContainer_0_14;
   bool __overlaySyncDom_0_15;
   bool __overlayRepositionLoop_0_16;
-  import26.OverlayStyleConfig __OverlayStyleConfig_0_17;
-  import27.ZIndexer __ZIndexer_0_18;
-  import28.OverlayDomRenderService __OverlayDomRenderService_0_19;
-  import29.OverlayService __OverlayService_0_20;
-  import30.DomPopupSourceFactory __DomPopupSourceFactory_0_21;
-  _ViewSettingsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import25.OverlayStyleConfig __OverlayStyleConfig_0_17;
+  import26.ZIndexer __ZIndexer_0_18;
+  import27.OverlayDomRenderService __OverlayDomRenderService_0_19;
+  import28.OverlayService __OverlayService_0_20;
+  import29.DomPopupSourceFactory __DomPopupSourceFactory_0_21;
+  _ViewSettingsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<dynamic> get _defaultPopupPositions_0_5 {
     if ((this.__defaultPopupPositions_0_5 == null)) {
-      (__defaultPopupPositions_0_5 = const [const import31.RelativePosition(animationOrigin: 'top center'), const import31.RelativePosition(animationOrigin: 'top right', originX: const import31.Alignment('End', 'flex-end')), const import31.RelativePosition(animationOrigin: 'top left', originX: const import31.Alignment('Start', 'flex-start')), const import31.RelativePosition(animationOrigin: 'bottom center', originY: const import31.Alignment('End', 'flex-end')), const import31.RelativePosition(animationOrigin: 'bottom right', originX: const import31.Alignment('End', 'flex-end'), originY: const import31.Alignment('End', 'flex-end')), const import31.RelativePosition(animationOrigin: 'bottom left', originX: const import31.Alignment('Start', 'flex-start'), originY: const import31.Alignment('End', 'flex-end'))]);
+      (__defaultPopupPositions_0_5 = const [const import30.RelativePosition(animationOrigin: 'top center'), const import30.RelativePosition(animationOrigin: 'top right', originX: const import30.Alignment('End', 'flex-end')), const import30.RelativePosition(animationOrigin: 'top left', originX: const import30.Alignment('Start', 'flex-start')), const import30.RelativePosition(animationOrigin: 'bottom center', originY: const import30.Alignment('End', 'flex-end')), const import30.RelativePosition(animationOrigin: 'bottom right', originX: const import30.Alignment('End', 'flex-end'), originY: const import30.Alignment('End', 'flex-end')), const import30.RelativePosition(animationOrigin: 'bottom left', originX: const import30.Alignment('Start', 'flex-start'), originY: const import30.Alignment('End', 'flex-end'))]);
     }
     return this.__defaultPopupPositions_0_5;
   }
 
   dynamic get _Window_0_6 {
     if ((this.__Window_0_6 == null)) {
-      (__Window_0_6 = import32.getWindow());
+      (__Window_0_6 = import31.getWindow());
     }
     return this.__Window_0_6;
   }
 
   dynamic get _DomService_0_7 {
     if ((this.__DomService_0_7 == null)) {
-      (__DomService_0_7 = import33.createDomService(this.injectorGet(import34.DomService, this.viewData.parentIndex, null), this.injectorGet(import35.Disposer, this.viewData.parentIndex, null), this.injectorGet(import16.NgZone, this.viewData.parentIndex), this._Window_0_6));
+      (__DomService_0_7 = import32.createDomService(this.injectorGet(import33.DomService, this.viewData.parentIndex, null), this.injectorGet(import34.Disposer, this.viewData.parentIndex, null), this.injectorGet(import15.NgZone, this.viewData.parentIndex), this._Window_0_6));
     }
     return this.__DomService_0_7;
   }
 
-  import23.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_8 {
+  import22.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_8 {
     if ((this.__AcxImperativeViewUtils_0_8 == null)) {
-      (__AcxImperativeViewUtils_0_8 = new import23.AcxImperativeViewUtils(this.injectorGet(import36.ComponentLoader, this.viewData.parentIndex), this._DomService_0_7));
+      (__AcxImperativeViewUtils_0_8 = new import22.AcxImperativeViewUtils(this.injectorGet(import35.ComponentLoader, this.viewData.parentIndex), this._DomService_0_7));
     }
     return this.__AcxImperativeViewUtils_0_8;
   }
 
   dynamic get _Document_0_9 {
     if ((this.__Document_0_9 == null)) {
-      (__Document_0_9 = import32.getDocument());
+      (__Document_0_9 = import31.getDocument());
     }
     return this.__Document_0_9;
   }
 
-  import24.DomRuler get _DomRuler_0_10 {
+  import23.DomRuler get _DomRuler_0_10 {
     if ((this.__DomRuler_0_10 == null)) {
-      (__DomRuler_0_10 = new import24.DomRuler(this._Document_0_9, this._DomService_0_7));
+      (__DomRuler_0_10 = new import23.DomRuler(this._Document_0_9, this._DomService_0_7));
     }
     return this.__DomRuler_0_10;
   }
 
-  import25.Angular2ManagedZone get _ManagedZone_0_11 {
+  import24.Angular2ManagedZone get _ManagedZone_0_11 {
     if ((this.__ManagedZone_0_11 == null)) {
-      (__ManagedZone_0_11 = new import25.Angular2ManagedZone(this.injectorGet(import16.NgZone, this.viewData.parentIndex)));
+      (__ManagedZone_0_11 = new import24.Angular2ManagedZone(this.injectorGet(import15.NgZone, this.viewData.parentIndex)));
     }
     return this.__ManagedZone_0_11;
   }
 
   dynamic get _overlayContainerName_0_12 {
     if ((this.__overlayContainerName_0_12 == null)) {
-      (__overlayContainerName_0_12 = import37.getDefaultContainerName(this.injectorGet(const import38.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
+      (__overlayContainerName_0_12 = import36.getDefaultContainerName(this.injectorGet(const import37.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
     }
     return this.__overlayContainerName_0_12;
   }
 
   dynamic get _overlayContainerParent_0_13 {
     if ((this.__overlayContainerParent_0_13 == null)) {
-      (__overlayContainerParent_0_13 = import37.getOverlayContainerParent(this._Document_0_9, this.injectorGet(const import38.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
+      (__overlayContainerParent_0_13 = import36.getOverlayContainerParent(this._Document_0_9, this.injectorGet(const import37.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
     }
     return this.__overlayContainerParent_0_13;
   }
 
   dynamic get _overlayContainer_0_14 {
     if ((this.__overlayContainer_0_14 == null)) {
-      (__overlayContainer_0_14 = import37.getDefaultContainer(this._overlayContainerName_0_12, this._overlayContainerParent_0_13, this.injectorGet(const import38.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
+      (__overlayContainer_0_14 = import36.getDefaultContainer(this._overlayContainerName_0_12, this._overlayContainerParent_0_13, this.injectorGet(const import37.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
     }
     return this.__overlayContainer_0_14;
   }
@@ -1185,42 +1182,42 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
 
   bool get _overlayRepositionLoop_0_16 {
     if ((this.__overlayRepositionLoop_0_16 == null)) {
-      (__overlayRepositionLoop_0_16 = false);
+      (__overlayRepositionLoop_0_16 = true);
     }
     return this.__overlayRepositionLoop_0_16;
   }
 
-  import26.OverlayStyleConfig get _OverlayStyleConfig_0_17 {
+  import25.OverlayStyleConfig get _OverlayStyleConfig_0_17 {
     if ((this.__OverlayStyleConfig_0_17 == null)) {
-      (__OverlayStyleConfig_0_17 = new import26.OverlayStyleConfig(this._Document_0_9));
+      (__OverlayStyleConfig_0_17 = new import25.OverlayStyleConfig(this._Document_0_9));
     }
     return this.__OverlayStyleConfig_0_17;
   }
 
-  import27.ZIndexer get _ZIndexer_0_18 {
+  import26.ZIndexer get _ZIndexer_0_18 {
     if ((this.__ZIndexer_0_18 == null)) {
-      (__ZIndexer_0_18 = new import27.ZIndexer());
+      (__ZIndexer_0_18 = new import26.ZIndexer());
     }
     return this.__ZIndexer_0_18;
   }
 
-  import28.OverlayDomRenderService get _OverlayDomRenderService_0_19 {
+  import27.OverlayDomRenderService get _OverlayDomRenderService_0_19 {
     if ((this.__OverlayDomRenderService_0_19 == null)) {
-      (__OverlayDomRenderService_0_19 = new import28.OverlayDomRenderService(this._OverlayStyleConfig_0_17, this._overlayContainer_0_14, this._overlayContainerName_0_12, this._DomRuler_0_10, this._DomService_0_7, this._AcxImperativeViewUtils_0_8, this._overlaySyncDom_0_15, this._overlayRepositionLoop_0_16, this._ZIndexer_0_18));
+      (__OverlayDomRenderService_0_19 = new import27.OverlayDomRenderService(this._OverlayStyleConfig_0_17, this._overlayContainer_0_14, this._overlayContainerName_0_12, this._DomRuler_0_10, this._DomService_0_7, this._AcxImperativeViewUtils_0_8, this._overlaySyncDom_0_15, this._overlayRepositionLoop_0_16, this._ZIndexer_0_18));
     }
     return this.__OverlayDomRenderService_0_19;
   }
 
-  import29.OverlayService get _OverlayService_0_20 {
+  import28.OverlayService get _OverlayService_0_20 {
     if ((this.__OverlayService_0_20 == null)) {
-      (__OverlayService_0_20 = new import29.OverlayService(this.injectorGet(import16.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_15, this._OverlayDomRenderService_0_19, this.injectorGet(import29.OverlayService, this.viewData.parentIndex, null)));
+      (__OverlayService_0_20 = new import28.OverlayService(this.injectorGet(import15.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_15, this._OverlayDomRenderService_0_19, this.injectorGet(import28.OverlayService, this.viewData.parentIndex, null)));
     }
     return this.__OverlayService_0_20;
   }
 
-  import30.DomPopupSourceFactory get _DomPopupSourceFactory_0_21 {
+  import29.DomPopupSourceFactory get _DomPopupSourceFactory_0_21 {
     if ((this.__DomPopupSourceFactory_0_21 == null)) {
-      (__DomPopupSourceFactory_0_21 = new import30.DomPopupSourceFactory(this._DomRuler_0_10));
+      (__DomPopupSourceFactory_0_21 = new import29.DomPopupSourceFactory(this._DomRuler_0_10));
     }
     return this.__DomPopupSourceFactory_0_21;
   }
@@ -1240,55 +1237,55 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import2.SettingsComponent) && (0 == nodeIndex))) {
       return _SettingsComponent_0_4;
     }
-    if ((identical(token, const import38.OpaqueToken('defaultPopupPositions')) && (0 == nodeIndex))) {
+    if ((identical(token, const import37.OpaqueToken<List<import30.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
       return _defaultPopupPositions_0_5;
     }
     if ((identical(token, import3.Window) && (0 == nodeIndex))) {
       return _Window_0_6;
     }
-    if ((identical(token, import34.DomService) && (0 == nodeIndex))) {
+    if ((identical(token, import33.DomService) && (0 == nodeIndex))) {
       return _DomService_0_7;
     }
-    if ((identical(token, import23.AcxImperativeViewUtils) && (0 == nodeIndex))) {
+    if ((identical(token, import22.AcxImperativeViewUtils) && (0 == nodeIndex))) {
       return _AcxImperativeViewUtils_0_8;
     }
     if ((identical(token, import3.Document) && (0 == nodeIndex))) {
       return _Document_0_9;
     }
-    if ((identical(token, import24.DomRuler) && (0 == nodeIndex))) {
+    if ((identical(token, import23.DomRuler) && (0 == nodeIndex))) {
       return _DomRuler_0_10;
     }
-    if ((identical(token, import39.ManagedZone) && (0 == nodeIndex))) {
+    if ((identical(token, import38.ManagedZone) && (0 == nodeIndex))) {
       return _ManagedZone_0_11;
     }
-    if ((identical(token, const import38.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
+    if ((identical(token, const import37.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
       return _overlayContainerName_0_12;
     }
-    if ((identical(token, const import38.OpaqueToken('overlayContainerParent')) && (0 == nodeIndex))) {
+    if ((identical(token, const import37.OpaqueToken('overlayContainerParent')) && (0 == nodeIndex))) {
       return _overlayContainerParent_0_13;
     }
-    if ((identical(token, const import38.OpaqueToken('overlayContainer')) && (0 == nodeIndex))) {
+    if ((identical(token, const import37.OpaqueToken('overlayContainer')) && (0 == nodeIndex))) {
       return _overlayContainer_0_14;
     }
-    if ((identical(token, const import38.OpaqueToken('overlaySyncDom')) && (0 == nodeIndex))) {
+    if ((identical(token, const import37.OpaqueToken('overlaySyncDom')) && (0 == nodeIndex))) {
       return _overlaySyncDom_0_15;
     }
-    if ((identical(token, const import38.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
+    if ((identical(token, const import37.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
       return _overlayRepositionLoop_0_16;
     }
-    if ((identical(token, import26.OverlayStyleConfig) && (0 == nodeIndex))) {
+    if ((identical(token, import25.OverlayStyleConfig) && (0 == nodeIndex))) {
       return _OverlayStyleConfig_0_17;
     }
-    if ((identical(token, import27.ZIndexer) && (0 == nodeIndex))) {
+    if ((identical(token, import26.ZIndexer) && (0 == nodeIndex))) {
       return _ZIndexer_0_18;
     }
-    if ((identical(token, import28.OverlayDomRenderService) && (0 == nodeIndex))) {
+    if ((identical(token, import27.OverlayDomRenderService) && (0 == nodeIndex))) {
       return _OverlayDomRenderService_0_19;
     }
-    if ((identical(token, import29.OverlayService) && (0 == nodeIndex))) {
+    if ((identical(token, import28.OverlayService) && (0 == nodeIndex))) {
       return _OverlayService_0_20;
     }
-    if ((identical(token, import30.DomPopupSourceFactory) && (0 == nodeIndex))) {
+    if ((identical(token, import29.DomPopupSourceFactory) && (0 == nodeIndex))) {
       return _DomPopupSourceFactory_0_21;
     }
     return notFoundResult;
@@ -1321,12 +1318,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(SettingsComponent, SettingsComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    SettingsComponent,
-    SettingsComponentNgFactory,
-  );
 }

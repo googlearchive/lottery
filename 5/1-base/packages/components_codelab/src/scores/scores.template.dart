@@ -8,10 +8,8 @@
 import 'scores.dart';
 export 'scores.dart';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
-
 import 'package:components_codelab/src/scores/scores.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'scores.dart' as import2;
@@ -163,9 +161,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(ScoresComponent, ScoresComponentNgFactory);
   _ref0.initReflector();
-  _ngRef.registerComponent(
-    ScoresComponent,
-    ScoresComponentNgFactory,
-  );
 }

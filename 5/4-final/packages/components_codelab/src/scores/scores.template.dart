@@ -9,11 +9,9 @@ import 'scores.dart';
 export 'scores.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/angular_components.template.dart' as _ref1;
-
 import 'package:components_codelab/src/scores/scores.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'scores.dart' as import2;
@@ -42,7 +40,8 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import24;
 import 'package:angular/src/core/linker/component_loader.dart' as import25;
 import 'package:angular_components/laminate/overlay/module.dart' as import26;
 import 'package:angular/src/core/di/opaque_token.dart' as import27;
-import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import28;
+import 'dart:core';
+import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import29;
 
 const List<dynamic> styles$ScoresComponent = const [import0.styles];
 
@@ -253,7 +252,7 @@ class _ViewScoresComponentHost0 extends AppView<dynamic> {
 
   bool get _overlayRepositionLoop_0_16 {
     if ((this.__overlayRepositionLoop_0_16 == null)) {
-      (__overlayRepositionLoop_0_16 = false);
+      (__overlayRepositionLoop_0_16 = true);
     }
     return this.__overlayRepositionLoop_0_16;
   }
@@ -308,7 +307,7 @@ class _ViewScoresComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import2.ScoresComponent) && (0 == nodeIndex))) {
       return _ScoresComponent_0_4;
     }
-    if ((identical(token, const import27.OpaqueToken('defaultPopupPositions')) && (0 == nodeIndex))) {
+    if ((identical(token, const import27.OpaqueToken<List<import20.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
       return _defaultPopupPositions_0_5;
     }
     if ((identical(token, import3.Window) && (0 == nodeIndex))) {
@@ -326,7 +325,7 @@ class _ViewScoresComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import13.DomRuler) && (0 == nodeIndex))) {
       return _DomRuler_0_10;
     }
-    if ((identical(token, import28.ManagedZone) && (0 == nodeIndex))) {
+    if ((identical(token, import29.ManagedZone) && (0 == nodeIndex))) {
       return _ManagedZone_0_11;
     }
     if ((identical(token, const import27.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
@@ -385,10 +384,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(ScoresComponent, ScoresComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    ScoresComponent,
-    ScoresComponentNgFactory,
-  );
 }

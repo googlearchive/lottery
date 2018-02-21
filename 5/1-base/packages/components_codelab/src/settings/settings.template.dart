@@ -9,7 +9,6 @@ import 'settings.dart';
 export 'settings.dart';
 import 'package:angular/angular.dart';
 import 'package:components_codelab/src/lottery/lottery.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:components_codelab/src/lottery/lottery.template.dart' as _ref1;
@@ -20,10 +19,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(Settings, () => new Settings());
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerFactory(
-    Settings,
-    () => new Settings(),
-  );
 }

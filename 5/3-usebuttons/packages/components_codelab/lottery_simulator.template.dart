@@ -17,7 +17,6 @@ import 'src/settings/settings_component.dart';
 import 'src/stats/stats.dart';
 import 'src/visualize_winnings/visualize_winnings.dart';
 import 'package:intl/intl.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/angular_components.template.dart' as _ref1;
@@ -27,7 +26,6 @@ import 'src/settings/settings.template.dart' as _ref4;
 import 'src/settings/settings_component.template.dart' as _ref5;
 import 'src/stats/stats.template.dart' as _ref6;
 import 'src/visualize_winnings/visualize_winnings.template.dart' as _ref7;
-
 import 'package:components_codelab/lottery_simulator.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'lottery_simulator.dart' as import2;
@@ -73,8 +71,9 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import41;
 import 'package:angular/src/core/linker/component_loader.dart' as import42;
 import 'package:angular_components/laminate/overlay/module.dart' as import43;
 import 'package:angular/src/core/di/opaque_token.dart' as import44;
-import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import45;
-import 'src/settings/settings.dart' as import46;
+import 'dart:core';
+import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import46;
+import 'src/settings/settings.dart' as import47;
 
 const List<dynamic> styles$AppComponent = const [import0.styles];
 
@@ -282,7 +281,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
 
   bool get _overlayRepositionLoop_9_16 {
     if ((this.__overlayRepositionLoop_9_16 == null)) {
-      (__overlayRepositionLoop_9_16 = false);
+      (__overlayRepositionLoop_9_16 = true);
     }
     return this.__overlayRepositionLoop_9_16;
   }
@@ -401,7 +400,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
 
   bool get _overlayRepositionLoop_38_16 {
     if ((this.__overlayRepositionLoop_38_16 == null)) {
-      (__overlayRepositionLoop_38_16 = false);
+      (__overlayRepositionLoop_38_16 = true);
     }
     return this.__overlayRepositionLoop_38_16;
   }
@@ -658,7 +657,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if ((identical(token, import6.ScoresComponent) && (9 == nodeIndex))) {
       return _ScoresComponent_9_4;
     }
-    if ((identical(token, const import44.OpaqueToken('defaultPopupPositions')) && (9 == nodeIndex))) {
+    if ((identical(token, const import44.OpaqueToken<List<import36.RelativePosition>>('defaultPopupPositions')) && (9 == nodeIndex))) {
       return _defaultPopupPositions_9_5;
     }
     if ((identical(token, import4.Window) && (9 == nodeIndex))) {
@@ -676,7 +675,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if ((identical(token, import8.DomRuler) && (9 == nodeIndex))) {
       return _DomRuler_9_10;
     }
-    if ((identical(token, import45.ManagedZone) && (9 == nodeIndex))) {
+    if ((identical(token, import46.ManagedZone) && (9 == nodeIndex))) {
       return _ManagedZone_9_11;
     }
     if ((identical(token, const import44.OpaqueToken('overlayContainerName')) && (9 == nodeIndex))) {
@@ -721,7 +720,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if ((identical(token, import28.SettingsComponent) && (38 == nodeIndex))) {
       return _SettingsComponent_38_4;
     }
-    if ((identical(token, const import44.OpaqueToken('defaultPopupPositions')) && (38 == nodeIndex))) {
+    if ((identical(token, const import44.OpaqueToken<List<import36.RelativePosition>>('defaultPopupPositions')) && (38 == nodeIndex))) {
       return _defaultPopupPositions_38_5;
     }
     if ((identical(token, import4.Window) && (38 == nodeIndex))) {
@@ -739,7 +738,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if ((identical(token, import8.DomRuler) && (38 == nodeIndex))) {
       return _DomRuler_38_10;
     }
-    if ((identical(token, import45.ManagedZone) && (38 == nodeIndex))) {
+    if ((identical(token, import46.ManagedZone) && (38 == nodeIndex))) {
       return _ManagedZone_38_11;
     }
     if ((identical(token, const import44.OpaqueToken('overlayContainerName')) && (38 == nodeIndex))) {
@@ -998,7 +997,7 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  import46.Settings _Settings_0_4;
+  import47.Settings _Settings_0_4;
   import2.AppComponent _AppComponent_0_5;
   List<dynamic> __defaultPopupPositions_0_6;
   dynamic __Window_0_7;
@@ -1097,7 +1096,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
 
   bool get _overlayRepositionLoop_0_17 {
     if ((this.__overlayRepositionLoop_0_17 == null)) {
-      (__overlayRepositionLoop_0_17 = false);
+      (__overlayRepositionLoop_0_17 = true);
     }
     return this.__overlayRepositionLoop_0_17;
   }
@@ -1141,7 +1140,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Settings_0_4 = new import46.Settings();
+    _Settings_0_4 = new import47.Settings();
     _AppComponent_0_5 = new import2.AppComponent(_Settings_0_4);
     _compView_0.create(_AppComponent_0_5, projectableNodes);
     init0(rootEl);
@@ -1150,13 +1149,13 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import46.Settings) && (0 == nodeIndex))) {
+    if ((identical(token, import47.Settings) && (0 == nodeIndex))) {
       return _Settings_0_4;
     }
     if ((identical(token, import2.AppComponent) && (0 == nodeIndex))) {
       return _AppComponent_0_5;
     }
-    if ((identical(token, const import44.OpaqueToken('defaultPopupPositions')) && (0 == nodeIndex))) {
+    if ((identical(token, const import44.OpaqueToken<List<import36.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
       return _defaultPopupPositions_0_6;
     }
     if ((identical(token, import4.Window) && (0 == nodeIndex))) {
@@ -1174,7 +1173,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import8.DomRuler) && (0 == nodeIndex))) {
       return _DomRuler_0_11;
     }
-    if ((identical(token, import45.ManagedZone) && (0 == nodeIndex))) {
+    if ((identical(token, import46.ManagedZone) && (0 == nodeIndex))) {
       return _ManagedZone_0_12;
     }
     if ((identical(token, const import44.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
@@ -1237,6 +1236,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -1245,8 +1246,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }

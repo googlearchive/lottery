@@ -16,7 +16,6 @@ import 'src/settings/settings_component.dart';
 import 'src/stats/stats.dart';
 import 'src/visualize_winnings/visualize_winnings.dart';
 import 'package:intl/intl.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'src/help/help.template.dart' as _ref1;
@@ -25,7 +24,6 @@ import 'src/settings/settings.template.dart' as _ref3;
 import 'src/settings/settings_component.template.dart' as _ref4;
 import 'src/stats/stats.template.dart' as _ref5;
 import 'src/visualize_winnings/visualize_winnings.template.dart' as _ref6;
-
 import 'package:components_codelab/lottery_simulator.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'lottery_simulator.dart' as import2;
@@ -474,6 +472,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -481,8 +481,4 @@ void initReflector() {
   _ref4.initReflector();
   _ref5.initReflector();
   _ref6.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }
