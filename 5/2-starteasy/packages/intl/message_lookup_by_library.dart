@@ -33,13 +33,13 @@ class CompositeMessageLookup implements MessageLookup {
   /// Caches the last messages that we found
   MessageLookupByLibrary _lastLookup;
 
-  /// Look up the message with the given [name] and [locale] and return
-  /// the translated version with the values in [args] interpolated.
-  /// If nothing is found, return [message_str]. The [desc] and [examples]
-  /// parameters are ignored
+  /// Look up the message with the given [name] and [locale] and return the
+  /// translated version with the values in [args] interpolated.  If nothing is
+  /// found, return the result of [ifAbsent] or [message_str]. The
+  /// [desc] and [examples] parameters are ignored
   String lookupMessage(
       String message_str, String locale, String name, List args, String meaning,
-      {MessageIfAbsent ifAbsent: _useOriginal}) {
+      {MessageIfAbsent ifAbsent}) {
     // If passed null, use the default.
     var knownLocale = locale ?? Intl.getCurrentLocale();
     var messages = (knownLocale == _lastLocale)
@@ -48,10 +48,9 @@ class CompositeMessageLookup implements MessageLookup {
     // If we didn't find any messages for this locale, use the original string,
     // faking interpolations if necessary.
     if (messages == null) {
-      return ifAbsent(message_str, args);
+      return ifAbsent == null ? message_str : ifAbsent(message_str, args);
     }
-    return messages.lookupMessage(
-        message_str, locale, name, args, meaning,
+    return messages.lookupMessage(message_str, locale, name, args, meaning,
         ifAbsent: ifAbsent);
   }
 
@@ -83,9 +82,6 @@ class CompositeMessageLookup implements MessageLookup {
   }
 }
 
-/// The default ifAbsent method, just returns the message string.
-String _useOriginal(String message_str, List args) => message_str;
-
 /// This provides an abstract class for messages looked up in generated code.
 /// Each locale will have a separate subclass of this class with its set of
 /// messages. See generate_localized.dart.
@@ -116,21 +112,28 @@ abstract class MessageLookupByLibrary {
     var notFound = false;
     var actualName = computeMessageName(name, message_str, meaning);
     if (actualName == null) notFound = true;
-    var function = this[actualName];
-    notFound = notFound || (function == null);
+    var translation = this[actualName];
+    notFound = notFound || (translation == null);
     if (notFound) {
       return ifAbsent == null ? message_str : ifAbsent(message_str, args);
     } else {
-      return Function.apply(function, args);
+      args = args ?? const [];
+      return evaluateMessage(translation, args);
     }
+  }
+
+  /// Evaluate the translated message and return the translated string.
+  String evaluateMessage(translation, List args) {
+    return Function.apply(translation, args);
   }
 
   /// Return our message with the given name
   operator [](String messageName) => messages[messageName];
 
   /// Subclasses should override this to return a list of their message
-  /// functions.
-  Map<String, Function> get messages;
+  /// implementations. In this class these are functions, but subclasses may
+  /// implement them differently.
+  Map<String, dynamic> get messages;
 
   /// Subclasses should override this to return their locale, e.g. 'en_US'
   String get localeName;

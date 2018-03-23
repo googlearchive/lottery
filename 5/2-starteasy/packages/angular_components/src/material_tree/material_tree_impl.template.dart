@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -54,31 +52,32 @@ const List<dynamic> styles$MaterialTreeComponent = const [];
 class ViewMaterialTreeComponent0 extends AppView<import1.MaterialTreeComponent> {
   bool _query_MaterialTreeGroupComponent_1_0_isDirty = true;
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   var _expr_2;
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
-  ViewMaterialTreeComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('material-tree');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$MaterialTreeComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
-    final import7.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent1);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent1);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     var _anchor_1 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeComponent3);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeComponent3);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     init(const [], null);
     return null;
   }
@@ -86,14 +85,14 @@ class ViewMaterialTreeComponent0 extends AppView<import1.MaterialTreeComponent> 
   @override
   void detectChangesInternal() {
     final import1.MaterialTreeComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = _ctx.supportsHierarchy;
-    _NgIf_1_7.ngIf = !_ctx.supportsHierarchy;
+    _NgIf_0_9.ngIf = _ctx.supportsHierarchy;
+    _NgIf_1_9.ngIf = !_ctx.supportsHierarchy;
     _appEl_0.detectChangesInNestedViews();
     _appEl_1.detectChangesInNestedViews();
     if (_query_MaterialTreeGroupComponent_1_0_isDirty) {
       ctx.treeGroupNodes = _appEl_0.mapNestedViews((_ViewMaterialTreeComponent1 nestedView) {
         return nestedView._appEl_0.mapNestedViews((_ViewMaterialTreeComponent2 nestedView) {
-          return [nestedView._MaterialTreeGroupComponent_0_4];
+          return [nestedView._MaterialTreeGroupComponent_0_5];
         });
       });
       _query_MaterialTreeGroupComponent_1_0_isDirty = false;
@@ -125,23 +124,23 @@ class ViewMaterialTreeComponent0 extends AppView<import1.MaterialTreeComponent> 
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeComponent0(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent1 extends AppView<import1.MaterialTreeComponent> {
   ViewContainer _appEl_0;
-  import11.NgFor _NgFor_0_7;
+  import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent1(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     var _anchor_0 = ngAnchor.clone(false);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent2);
-    _NgFor_0_7 = new import11.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent2);
+    _NgFor_0_9 = new import11.NgFor(_appEl_0, _TemplateRef_0_8);
     init0(_appEl_0);
     return null;
   }
@@ -151,10 +150,10 @@ class _ViewMaterialTreeComponent1 extends AppView<import1.MaterialTreeComponent>
     final import1.MaterialTreeComponent _ctx = ctx;
     final currVal_0 = _ctx.options.optionGroups;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -164,26 +163,27 @@ class _ViewMaterialTreeComponent1 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent1(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent> {
   import7.Element _el_0;
   import12.ViewMaterialTreeGroupComponent0 _compView_0;
-  import13.MaterialTreeGroupComponent _MaterialTreeGroupComponent_0_4;
+  import13.MaterialTreeGroupComponent _MaterialTreeGroupComponent_0_5;
   var _expr_0;
-  int _expr_1;
-  bool _expr_2;
-  _ViewMaterialTreeComponent2(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  bool _expr_1;
+  int _expr_2;
+  bool _expr_3;
+  _ViewMaterialTreeComponent2(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     _compView_0 = new import12.ViewMaterialTreeGroupComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
-    _MaterialTreeGroupComponent_0_4 = new import13.MaterialTreeGroupComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, parentView.injectorGet(import15.DropdownHandle, viewData.parentIndex, null), parentView.injectorGet(const import16.OpaqueToken('MaterialTreeGroupComponent_materialTreeLeftPaddingToken'), viewData.parentIndex, null));
-    _compView_0.create(_MaterialTreeGroupComponent_0_4, []);
+    _MaterialTreeGroupComponent_0_5 = new import13.MaterialTreeGroupComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, parentView.injectorGet(import15.DropdownHandle, viewData.parentIndex, null), parentView.injectorGet(const import16.OpaqueToken('MaterialTreeGroupComponent_materialTreeLeftPaddingToken'), viewData.parentIndex, null));
+    _compView_0.create(_MaterialTreeGroupComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -191,7 +191,7 @@ class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent>
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import13.MaterialTreeGroupComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupComponent_0_4;
+      return _MaterialTreeGroupComponent_0_5;
     }
     return notFoundResult;
   }
@@ -204,18 +204,23 @@ class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent>
     final int local_optionIndex = locals['index'];
     final currVal_0 = local_group;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialTreeGroupComponent_0_4.group = currVal_0;
+      _MaterialTreeGroupComponent_0_5.group = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = _ctx.maxInitialOptionsShown(local_group, local_optionIndex);
+    final currVal_1 = _ctx.allowParentSingleSelection;
     if (!identical(_expr_1, currVal_1)) {
-      _MaterialTreeGroupComponent_0_4.maxInitialOptionsShown = currVal_1;
+      _MaterialTreeGroupComponent_0_5.allowParentSingleSelection = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.shouldExpand(local_group, local_optionIndex);
+    final currVal_2 = _ctx.maxInitialOptionsShown(local_group, local_optionIndex);
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialTreeGroupComponent_0_4.expandAll = currVal_2;
+      _MaterialTreeGroupComponent_0_5.maxInitialOptionsShown = currVal_2;
       _expr_2 = currVal_2;
+    }
+    final currVal_3 = _ctx.shouldExpand(local_group, local_optionIndex);
+    if (!identical(_expr_3, currVal_3)) {
+      _MaterialTreeGroupComponent_0_5.expandAll = currVal_3;
+      _expr_3 = currVal_3;
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -229,38 +234,38 @@ class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent>
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialTreeGroupComponent_0_4.ngOnDestroy();
+    _MaterialTreeGroupComponent_0_5.ngOnDestroy();
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent2(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent3 extends AppView<import1.MaterialTreeComponent> {
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   ViewContainer _appEl_2;
-  NgIf _NgIf_2_7;
-  _ViewMaterialTreeComponent3(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  NgIf _NgIf_2_9;
+  _ViewMaterialTreeComponent3(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     var _anchor_0 = ngAnchor.clone(false);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent4);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent4);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeComponent6);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeComponent6);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     var _anchor_2 = ngAnchor.clone(false);
     _appEl_2 = new ViewContainer(2, null, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialTreeComponent8);
-    _NgIf_2_7 = new NgIf(_appEl_2, _TemplateRef_2_6);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialTreeComponent8);
+    _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
     init([_appEl_0, _appEl_1, _appEl_2], null);
     return null;
   }
@@ -268,9 +273,9 @@ class _ViewMaterialTreeComponent3 extends AppView<import1.MaterialTreeComponent>
   @override
   void detectChangesInternal() {
     final import1.MaterialTreeComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = _ctx.showFlatList;
-    _NgIf_1_7.ngIf = _ctx.showFlatRadio;
-    _NgIf_2_7.ngIf = _ctx.showFlatCheck;
+    _NgIf_0_9.ngIf = _ctx.showFlatList;
+    _NgIf_1_9.ngIf = _ctx.showFlatRadio;
+    _NgIf_2_9.ngIf = _ctx.showFlatCheck;
     _appEl_0.detectChangesInNestedViews();
     _appEl_1.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
@@ -284,23 +289,23 @@ class _ViewMaterialTreeComponent3 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent3(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent4 extends AppView<import1.MaterialTreeComponent> {
   ViewContainer _appEl_0;
-  import11.NgFor _NgFor_0_7;
+  import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent4(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent4(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     var _anchor_0 = ngAnchor.clone(false);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent5);
-    _NgFor_0_7 = new import11.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent5);
+    _NgFor_0_9 = new import11.NgFor(_appEl_0, _TemplateRef_0_8);
     init0(_appEl_0);
     return null;
   }
@@ -310,10 +315,10 @@ class _ViewMaterialTreeComponent4 extends AppView<import1.MaterialTreeComponent>
     final import1.MaterialTreeComponent _ctx = ctx;
     final currVal_0 = _ctx.options.optionGroups;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -323,24 +328,24 @@ class _ViewMaterialTreeComponent4 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent4(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent> {
   import7.Element _el_0;
   import18.ViewMaterialTreeGroupFlatListComponent0 _compView_0;
-  import19.MaterialTreeGroupFlatListComponent _MaterialTreeGroupFlatListComponent_0_4;
+  import19.MaterialTreeGroupFlatListComponent _MaterialTreeGroupFlatListComponent_0_5;
   var _expr_0;
-  _ViewMaterialTreeComponent5(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent5(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     _compView_0 = new import18.ViewMaterialTreeGroupFlatListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
-    _MaterialTreeGroupFlatListComponent_0_4 = new import19.MaterialTreeGroupFlatListComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref);
-    _compView_0.create(_MaterialTreeGroupFlatListComponent_0_4, []);
+    _MaterialTreeGroupFlatListComponent_0_5 = new import19.MaterialTreeGroupFlatListComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref);
+    _compView_0.create(_MaterialTreeGroupFlatListComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -348,7 +353,7 @@ class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent>
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import19.MaterialTreeGroupFlatListComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatListComponent_0_4;
+      return _MaterialTreeGroupFlatListComponent_0_5;
     }
     return notFoundResult;
   }
@@ -359,7 +364,7 @@ class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent>
     final import17.OptionGroup<dynamic> local_group = locals['\$implicit'];
     final currVal_0 = local_group;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialTreeGroupFlatListComponent_0_4.group = currVal_0;
+      _MaterialTreeGroupFlatListComponent_0_5.group = currVal_0;
       _expr_0 = currVal_0;
     }
     _compView_0.detectHostChanges(firstCheck);
@@ -372,23 +377,23 @@ class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent5(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent6 extends AppView<import1.MaterialTreeComponent> {
   ViewContainer _appEl_0;
-  import11.NgFor _NgFor_0_7;
+  import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent6(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent6(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     var _anchor_0 = ngAnchor.clone(false);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent7);
-    _NgFor_0_7 = new import11.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent7);
+    _NgFor_0_9 = new import11.NgFor(_appEl_0, _TemplateRef_0_8);
     init0(_appEl_0);
     return null;
   }
@@ -398,10 +403,10 @@ class _ViewMaterialTreeComponent6 extends AppView<import1.MaterialTreeComponent>
     final import1.MaterialTreeComponent _ctx = ctx;
     final currVal_0 = _ctx.options.optionGroups;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -411,24 +416,24 @@ class _ViewMaterialTreeComponent6 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent6(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent> {
   import7.Element _el_0;
   import18.ViewMaterialTreeGroupFlatRadioComponent0 _compView_0;
-  import19.MaterialTreeGroupFlatRadioComponent _MaterialTreeGroupFlatRadioComponent_0_4;
+  import19.MaterialTreeGroupFlatRadioComponent _MaterialTreeGroupFlatRadioComponent_0_5;
   var _expr_0;
-  _ViewMaterialTreeComponent7(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent7(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     _compView_0 = new import18.ViewMaterialTreeGroupFlatRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
-    _MaterialTreeGroupFlatRadioComponent_0_4 = new import19.MaterialTreeGroupFlatRadioComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, parentView.injectorGet(import15.DropdownHandle, viewData.parentIndex, null));
-    _compView_0.create(_MaterialTreeGroupFlatRadioComponent_0_4, []);
+    _MaterialTreeGroupFlatRadioComponent_0_5 = new import19.MaterialTreeGroupFlatRadioComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, parentView.injectorGet(import15.DropdownHandle, viewData.parentIndex, null));
+    _compView_0.create(_MaterialTreeGroupFlatRadioComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -436,7 +441,7 @@ class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent>
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import19.MaterialTreeGroupFlatRadioComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatRadioComponent_0_4;
+      return _MaterialTreeGroupFlatRadioComponent_0_5;
     }
     return notFoundResult;
   }
@@ -447,7 +452,7 @@ class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent>
     final import17.OptionGroup<dynamic> local_group = locals['\$implicit'];
     final currVal_0 = local_group;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialTreeGroupFlatRadioComponent_0_4.group = currVal_0;
+      _MaterialTreeGroupFlatRadioComponent_0_5.group = currVal_0;
       _expr_0 = currVal_0;
     }
     _compView_0.detectHostChanges(firstCheck);
@@ -460,23 +465,23 @@ class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent7(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent8 extends AppView<import1.MaterialTreeComponent> {
   ViewContainer _appEl_0;
-  import11.NgFor _NgFor_0_7;
+  import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent8(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent8(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     var _anchor_0 = ngAnchor.clone(false);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent9);
-    _NgFor_0_7 = new import11.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTreeComponent9);
+    _NgFor_0_9 = new import11.NgFor(_appEl_0, _TemplateRef_0_8);
     init0(_appEl_0);
     return null;
   }
@@ -486,10 +491,10 @@ class _ViewMaterialTreeComponent8 extends AppView<import1.MaterialTreeComponent>
     final import1.MaterialTreeComponent _ctx = ctx;
     final currVal_0 = _ctx.options.optionGroups;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -499,24 +504,24 @@ class _ViewMaterialTreeComponent8 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent8(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent8(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent8(parentView, parentIndex);
 }
 
 class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent> {
   import7.Element _el_0;
   import18.ViewMaterialTreeGroupFlatCheckComponent0 _compView_0;
-  import19.MaterialTreeGroupFlatCheckComponent _MaterialTreeGroupFlatCheckComponent_0_4;
+  import19.MaterialTreeGroupFlatCheckComponent _MaterialTreeGroupFlatCheckComponent_0_5;
   var _expr_0;
-  _ViewMaterialTreeComponent9(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent9(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
     _compView_0 = new import18.ViewMaterialTreeGroupFlatCheckComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
-    _MaterialTreeGroupFlatCheckComponent_0_4 = new import19.MaterialTreeGroupFlatCheckComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, parentView.injectorGet(import15.DropdownHandle, viewData.parentIndex, null));
-    _compView_0.create(_MaterialTreeGroupFlatCheckComponent_0_4, []);
+    _MaterialTreeGroupFlatCheckComponent_0_5 = new import19.MaterialTreeGroupFlatCheckComponent(parentView.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, parentView.injectorGet(import15.DropdownHandle, viewData.parentIndex, null));
+    _compView_0.create(_MaterialTreeGroupFlatCheckComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -524,7 +529,7 @@ class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent>
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import19.MaterialTreeGroupFlatCheckComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatCheckComponent_0_4;
+      return _MaterialTreeGroupFlatCheckComponent_0_5;
     }
     return notFoundResult;
   }
@@ -535,7 +540,7 @@ class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent>
     final import17.OptionGroup<dynamic> local_group = locals['\$implicit'];
     final currVal_0 = local_group;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialTreeGroupFlatCheckComponent_0_4.group = currVal_0;
+      _MaterialTreeGroupFlatCheckComponent_0_5.group = currVal_0;
       _expr_0 = currVal_0;
     }
     _compView_0.detectHostChanges(firstCheck);
@@ -548,7 +553,7 @@ class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent9(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent9(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent9(parentView, parentIndex);
 }
 
@@ -556,22 +561,22 @@ const List<dynamic> styles$MaterialTreeComponentHost = const [];
 
 class _ViewMaterialTreeComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeComponent0 _compView_0;
-  import1.MaterialTreeComponent _MaterialTreeComponent_0_4;
-  _ViewMaterialTreeComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import1.MaterialTreeComponent _MaterialTreeComponent_0_5;
+  _ViewMaterialTreeComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTreeComponent_0_4 = new import1.MaterialTreeComponent(this.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex, null), null);
-    _compView_0.create(_MaterialTreeComponent_0_4, projectableNodes);
+    _MaterialTreeComponent_0_5 = new import1.MaterialTreeComponent(this.injectorGet(import14.MaterialTreeRoot, viewData.parentIndex, null), null);
+    _compView_0.create(_MaterialTreeComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.MaterialTreeComponent>(0, this, rootEl, _MaterialTreeComponent_0_4);
+    return new ComponentRef<import1.MaterialTreeComponent>(0, this, rootEl, _MaterialTreeComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if (((identical(token, import1.MaterialTreeComponent) || identical(token, import14.MaterialTreeRoot)) && (0 == nodeIndex))) {
-      return _MaterialTreeComponent_0_4;
+      return _MaterialTreeComponent_0_5;
     }
     return notFoundResult;
   }
@@ -589,7 +594,7 @@ class _ViewMaterialTreeComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponentHost0(parentView, parentIndex);
 }
 

@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -30,14 +28,15 @@ class ViewMaterialIconComponent0 extends AppView<import2.MaterialIconComponent> 
   import3.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialIconComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialIconComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-icon');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialIconComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialIconComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'i', parentRenderNode);
     createAttr(_el_0, 'aria-hidden', 'true');
@@ -60,7 +59,7 @@ class ViewMaterialIconComponent0 extends AppView<import2.MaterialIconComponent> 
   }
 }
 
-AppView<import2.MaterialIconComponent> viewFactory_MaterialIconComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialIconComponent> viewFactory_MaterialIconComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialIconComponent0(parentView, parentIndex);
 }
 
@@ -68,16 +67,16 @@ const List<dynamic> styles$MaterialIconComponentHost = const [];
 
 class _ViewMaterialIconComponentHost0 extends AppView<dynamic> {
   ViewMaterialIconComponent0 _compView_0;
-  import2.MaterialIconComponent _MaterialIconComponent_0_4;
-  _ViewMaterialIconComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MaterialIconComponent _MaterialIconComponent_0_5;
+  _ViewMaterialIconComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialIconComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialIconComponent_0_4 = new import2.MaterialIconComponent(rootEl);
-    _compView_0.create(_MaterialIconComponent_0_4, projectableNodes);
+    _MaterialIconComponent_0_5 = new import2.MaterialIconComponent(rootEl);
+    _compView_0.create(_MaterialIconComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialIconComponent>(0, this, rootEl, _MaterialIconComponent_0_4);
+    return new ComponentRef<import2.MaterialIconComponent>(0, this, rootEl, _MaterialIconComponent_0_5);
   }
 
   @override
@@ -95,7 +94,7 @@ class _ViewMaterialIconComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialIconComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialIconComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialIconComponentHost0(parentView, parentIndex);
 }
 

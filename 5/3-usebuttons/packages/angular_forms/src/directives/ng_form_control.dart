@@ -1,27 +1,13 @@
 import 'dart:async';
 
-import 'package:angular/angular.dart'
-    show
-        Directive,
-        Inject,
-        Input,
-        AfterChanges,
-        Optional,
-        Output,
-        Provider,
-        Self,
-        Visibility;
+import 'package:angular/angular.dart';
 
 import '../model.dart' show Control;
 import '../validators.dart' show NG_VALIDATORS;
 import 'control_value_accessor.dart'
     show ControlValueAccessor, NG_VALUE_ACCESSOR;
 import 'ng_control.dart' show NgControl;
-import 'shared.dart' show setUpControl, composeValidators, selectValueAccessor;
-import 'validators.dart' show ValidatorFn;
-
-const formControlBinding =
-    const Provider(NgControl, useExisting: NgFormControl);
+import 'shared.dart' show setUpControl;
 
 /// Binds an existing [Control] to a DOM element.
 ///
@@ -71,13 +57,13 @@ const formControlBinding =
 /// ```
 @Directive(
   selector: '[ngFormControl]',
-  providers: const [formControlBinding],
+  providers: const [
+    const ExistingProvider(NgControl, NgFormControl),
+  ],
   exportAs: 'ngForm',
-  // TODO(b/71710685): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
 class NgFormControl extends NgControl implements AfterChanges {
-  final /* Array<Validator|Function> */ List<dynamic> _validators;
   bool _formChanged = false;
   Control _form;
   @Input('ngFormControl')
@@ -103,13 +89,12 @@ class NgFormControl extends NgControl implements AfterChanges {
       @Optional()
       @Self()
       @Inject(NG_VALIDATORS)
-          this._validators,
+          List validators,
       @Optional()
       @Self()
       @Inject(NG_VALUE_ACCESSOR)
-          List<ControlValueAccessor> valueAccessors) {
-    valueAccessor = selectValueAccessor(this, valueAccessors);
-  }
+          List<ControlValueAccessor> valueAccessors)
+      : super(valueAccessors, validators);
 
   @Output('ngModelChange')
   Stream get update => _update.stream;
@@ -132,9 +117,6 @@ class NgFormControl extends NgControl implements AfterChanges {
 
   @override
   List<String> get path => [];
-
-  @override
-  ValidatorFn get validator => composeValidators(_validators);
 
   @override
   Control get control => form;

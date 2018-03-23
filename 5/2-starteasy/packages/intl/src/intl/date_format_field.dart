@@ -22,6 +22,10 @@ abstract class _DateFormatField {
     _trimmedPattern = pattern.trim();
   }
 
+  /// Does this field potentially represent part of a Date, i.e. is not
+  /// time-specific.
+  bool get forDate => true;
+
   /// Return the width of [pattern]. Different widths represent different
   /// formatting options. See the comment for DateFormat for details.
   int get width => pattern.length;
@@ -253,6 +257,17 @@ class _DateFormatPatternField extends _DateFormatField {
     new _LoosePatternField(pattern, parent).parse(input, dateFields);
   }
 
+  bool _forDate;
+
+  /// Is this field involved in computing the date portion, as opposed to the
+  /// time.
+  ///
+  /// The [pattern] will contain one or more of a particular format character,
+  /// e.g. "yyyy" for a four-digit year. This hard-codes all the pattern
+  /// characters that pertain to dates. The remaining characters, 'ahHkKms' are
+  /// all time-related. See e.g. [formatField]
+  bool get forDate => _forDate ??= 'cdDEGLMQvyZz'.contains(pattern[0]);
+
   /// Parse a field representing part of a date pattern. Note that we do not
   /// return a value, but rather build up the result in [builder].
   void parseField(_Stream input, _DateBuilder builder) {
@@ -396,7 +411,9 @@ class _DateFormatPatternField extends _DateFormatField {
   /// This method handles reading any of the numeric fields. The [offset]
   /// argument allows us to compensate for zero-based versus one-based values.
   void handleNumericField(_Stream input, Function setter, [int offset = 0]) {
-    var result = input.nextInteger();
+    var result = input.nextInteger(
+        digitMatcher: parent.digitMatcher,
+        zeroDigit: parent.localeZeroCodeUnit);
     if (result == null) throwFormatException(input);
     setter(result + offset);
   }
@@ -576,32 +593,14 @@ class _DateFormatPatternField extends _DateFormatField {
     return padTo(width, date.day);
   }
 
-  String formatDayOfYear(DateTime date) => padTo(width, dayNumberInYear(date));
-
-  /// Return the ordinal day, i.e. the day number in the year.
-  int dayNumberInYear(DateTime date) {
-    if (date.month == 1) return date.day;
-    if (date.month == 2) return date.day + 31;
-    return ordinalDayFromMarchFirst(date) + 59 + (isLeapYear(date) ? 1 : 0);
-  }
-
-  /// Return the day of the year counting March 1st as 1, after which the
-  /// number of days per month is constant, so it's easier to calculate.
-  /// Formula from http://en.wikipedia.org/wiki/Ordinal_date
-  int ordinalDayFromMarchFirst(DateTime date) =>
-      ((30.6 * date.month) - 91.4).floor() + date.day;
-
-  /// Return true if this is a leap year. Rely on [DateTime] to do the
-  /// underlying calculation, even though it doesn't expose the test to us.
-  bool isLeapYear(DateTime date) {
-    var feb29 = new DateTime(date.year, 2, 29);
-    return feb29.month == 2;
-  }
+  String formatDayOfYear(DateTime date) =>
+      padTo(width, _dayOfYear(date.month, date.day, _isLeapYear(date)));
 
   String formatDayOfWeek(DateTime date) {
     // Note that Dart's weekday returns 1 for Monday and 7 for Sunday.
-    return (width >= 4 ? symbols.WEEKDAYS : symbols.SHORTWEEKDAYS)[
-        (date.weekday) % 7];
+    return (width >= 4
+        ? symbols.WEEKDAYS
+        : symbols.SHORTWEEKDAYS)[(date.weekday) % 7];
   }
 
   void parseDayOfWeek(_Stream input) {
@@ -638,6 +637,6 @@ class _DateFormatPatternField extends _DateFormatField {
 
   /// Return a string representation of the object padded to the left with
   /// zeros. Primarily useful for numbers.
-  static String padTo(int width, Object toBePrinted) =>
-      '$toBePrinted'.padLeft(width, '0');
+  String padTo(int width, Object toBePrinted) =>
+      parent._localizeDigits('$toBePrinted'.padLeft(width, '0'));
 }

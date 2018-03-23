@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -39,23 +37,25 @@ import 'package:angular_components/material_radio/material_radio.dart' as import
 import 'dart:core';
 import '../lottery/lottery.dart' as import20;
 import 'settings.dart' as import21;
-import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import22;
-import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import23;
-import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import24;
-import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import25;
-import 'package:angular_components/laminate/overlay/zindexer.dart' as import26;
-import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import27;
-import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import28;
-import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import29;
-import 'package:angular_components/laminate/enums/alignment.dart' as import30;
-import 'package:angular_components/utils/browser/window/module.dart' as import31;
-import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import32;
-import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import33;
-import 'package:angular_components/utils/disposer/disposer.dart' as import34;
-import 'package:angular/src/core/linker/component_loader.dart' as import35;
-import 'package:angular_components/laminate/overlay/module.dart' as import36;
-import 'package:angular/src/core/di/opaque_token.dart' as import37;
-import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import38;
+import 'package:angular_components/laminate/enums/alignment.dart' as import22;
+import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import23;
+import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import24;
+import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import25;
+import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import26;
+import 'package:angular_components/laminate/overlay/zindexer.dart' as import27;
+import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import28;
+import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import29;
+import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import30;
+import 'package:quiver/time.dart' as import31;
+import 'package:angular_components/utils/browser/window/module.dart' as import32;
+import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import33;
+import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import34;
+import 'package:angular_components/utils/disposer/disposer.dart' as import35;
+import 'package:angular/src/core/linker/component_loader.dart' as import36;
+import 'package:angular_components/laminate/overlay/module.dart' as import37;
+import 'package:angular/src/core/di/opaque_token.dart' as import38;
+import 'package:angular_components/laminate/enums/alignment.dart' as import39;
+import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import40;
 
 const List<dynamic> styles$SettingsComponent = const [import0.styles];
 
@@ -70,17 +70,17 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_11;
   import3.Element _el_13;
   import4.ViewMaterialRadioGroupComponent0 _compView_13;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_13_4;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_13_5;
   bool _query_MaterialRadioComponent_13_0_isDirty = true;
   ViewContainer _appEl_14;
-  import7.NgFor _NgFor_14_7;
+  import7.NgFor _NgFor_14_9;
   import3.Element _el_15;
   import3.Element _el_17;
   import4.ViewMaterialRadioGroupComponent0 _compView_17;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_17_4;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_17_5;
   bool _query_MaterialRadioComponent_17_0_isDirty = true;
   ViewContainer _appEl_18;
-  import7.NgFor _NgFor_18_7;
+  import7.NgFor _NgFor_18_9;
   import3.ButtonElement _el_19;
   import3.ButtonElement _el_21;
   import3.DivElement _el_23;
@@ -92,20 +92,20 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_33;
   import3.Element _el_35;
   import4.ViewMaterialRadioGroupComponent0 _compView_35;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_35_4;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_35_5;
   bool _query_MaterialRadioComponent_35_0_isDirty = true;
   ViewContainer _appEl_36;
-  import7.NgFor _NgFor_36_7;
+  import7.NgFor _NgFor_36_9;
   import3.Element _el_37;
   import3.Element _el_38;
   import3.Text _text_41;
   import3.Element _el_42;
   import3.Element _el_44;
   import4.ViewMaterialRadioGroupComponent0 _compView_44;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_44_4;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_44_5;
   bool _query_MaterialRadioComponent_44_0_isDirty = true;
   ViewContainer _appEl_45;
-  import7.NgFor _NgFor_45_7;
+  import7.NgFor _NgFor_45_9;
   import3.Element _el_46;
   import3.Element _el_47;
   import3.Text _text_50;
@@ -120,21 +120,21 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   import3.Element _el_65;
   import3.Element _el_67;
   import8.ViewMaterialCheckboxComponent0 _compView_67;
-  import9.MaterialCheckboxComponent _MaterialCheckboxComponent_67_4;
+  import9.MaterialCheckboxComponent _MaterialCheckboxComponent_67_5;
   import3.Element _el_68;
   import3.Element _el_69;
   import4.ViewMaterialRadioGroupComponent0 _compView_69;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_69_4;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_69_5;
   bool _query_MaterialRadioComponent_69_0_isDirty = true;
   ViewContainer _appEl_70;
-  import7.NgFor _NgFor_70_7;
+  import7.NgFor _NgFor_70_9;
   import3.Element _el_71;
   import3.Element _el_73;
   import4.ViewMaterialRadioGroupComponent0 _compView_73;
-  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_73_4;
+  import5.MaterialRadioGroupComponent _MaterialRadioGroupComponent_73_5;
   bool _query_MaterialRadioComponent_73_0_isDirty = true;
   ViewContainer _appEl_74;
-  import7.NgFor _NgFor_74_7;
+  import7.NgFor _NgFor_74_9;
   import3.ButtonElement _el_75;
   import3.ButtonElement _el_77;
   var _expr_0;
@@ -149,14 +149,15 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   var _expr_11;
   bool _expr_13;
   static RenderComponentType _renderType;
-  ViewSettingsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSettingsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('settings-component');
     _renderType ??= import13.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$SettingsComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.SettingsComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_0);
@@ -188,12 +189,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_13 = _compView_13.rootEl;
     _el_10.append(_el_13);
     addShimC(_el_13);
-    _MaterialRadioGroupComponent_13_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_13_5 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_14 = ngAnchor.clone(false);
     _appEl_14 = new ViewContainer(14, 13, this, _anchor_14);
-    TemplateRef _TemplateRef_14_6 = new TemplateRef(_appEl_14, viewFactory_SettingsComponent1);
-    _NgFor_14_7 = new import7.NgFor(_appEl_14, _TemplateRef_14_6);
-    _compView_13.create(_MaterialRadioGroupComponent_13_4, [
+    TemplateRef _TemplateRef_14_8 = new TemplateRef(_appEl_14, viewFactory_SettingsComponent1);
+    _NgFor_14_9 = new import7.NgFor(_appEl_14, _TemplateRef_14_8);
+    _compView_13.create(_MaterialRadioGroupComponent_13_5, [
       [_appEl_14]
     ]);
     _el_15 = createAndAppend(doc, 'h3', _el_10);
@@ -204,12 +205,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_17 = _compView_17.rootEl;
     _el_10.append(_el_17);
     addShimC(_el_17);
-    _MaterialRadioGroupComponent_17_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_17_5 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_18 = ngAnchor.clone(false);
     _appEl_18 = new ViewContainer(18, 17, this, _anchor_18);
-    TemplateRef _TemplateRef_18_6 = new TemplateRef(_appEl_18, viewFactory_SettingsComponent2);
-    _NgFor_18_7 = new import7.NgFor(_appEl_18, _TemplateRef_18_6);
-    _compView_17.create(_MaterialRadioGroupComponent_17_4, [
+    TemplateRef _TemplateRef_18_8 = new TemplateRef(_appEl_18, viewFactory_SettingsComponent2);
+    _NgFor_18_9 = new import7.NgFor(_appEl_18, _TemplateRef_18_8);
+    _compView_17.create(_MaterialRadioGroupComponent_17_5, [
       [_appEl_18]
     ]);
     _el_19 = createAndAppend(doc, 'button', _el_1);
@@ -249,12 +250,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_35 = _compView_35.rootEl;
     _el_32.append(_el_35);
     addShimC(_el_35);
-    _MaterialRadioGroupComponent_35_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_35_5 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_36 = ngAnchor.clone(false);
     _appEl_36 = new ViewContainer(36, 35, this, _anchor_36);
-    TemplateRef _TemplateRef_36_6 = new TemplateRef(_appEl_36, viewFactory_SettingsComponent3);
-    _NgFor_36_7 = new import7.NgFor(_appEl_36, _TemplateRef_36_6);
-    _compView_35.create(_MaterialRadioGroupComponent_35_4, [
+    TemplateRef _TemplateRef_36_8 = new TemplateRef(_appEl_36, viewFactory_SettingsComponent3);
+    _NgFor_36_9 = new import7.NgFor(_appEl_36, _TemplateRef_36_8);
+    _compView_35.create(_MaterialRadioGroupComponent_35_5, [
       [_appEl_36]
     ]);
     _el_37 = createAndAppend(doc, 'p', _el_32);
@@ -275,12 +276,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_44 = _compView_44.rootEl;
     _el_32.append(_el_44);
     addShimC(_el_44);
-    _MaterialRadioGroupComponent_44_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_44_5 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_45 = ngAnchor.clone(false);
     _appEl_45 = new ViewContainer(45, 44, this, _anchor_45);
-    TemplateRef _TemplateRef_45_6 = new TemplateRef(_appEl_45, viewFactory_SettingsComponent4);
-    _NgFor_45_7 = new import7.NgFor(_appEl_45, _TemplateRef_45_6);
-    _compView_44.create(_MaterialRadioGroupComponent_44_4, [
+    TemplateRef _TemplateRef_45_8 = new TemplateRef(_appEl_45, viewFactory_SettingsComponent4);
+    _NgFor_45_9 = new import7.NgFor(_appEl_45, _TemplateRef_45_8);
+    _compView_44.create(_MaterialRadioGroupComponent_44_5, [
       [_appEl_45]
     ]);
     _el_46 = createAndAppend(doc, 'p', _el_32);
@@ -330,20 +331,20 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_64.append(_el_67);
     createAttr(_el_67, 'label', 'Investing');
     addShimC(_el_67);
-    _MaterialCheckboxComponent_67_4 = new import9.MaterialCheckboxComponent(_el_67, _compView_67.ref, null, null, null);
-    _compView_67.create(_MaterialCheckboxComponent_67_4, [const []]);
+    _MaterialCheckboxComponent_67_5 = new import9.MaterialCheckboxComponent(_el_67, _compView_67.ref, null, null, null);
+    _compView_67.create(_MaterialCheckboxComponent_67_5, [const []]);
     _el_68 = createAndAppend(doc, 'br', _el_64);
     addShimE(_el_68);
     _compView_69 = new import4.ViewMaterialRadioGroupComponent0(this, 69);
     _el_69 = _compView_69.rootEl;
     _el_64.append(_el_69);
     addShimC(_el_69);
-    _MaterialRadioGroupComponent_69_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_69_5 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_70 = ngAnchor.clone(false);
     _appEl_70 = new ViewContainer(70, 69, this, _anchor_70);
-    TemplateRef _TemplateRef_70_6 = new TemplateRef(_appEl_70, viewFactory_SettingsComponent5);
-    _NgFor_70_7 = new import7.NgFor(_appEl_70, _TemplateRef_70_6);
-    _compView_69.create(_MaterialRadioGroupComponent_69_4, [
+    TemplateRef _TemplateRef_70_8 = new TemplateRef(_appEl_70, viewFactory_SettingsComponent5);
+    _NgFor_70_9 = new import7.NgFor(_appEl_70, _TemplateRef_70_8);
+    _compView_69.create(_MaterialRadioGroupComponent_69_5, [
       [_appEl_70]
     ]);
     _el_71 = createAndAppend(doc, 'h3', _el_64);
@@ -354,12 +355,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_73 = _compView_73.rootEl;
     _el_64.append(_el_73);
     addShimC(_el_73);
-    _MaterialRadioGroupComponent_73_4 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_73_5 = new import5.MaterialRadioGroupComponent(parentView.injectorGet(import15.NgZone, viewData.parentIndex), null);
     var _anchor_74 = ngAnchor.clone(false);
     _appEl_74 = new ViewContainer(74, 73, this, _anchor_74);
-    TemplateRef _TemplateRef_74_6 = new TemplateRef(_appEl_74, viewFactory_SettingsComponent6);
-    _NgFor_74_7 = new import7.NgFor(_appEl_74, _TemplateRef_74_6);
-    _compView_73.create(_MaterialRadioGroupComponent_73_4, [
+    TemplateRef _TemplateRef_74_8 = new TemplateRef(_appEl_74, viewFactory_SettingsComponent6);
+    _NgFor_74_9 = new import7.NgFor(_appEl_74, _TemplateRef_74_8);
+    _compView_73.create(_MaterialRadioGroupComponent_73_5, [
       [_appEl_74]
     ]);
     _el_75 = createAndAppend(doc, 'button', _el_55);
@@ -374,7 +375,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_21.addEventListener('click', eventHandler0(ctx.resetWallet));
     _el_51.addEventListener('click', eventHandler0(ctx.settingsUpdated));
     _el_53.addEventListener('click', eventHandler0(ctx.resetBetting));
-    final subscription_0 = _MaterialCheckboxComponent_67_4.onChecked.listen(eventHandler1(_handle_checkedChange_67_0));
+    final subscription_0 = _MaterialCheckboxComponent_67_5.onChecked.listen(eventHandler1(_handle_checkedChange_67_0));
     _el_75.addEventListener('click', eventHandler0(ctx.settingsUpdated));
     _el_77.addEventListener('click', eventHandler0(ctx.resetOther));
     init(const [], [subscription_0]);
@@ -384,22 +385,22 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((13 <= nodeIndex) && (nodeIndex <= 14)))) {
-      return _MaterialRadioGroupComponent_13_4;
+      return _MaterialRadioGroupComponent_13_5;
     }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((17 <= nodeIndex) && (nodeIndex <= 18)))) {
-      return _MaterialRadioGroupComponent_17_4;
+      return _MaterialRadioGroupComponent_17_5;
     }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((35 <= nodeIndex) && (nodeIndex <= 36)))) {
-      return _MaterialRadioGroupComponent_35_4;
+      return _MaterialRadioGroupComponent_35_5;
     }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((44 <= nodeIndex) && (nodeIndex <= 45)))) {
-      return _MaterialRadioGroupComponent_44_4;
+      return _MaterialRadioGroupComponent_44_5;
     }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((69 <= nodeIndex) && (nodeIndex <= 70)))) {
-      return _MaterialRadioGroupComponent_69_4;
+      return _MaterialRadioGroupComponent_69_5;
     }
     if ((identical(token, import5.MaterialRadioGroupComponent) && ((73 <= nodeIndex) && (nodeIndex <= 74)))) {
-      return _MaterialRadioGroupComponent_73_4;
+      return _MaterialRadioGroupComponent_73_5;
     }
     return notFoundResult;
   }
@@ -415,48 +416,48 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     }
     if (firstCheck) {
       if (!identical(_ctx.initialCashOptions, null)) {
-        (_NgFor_14_7.ngForOf = _ctx.initialCashOptions);
+        (_NgFor_14_9.ngForOf = _ctx.initialCashOptions);
       }
     }
-    _NgFor_14_7.ngDoCheck();
+    _NgFor_14_9.ngDoCheck();
     changed = false;
     if (changed) {
       _compView_17.markAsCheckOnce();
     }
     if (firstCheck) {
       if (!identical(_ctx.dailyDisposableOptions, null)) {
-        (_NgFor_18_7.ngForOf = _ctx.dailyDisposableOptions);
+        (_NgFor_18_9.ngForOf = _ctx.dailyDisposableOptions);
       }
     }
-    _NgFor_18_7.ngDoCheck();
+    _NgFor_18_9.ngDoCheck();
     changed = false;
     if (changed) {
       _compView_35.markAsCheckOnce();
     }
     final currVal_6 = _ctx.settings.lotteries;
     if (!identical(_expr_6, currVal_6)) {
-      _NgFor_36_7.ngForOf = currVal_6;
+      _NgFor_36_9.ngForOf = currVal_6;
       _expr_6 = currVal_6;
     }
-    _NgFor_36_7.ngDoCheck();
+    _NgFor_36_9.ngDoCheck();
     changed = false;
     if (changed) {
       _compView_44.markAsCheckOnce();
     }
     final currVal_8 = _ctx.settings.strategies;
     if (!identical(_expr_8, currVal_8)) {
-      _NgFor_45_7.ngForOf = currVal_8;
+      _NgFor_45_9.ngForOf = currVal_8;
       _expr_8 = currVal_8;
     }
-    _NgFor_45_7.ngDoCheck();
+    _NgFor_45_9.ngDoCheck();
     changed = false;
     if (firstCheck) {
-      _MaterialCheckboxComponent_67_4.label = 'Investing';
+      _MaterialCheckboxComponent_67_5.label = 'Investing';
       changed = true;
     }
     final currVal_13 = _ctx.isInvesting;
     if (!identical(_expr_13, currVal_13)) {
-      _MaterialCheckboxComponent_67_4.checked = currVal_13;
+      _MaterialCheckboxComponent_67_5.checked = currVal_13;
       changed = true;
       _expr_13 = currVal_13;
     }
@@ -469,20 +470,20 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     }
     if (firstCheck) {
       if (!identical(_ctx.interestRateOptions, null)) {
-        (_NgFor_70_7.ngForOf = _ctx.interestRateOptions);
+        (_NgFor_70_9.ngForOf = _ctx.interestRateOptions);
       }
     }
-    _NgFor_70_7.ngDoCheck();
+    _NgFor_70_9.ngDoCheck();
     changed = false;
     if (changed) {
       _compView_73.markAsCheckOnce();
     }
     if (firstCheck) {
       if (!identical(_ctx.yearsOptions, null)) {
-        (_NgFor_74_7.ngForOf = _ctx.yearsOptions);
+        (_NgFor_74_9.ngForOf = _ctx.yearsOptions);
       }
     }
-    _NgFor_74_7.ngDoCheck();
+    _NgFor_74_9.ngDoCheck();
     _appEl_14.detectChangesInNestedViews();
     _appEl_18.detectChangesInNestedViews();
     _appEl_36.detectChangesInNestedViews();
@@ -490,58 +491,58 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _appEl_70.detectChangesInNestedViews();
     _appEl_74.detectChangesInNestedViews();
     if (_query_MaterialRadioComponent_13_0_isDirty) {
-      _MaterialRadioGroupComponent_13_4.list = _appEl_14.mapNestedViews((_ViewSettingsComponent1 nestedView) {
-        return [nestedView._MaterialRadioComponent_0_4];
+      _MaterialRadioGroupComponent_13_5.list = _appEl_14.mapNestedViews((_ViewSettingsComponent1 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_5];
       });
       _query_MaterialRadioComponent_13_0_isDirty = false;
     }
     if (_query_MaterialRadioComponent_17_0_isDirty) {
-      _MaterialRadioGroupComponent_17_4.list = _appEl_18.mapNestedViews((_ViewSettingsComponent2 nestedView) {
-        return [nestedView._MaterialRadioComponent_0_4];
+      _MaterialRadioGroupComponent_17_5.list = _appEl_18.mapNestedViews((_ViewSettingsComponent2 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_5];
       });
       _query_MaterialRadioComponent_17_0_isDirty = false;
     }
     if (_query_MaterialRadioComponent_35_0_isDirty) {
-      _MaterialRadioGroupComponent_35_4.list = _appEl_36.mapNestedViews((_ViewSettingsComponent3 nestedView) {
-        return [nestedView._MaterialRadioComponent_0_4];
+      _MaterialRadioGroupComponent_35_5.list = _appEl_36.mapNestedViews((_ViewSettingsComponent3 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_5];
       });
       _query_MaterialRadioComponent_35_0_isDirty = false;
     }
     if (_query_MaterialRadioComponent_44_0_isDirty) {
-      _MaterialRadioGroupComponent_44_4.list = _appEl_45.mapNestedViews((_ViewSettingsComponent4 nestedView) {
-        return [nestedView._MaterialRadioComponent_0_4];
+      _MaterialRadioGroupComponent_44_5.list = _appEl_45.mapNestedViews((_ViewSettingsComponent4 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_5];
       });
       _query_MaterialRadioComponent_44_0_isDirty = false;
     }
     if (_query_MaterialRadioComponent_69_0_isDirty) {
-      _MaterialRadioGroupComponent_69_4.list = _appEl_70.mapNestedViews((_ViewSettingsComponent5 nestedView) {
-        return [nestedView._MaterialRadioComponent_0_4];
+      _MaterialRadioGroupComponent_69_5.list = _appEl_70.mapNestedViews((_ViewSettingsComponent5 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_5];
       });
       _query_MaterialRadioComponent_69_0_isDirty = false;
     }
     if (_query_MaterialRadioComponent_73_0_isDirty) {
-      _MaterialRadioGroupComponent_73_4.list = _appEl_74.mapNestedViews((_ViewSettingsComponent6 nestedView) {
-        return [nestedView._MaterialRadioComponent_0_4];
+      _MaterialRadioGroupComponent_73_5.list = _appEl_74.mapNestedViews((_ViewSettingsComponent6 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_5];
       });
       _query_MaterialRadioComponent_73_0_isDirty = false;
     }
     if (firstCheck) {
-      _MaterialRadioGroupComponent_13_4.ngAfterContentInit();
+      _MaterialRadioGroupComponent_13_5.ngAfterContentInit();
     }
     if (firstCheck) {
-      _MaterialRadioGroupComponent_17_4.ngAfterContentInit();
+      _MaterialRadioGroupComponent_17_5.ngAfterContentInit();
     }
     if (firstCheck) {
-      _MaterialRadioGroupComponent_35_4.ngAfterContentInit();
+      _MaterialRadioGroupComponent_35_5.ngAfterContentInit();
     }
     if (firstCheck) {
-      _MaterialRadioGroupComponent_44_4.ngAfterContentInit();
+      _MaterialRadioGroupComponent_44_5.ngAfterContentInit();
     }
     if (firstCheck) {
-      _MaterialRadioGroupComponent_69_4.ngAfterContentInit();
+      _MaterialRadioGroupComponent_69_5.ngAfterContentInit();
     }
     if (firstCheck) {
-      _MaterialRadioGroupComponent_73_4.ngAfterContentInit();
+      _MaterialRadioGroupComponent_73_5.ngAfterContentInit();
     }
     final currVal_0 = import13.interpolate0(_ctx.settings.initialCash);
     if (!identical(_expr_0, currVal_0)) {
@@ -608,12 +609,12 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _compView_67?.destroy();
     _compView_69?.destroy();
     _compView_73?.destroy();
-    _MaterialRadioGroupComponent_13_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_17_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_35_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_44_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_69_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_73_4.ngOnDestroy();
+    _MaterialRadioGroupComponent_13_5.ngOnDestroy();
+    _MaterialRadioGroupComponent_17_5.ngOnDestroy();
+    _MaterialRadioGroupComponent_35_5.ngOnDestroy();
+    _MaterialRadioGroupComponent_44_5.ngOnDestroy();
+    _MaterialRadioGroupComponent_69_5.ngOnDestroy();
+    _MaterialRadioGroupComponent_73_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_67_0($event) {
@@ -621,18 +622,18 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewSettingsComponent0(parentView, parentIndex);
 }
 
 class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import17.ViewMaterialRadioComponent0 _compView_0;
-  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -640,13 +641,13 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_13_4, null, null);
+    _MaterialRadioComponent_0_5 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_13_5, null, null);
     import3.Text _text_1 = new import3.Text('\$');
     _text_2 = new import3.Text('');
-    _compView_0.create(_MaterialRadioComponent_0_4, [
+    _compView_0.create(_MaterialRadioComponent_0_5, [
       [_text_1, _text_2]
     ]);
-    final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
+    final subscription_0 = _MaterialRadioComponent_0_5.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -660,7 +661,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
     changed = false;
     final currVal_0 = (local_item == _ctx.initialCash);
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialRadioComponent_0_4.checked = currVal_0;
+      _MaterialRadioComponent_0_5.checked = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -684,7 +685,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRadioComponent_0_4.ngOnDestroy();
+    _MaterialRadioComponent_0_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_0_0($event) {
@@ -693,18 +694,18 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponent1(parentView, parentIndex);
 }
 
 class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import17.ViewMaterialRadioComponent0 _compView_0;
-  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -712,13 +713,13 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_17_4, null, null);
+    _MaterialRadioComponent_0_5 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_17_5, null, null);
     import3.Text _text_1 = new import3.Text('\$');
     _text_2 = new import3.Text('');
-    _compView_0.create(_MaterialRadioComponent_0_4, [
+    _compView_0.create(_MaterialRadioComponent_0_5, [
       [_text_1, _text_2]
     ]);
-    final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
+    final subscription_0 = _MaterialRadioComponent_0_5.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -732,7 +733,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
     changed = false;
     final currVal_0 = (local_item == _ctx.dailyDisposable);
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialRadioComponent_0_4.checked = currVal_0;
+      _MaterialRadioComponent_0_5.checked = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -756,7 +757,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRadioComponent_0_4.ngOnDestroy();
+    _MaterialRadioComponent_0_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_0_0($event) {
@@ -765,18 +766,18 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponent2(parentView, parentIndex);
 }
 
 class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import17.ViewMaterialRadioComponent0 _compView_0;
-  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -784,12 +785,12 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_35_4, null, null);
+    _MaterialRadioComponent_0_5 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_35_5, null, null);
     _text_1 = new import3.Text('');
-    _compView_0.create(_MaterialRadioComponent_0_4, [
+    _compView_0.create(_MaterialRadioComponent_0_5, [
       [_text_1]
     ]);
-    final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
+    final subscription_0 = _MaterialRadioComponent_0_5.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -803,7 +804,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
     changed = false;
     final currVal_0 = (local_item == _ctx.lottery);
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialRadioComponent_0_4.checked = currVal_0;
+      _MaterialRadioComponent_0_5.checked = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -827,7 +828,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRadioComponent_0_4.ngOnDestroy();
+    _MaterialRadioComponent_0_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_0_0($event) {
@@ -836,20 +837,20 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponent3(parentView, parentIndex);
 }
 
 class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import17.ViewMaterialRadioComponent0 _compView_0;
-  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_1;
   import3.Text _text_3;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewSettingsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -857,15 +858,15 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_44_4, null, null);
+    _MaterialRadioComponent_0_5 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_44_5, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text(' (');
     _text_3 = new import3.Text('');
     import3.Text _text_4 = new import3.Text(')');
-    _compView_0.create(_MaterialRadioComponent_0_4, [
+    _compView_0.create(_MaterialRadioComponent_0_5, [
       [_text_1, _text_2, _text_3, _text_4]
     ]);
-    final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
+    final subscription_0 = _MaterialRadioComponent_0_5.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -879,7 +880,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
     changed = false;
     final currVal_0 = (local_item == _ctx.strategy);
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialRadioComponent_0_4.checked = currVal_0;
+      _MaterialRadioComponent_0_5.checked = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -908,7 +909,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRadioComponent_0_4.ngOnDestroy();
+    _MaterialRadioComponent_0_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_0_0($event) {
@@ -917,19 +918,19 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponent4(parentView, parentIndex);
 }
 
 class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import17.ViewMaterialRadioComponent0 _compView_0;
-  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_1;
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
-  _ViewSettingsComponent5(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent5(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -937,13 +938,13 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_69_4, null, null);
+    _MaterialRadioComponent_0_5 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_69_5, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text('%');
-    _compView_0.create(_MaterialRadioComponent_0_4, [
+    _compView_0.create(_MaterialRadioComponent_0_5, [
       [_text_1, _text_2]
     ]);
-    final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
+    final subscription_0 = _MaterialRadioComponent_0_5.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -957,13 +958,13 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
     changed = false;
     final bool currVal_0 = !_ctx.isInvesting;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialRadioComponent_0_4.disabled = currVal_0;
+      _MaterialRadioComponent_0_5.disabled = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
     final currVal_1 = (local_value == _ctx.interestRate);
     if (!identical(_expr_1, currVal_1)) {
-      _MaterialRadioComponent_0_4.checked = currVal_1;
+      _MaterialRadioComponent_0_5.checked = currVal_1;
       changed = true;
       _expr_1 = currVal_1;
     }
@@ -987,7 +988,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRadioComponent_0_4.ngOnDestroy();
+    _MaterialRadioComponent_0_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_0_0($event) {
@@ -996,20 +997,20 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponent5(parentView, parentIndex);
 }
 
 class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
   import3.Element _el_0;
   import17.ViewMaterialRadioComponent0 _compView_0;
-  import18.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import18.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_1;
   import3.Text _text_3;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewSettingsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent6(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -1017,14 +1018,14 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
     _compView_0 = new import17.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_73_4, null, null);
+    _MaterialRadioComponent_0_5 = new import18.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewSettingsComponent0)._MaterialRadioGroupComponent_73_5, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text(' year');
     _text_3 = new import3.Text('');
-    _compView_0.create(_MaterialRadioComponent_0_4, [
+    _compView_0.create(_MaterialRadioComponent_0_5, [
       [_text_1, _text_2, _text_3]
     ]);
-    final subscription_0 = _MaterialRadioComponent_0_4.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
+    final subscription_0 = _MaterialRadioComponent_0_5.onChecked.listen(eventHandler1(_handle_checkedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -1038,7 +1039,7 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
     changed = false;
     final currVal_0 = (local_value == _ctx.years);
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialRadioComponent_0_4.checked = currVal_0;
+      _MaterialRadioComponent_0_5.checked = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -1067,7 +1068,7 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRadioComponent_0_4.ngOnDestroy();
+    _MaterialRadioComponent_0_5.ngOnDestroy();
   }
 
   void _handle_checkedChange_0_0($event) {
@@ -1076,7 +1077,7 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
   }
 }
 
-AppView<import2.SettingsComponent> viewFactory_SettingsComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.SettingsComponent> viewFactory_SettingsComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponent6(parentView, parentIndex);
 }
 
@@ -1084,209 +1085,217 @@ const List<dynamic> styles$SettingsComponentHost = const [];
 
 class _ViewSettingsComponentHost0 extends AppView<dynamic> {
   ViewSettingsComponent0 _compView_0;
-  import2.SettingsComponent _SettingsComponent_0_4;
-  List<dynamic> __defaultPopupPositions_0_5;
-  dynamic __Window_0_6;
-  dynamic __DomService_0_7;
-  import22.AcxImperativeViewUtils __AcxImperativeViewUtils_0_8;
-  dynamic __Document_0_9;
-  import23.DomRuler __DomRuler_0_10;
-  import24.Angular2ManagedZone __ManagedZone_0_11;
-  dynamic __overlayContainerName_0_12;
-  dynamic __overlayContainerParent_0_13;
-  dynamic __overlayContainer_0_14;
-  bool __overlaySyncDom_0_15;
-  bool __overlayRepositionLoop_0_16;
-  import25.OverlayStyleConfig __OverlayStyleConfig_0_17;
-  import26.ZIndexer __ZIndexer_0_18;
-  import27.OverlayDomRenderService __OverlayDomRenderService_0_19;
-  import28.OverlayService __OverlayService_0_20;
-  import29.DomPopupSourceFactory __DomPopupSourceFactory_0_21;
-  _ViewSettingsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  List<dynamic> get _defaultPopupPositions_0_5 {
-    if ((this.__defaultPopupPositions_0_5 == null)) {
-      (__defaultPopupPositions_0_5 = const [const import30.RelativePosition(animationOrigin: 'top center'), const import30.RelativePosition(animationOrigin: 'top right', originX: const import30.Alignment('End', 'flex-end')), const import30.RelativePosition(animationOrigin: 'top left', originX: const import30.Alignment('Start', 'flex-start')), const import30.RelativePosition(animationOrigin: 'bottom center', originY: const import30.Alignment('End', 'flex-end')), const import30.RelativePosition(animationOrigin: 'bottom right', originX: const import30.Alignment('End', 'flex-end'), originY: const import30.Alignment('End', 'flex-end')), const import30.RelativePosition(animationOrigin: 'bottom left', originX: const import30.Alignment('Start', 'flex-start'), originY: const import30.Alignment('End', 'flex-end'))]);
+  import2.SettingsComponent _SettingsComponent_0_5;
+  List<import22.RelativePosition> __defaultPopupPositions_0_6;
+  dynamic __Window_0_7;
+  dynamic __DomService_0_8;
+  import23.AcxImperativeViewUtils __AcxImperativeViewUtils_0_9;
+  dynamic __Document_0_10;
+  import24.DomRuler __DomRuler_0_11;
+  import25.Angular2ManagedZone __ManagedZone_0_12;
+  dynamic __overlayContainerName_0_13;
+  dynamic __overlayContainerParent_0_14;
+  dynamic __overlayContainer_0_15;
+  bool __overlaySyncDom_0_16;
+  bool __overlayRepositionLoop_0_17;
+  import26.OverlayStyleConfig __OverlayStyleConfig_0_18;
+  import27.ZIndexer __ZIndexer_0_19;
+  import28.OverlayDomRenderService __OverlayDomRenderService_0_20;
+  import29.OverlayService __OverlayService_0_21;
+  import30.DomPopupSourceFactory __DomPopupSourceFactory_0_22;
+  import31.Clock __Clock_0_23;
+  _ViewSettingsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  List<import22.RelativePosition> get _defaultPopupPositions_0_6 {
+    if ((this.__defaultPopupPositions_0_6 == null)) {
+      (__defaultPopupPositions_0_6 = const [const import22.RelativePosition(animationOrigin: 'top center'), const import22.RelativePosition(animationOrigin: 'top right', originX: const import22.Alignment('End', 'flex-end')), const import22.RelativePosition(animationOrigin: 'top left', originX: const import22.Alignment('Start', 'flex-start')), const import22.RelativePosition(animationOrigin: 'bottom center', originY: const import22.Alignment('End', 'flex-end')), const import22.RelativePosition(animationOrigin: 'bottom right', originX: const import22.Alignment('End', 'flex-end'), originY: const import22.Alignment('End', 'flex-end')), const import22.RelativePosition(animationOrigin: 'bottom left', originX: const import22.Alignment('Start', 'flex-start'), originY: const import22.Alignment('End', 'flex-end'))]);
     }
-    return this.__defaultPopupPositions_0_5;
+    return this.__defaultPopupPositions_0_6;
   }
 
-  dynamic get _Window_0_6 {
-    if ((this.__Window_0_6 == null)) {
-      (__Window_0_6 = import31.getWindow());
+  dynamic get _Window_0_7 {
+    if ((this.__Window_0_7 == null)) {
+      (__Window_0_7 = import32.getWindow());
     }
-    return this.__Window_0_6;
+    return this.__Window_0_7;
   }
 
-  dynamic get _DomService_0_7 {
-    if ((this.__DomService_0_7 == null)) {
-      (__DomService_0_7 = import32.createDomService(this.injectorGet(import33.DomService, this.viewData.parentIndex, null), this.injectorGet(import34.Disposer, this.viewData.parentIndex, null), this.injectorGet(import15.NgZone, this.viewData.parentIndex), this._Window_0_6));
+  dynamic get _DomService_0_8 {
+    if ((this.__DomService_0_8 == null)) {
+      (__DomService_0_8 = import33.createDomService(this.injectorGet(import34.DomService, this.viewData.parentIndex, null), this.injectorGet(import35.Disposer, this.viewData.parentIndex, null), this.injectorGet(import15.NgZone, this.viewData.parentIndex), this._Window_0_7));
     }
-    return this.__DomService_0_7;
+    return this.__DomService_0_8;
   }
 
-  import22.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_8 {
-    if ((this.__AcxImperativeViewUtils_0_8 == null)) {
-      (__AcxImperativeViewUtils_0_8 = new import22.AcxImperativeViewUtils(this.injectorGet(import35.ComponentLoader, this.viewData.parentIndex), this._DomService_0_7));
+  import23.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_9 {
+    if ((this.__AcxImperativeViewUtils_0_9 == null)) {
+      (__AcxImperativeViewUtils_0_9 = new import23.AcxImperativeViewUtils(this.injectorGet(import36.ComponentLoader, this.viewData.parentIndex), this._DomService_0_8));
     }
-    return this.__AcxImperativeViewUtils_0_8;
+    return this.__AcxImperativeViewUtils_0_9;
   }
 
-  dynamic get _Document_0_9 {
-    if ((this.__Document_0_9 == null)) {
-      (__Document_0_9 = import31.getDocument());
+  dynamic get _Document_0_10 {
+    if ((this.__Document_0_10 == null)) {
+      (__Document_0_10 = import32.getDocument());
     }
-    return this.__Document_0_9;
+    return this.__Document_0_10;
   }
 
-  import23.DomRuler get _DomRuler_0_10 {
-    if ((this.__DomRuler_0_10 == null)) {
-      (__DomRuler_0_10 = new import23.DomRuler(this._Document_0_9, this._DomService_0_7));
+  import24.DomRuler get _DomRuler_0_11 {
+    if ((this.__DomRuler_0_11 == null)) {
+      (__DomRuler_0_11 = new import24.DomRuler(this._Document_0_10, this._DomService_0_8));
     }
-    return this.__DomRuler_0_10;
+    return this.__DomRuler_0_11;
   }
 
-  import24.Angular2ManagedZone get _ManagedZone_0_11 {
-    if ((this.__ManagedZone_0_11 == null)) {
-      (__ManagedZone_0_11 = new import24.Angular2ManagedZone(this.injectorGet(import15.NgZone, this.viewData.parentIndex)));
+  import25.Angular2ManagedZone get _ManagedZone_0_12 {
+    if ((this.__ManagedZone_0_12 == null)) {
+      (__ManagedZone_0_12 = new import25.Angular2ManagedZone(this.injectorGet(import15.NgZone, this.viewData.parentIndex)));
     }
-    return this.__ManagedZone_0_11;
+    return this.__ManagedZone_0_12;
   }
 
-  dynamic get _overlayContainerName_0_12 {
-    if ((this.__overlayContainerName_0_12 == null)) {
-      (__overlayContainerName_0_12 = import36.getDefaultContainerName(this.injectorGet(const import37.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainerName_0_13 {
+    if ((this.__overlayContainerName_0_13 == null)) {
+      (__overlayContainerName_0_13 = import37.getDefaultContainerName(this.injectorGet(const import38.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainerName_0_12;
+    return this.__overlayContainerName_0_13;
   }
 
-  dynamic get _overlayContainerParent_0_13 {
-    if ((this.__overlayContainerParent_0_13 == null)) {
-      (__overlayContainerParent_0_13 = import36.getOverlayContainerParent(this._Document_0_9, this.injectorGet(const import37.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainerParent_0_14 {
+    if ((this.__overlayContainerParent_0_14 == null)) {
+      (__overlayContainerParent_0_14 = import37.getOverlayContainerParent(this._Document_0_10, this.injectorGet(const import38.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainerParent_0_13;
+    return this.__overlayContainerParent_0_14;
   }
 
-  dynamic get _overlayContainer_0_14 {
-    if ((this.__overlayContainer_0_14 == null)) {
-      (__overlayContainer_0_14 = import36.getDefaultContainer(this._overlayContainerName_0_12, this._overlayContainerParent_0_13, this.injectorGet(const import37.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
+  dynamic get _overlayContainer_0_15 {
+    if ((this.__overlayContainer_0_15 == null)) {
+      (__overlayContainer_0_15 = import37.getDefaultContainer(this._overlayContainerName_0_13, this._overlayContainerParent_0_14, this.injectorGet(const import38.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
     }
-    return this.__overlayContainer_0_14;
+    return this.__overlayContainer_0_15;
   }
 
-  bool get _overlaySyncDom_0_15 {
-    if ((this.__overlaySyncDom_0_15 == null)) {
-      (__overlaySyncDom_0_15 = true);
+  bool get _overlaySyncDom_0_16 {
+    if ((this.__overlaySyncDom_0_16 == null)) {
+      (__overlaySyncDom_0_16 = true);
     }
-    return this.__overlaySyncDom_0_15;
+    return this.__overlaySyncDom_0_16;
   }
 
-  bool get _overlayRepositionLoop_0_16 {
-    if ((this.__overlayRepositionLoop_0_16 == null)) {
-      (__overlayRepositionLoop_0_16 = true);
+  bool get _overlayRepositionLoop_0_17 {
+    if ((this.__overlayRepositionLoop_0_17 == null)) {
+      (__overlayRepositionLoop_0_17 = true);
     }
-    return this.__overlayRepositionLoop_0_16;
+    return this.__overlayRepositionLoop_0_17;
   }
 
-  import25.OverlayStyleConfig get _OverlayStyleConfig_0_17 {
-    if ((this.__OverlayStyleConfig_0_17 == null)) {
-      (__OverlayStyleConfig_0_17 = new import25.OverlayStyleConfig(this._Document_0_9));
+  import26.OverlayStyleConfig get _OverlayStyleConfig_0_18 {
+    if ((this.__OverlayStyleConfig_0_18 == null)) {
+      (__OverlayStyleConfig_0_18 = new import26.OverlayStyleConfig(this._Document_0_10));
     }
-    return this.__OverlayStyleConfig_0_17;
+    return this.__OverlayStyleConfig_0_18;
   }
 
-  import26.ZIndexer get _ZIndexer_0_18 {
-    if ((this.__ZIndexer_0_18 == null)) {
-      (__ZIndexer_0_18 = new import26.ZIndexer());
+  import27.ZIndexer get _ZIndexer_0_19 {
+    if ((this.__ZIndexer_0_19 == null)) {
+      (__ZIndexer_0_19 = new import27.ZIndexer());
     }
-    return this.__ZIndexer_0_18;
+    return this.__ZIndexer_0_19;
   }
 
-  import27.OverlayDomRenderService get _OverlayDomRenderService_0_19 {
-    if ((this.__OverlayDomRenderService_0_19 == null)) {
-      (__OverlayDomRenderService_0_19 = new import27.OverlayDomRenderService(this._OverlayStyleConfig_0_17, this._overlayContainer_0_14, this._overlayContainerName_0_12, this._DomRuler_0_10, this._DomService_0_7, this._AcxImperativeViewUtils_0_8, this._overlaySyncDom_0_15, this._overlayRepositionLoop_0_16, this._ZIndexer_0_18));
+  import28.OverlayDomRenderService get _OverlayDomRenderService_0_20 {
+    if ((this.__OverlayDomRenderService_0_20 == null)) {
+      (__OverlayDomRenderService_0_20 = new import28.OverlayDomRenderService(this._OverlayStyleConfig_0_18, this._overlayContainer_0_15, this._overlayContainerName_0_13, this._DomRuler_0_11, this._DomService_0_8, this._AcxImperativeViewUtils_0_9, this._overlaySyncDom_0_16, this._overlayRepositionLoop_0_17, this._ZIndexer_0_19));
     }
-    return this.__OverlayDomRenderService_0_19;
+    return this.__OverlayDomRenderService_0_20;
   }
 
-  import28.OverlayService get _OverlayService_0_20 {
-    if ((this.__OverlayService_0_20 == null)) {
-      (__OverlayService_0_20 = new import28.OverlayService(this.injectorGet(import15.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_15, this._OverlayDomRenderService_0_19, this.injectorGet(import28.OverlayService, this.viewData.parentIndex, null)));
+  import29.OverlayService get _OverlayService_0_21 {
+    if ((this.__OverlayService_0_21 == null)) {
+      (__OverlayService_0_21 = new import29.OverlayService(this.injectorGet(import15.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_16, this._OverlayDomRenderService_0_20, this.injectorGet(import29.OverlayService, this.viewData.parentIndex, null)));
     }
-    return this.__OverlayService_0_20;
+    return this.__OverlayService_0_21;
   }
 
-  import29.DomPopupSourceFactory get _DomPopupSourceFactory_0_21 {
-    if ((this.__DomPopupSourceFactory_0_21 == null)) {
-      (__DomPopupSourceFactory_0_21 = new import29.DomPopupSourceFactory(this._DomRuler_0_10));
+  import30.DomPopupSourceFactory get _DomPopupSourceFactory_0_22 {
+    if ((this.__DomPopupSourceFactory_0_22 == null)) {
+      (__DomPopupSourceFactory_0_22 = new import30.DomPopupSourceFactory(this._DomRuler_0_11));
     }
-    return this.__DomPopupSourceFactory_0_21;
+    return this.__DomPopupSourceFactory_0_22;
+  }
+
+  import31.Clock get _Clock_0_23 {
+    if ((this.__Clock_0_23 == null)) {
+      (__Clock_0_23 = const import31.Clock());
+    }
+    return this.__Clock_0_23;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewSettingsComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _SettingsComponent_0_4 = new import2.SettingsComponent();
-    _compView_0.create(_SettingsComponent_0_4, projectableNodes);
+    _SettingsComponent_0_5 = new import2.SettingsComponent();
+    _compView_0.create(_SettingsComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.SettingsComponent>(0, this, rootEl, _SettingsComponent_0_4);
+    return new ComponentRef<import2.SettingsComponent>(0, this, rootEl, _SettingsComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.SettingsComponent) && (0 == nodeIndex))) {
-      return _SettingsComponent_0_4;
-    }
-    if ((identical(token, const import37.OpaqueToken<List<import30.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
-      return _defaultPopupPositions_0_5;
+    if ((identical(token, const import38.OpaqueToken<List<import39.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
+      return _defaultPopupPositions_0_6;
     }
     if ((identical(token, import3.Window) && (0 == nodeIndex))) {
-      return _Window_0_6;
+      return _Window_0_7;
     }
-    if ((identical(token, import33.DomService) && (0 == nodeIndex))) {
-      return _DomService_0_7;
+    if ((identical(token, import34.DomService) && (0 == nodeIndex))) {
+      return _DomService_0_8;
     }
-    if ((identical(token, import22.AcxImperativeViewUtils) && (0 == nodeIndex))) {
-      return _AcxImperativeViewUtils_0_8;
+    if ((identical(token, import23.AcxImperativeViewUtils) && (0 == nodeIndex))) {
+      return _AcxImperativeViewUtils_0_9;
     }
     if ((identical(token, import3.Document) && (0 == nodeIndex))) {
-      return _Document_0_9;
+      return _Document_0_10;
     }
-    if ((identical(token, import23.DomRuler) && (0 == nodeIndex))) {
-      return _DomRuler_0_10;
+    if ((identical(token, import24.DomRuler) && (0 == nodeIndex))) {
+      return _DomRuler_0_11;
     }
-    if ((identical(token, import38.ManagedZone) && (0 == nodeIndex))) {
-      return _ManagedZone_0_11;
+    if ((identical(token, import40.ManagedZone) && (0 == nodeIndex))) {
+      return _ManagedZone_0_12;
     }
-    if ((identical(token, const import37.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
-      return _overlayContainerName_0_12;
+    if ((identical(token, const import38.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
+      return _overlayContainerName_0_13;
     }
-    if ((identical(token, const import37.OpaqueToken('overlayContainerParent')) && (0 == nodeIndex))) {
-      return _overlayContainerParent_0_13;
+    if ((identical(token, const import38.OpaqueToken('overlayContainerParent')) && (0 == nodeIndex))) {
+      return _overlayContainerParent_0_14;
     }
-    if ((identical(token, const import37.OpaqueToken('overlayContainer')) && (0 == nodeIndex))) {
-      return _overlayContainer_0_14;
+    if ((identical(token, const import38.OpaqueToken('overlayContainer')) && (0 == nodeIndex))) {
+      return _overlayContainer_0_15;
     }
-    if ((identical(token, const import37.OpaqueToken('overlaySyncDom')) && (0 == nodeIndex))) {
-      return _overlaySyncDom_0_15;
+    if ((identical(token, const import38.OpaqueToken('overlaySyncDom')) && (0 == nodeIndex))) {
+      return _overlaySyncDom_0_16;
     }
-    if ((identical(token, const import37.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
-      return _overlayRepositionLoop_0_16;
+    if ((identical(token, const import38.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
+      return _overlayRepositionLoop_0_17;
     }
-    if ((identical(token, import25.OverlayStyleConfig) && (0 == nodeIndex))) {
-      return _OverlayStyleConfig_0_17;
+    if ((identical(token, import26.OverlayStyleConfig) && (0 == nodeIndex))) {
+      return _OverlayStyleConfig_0_18;
     }
-    if ((identical(token, import26.ZIndexer) && (0 == nodeIndex))) {
-      return _ZIndexer_0_18;
+    if ((identical(token, import27.ZIndexer) && (0 == nodeIndex))) {
+      return _ZIndexer_0_19;
     }
-    if ((identical(token, import27.OverlayDomRenderService) && (0 == nodeIndex))) {
-      return _OverlayDomRenderService_0_19;
+    if ((identical(token, import28.OverlayDomRenderService) && (0 == nodeIndex))) {
+      return _OverlayDomRenderService_0_20;
     }
-    if ((identical(token, import28.OverlayService) && (0 == nodeIndex))) {
-      return _OverlayService_0_20;
+    if ((identical(token, import29.OverlayService) && (0 == nodeIndex))) {
+      return _OverlayService_0_21;
     }
-    if ((identical(token, import29.DomPopupSourceFactory) && (0 == nodeIndex))) {
-      return _DomPopupSourceFactory_0_21;
+    if ((identical(token, import30.DomPopupSourceFactory) && (0 == nodeIndex))) {
+      return _DomPopupSourceFactory_0_22;
+    }
+    if (((identical(token, import31.Clock) || identical(token, const import38.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'))) && (0 == nodeIndex))) {
+      return _Clock_0_23;
     }
     return notFoundResult;
   }
@@ -1295,7 +1304,7 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _SettingsComponent_0_4.ngOnInit();
+      _SettingsComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -1306,7 +1315,7 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_SettingsComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_SettingsComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSettingsComponentHost0(parentView, parentIndex);
 }
 

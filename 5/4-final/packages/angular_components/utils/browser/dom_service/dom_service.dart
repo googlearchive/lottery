@@ -7,6 +7,7 @@ import 'dart:html';
 import 'dart:math' show max, min;
 
 import 'package:angular/angular.dart';
+import 'package:meta/meta.dart';
 import 'package:angular_components/utils/async/async.dart';
 import 'package:angular_components/utils/disposer/disposable_callback.dart';
 // TODO(google): Consolidate this with RenderSync /Angular.
@@ -382,7 +383,7 @@ class DomService {
   ///
   /// Returns a subscription that allows pausing, resuming and canceling the
   /// observer.
-  StreamSubscription trackLayoutChange(fn(), void callback(value),
+  StreamSubscription trackLayoutChange<T>(T fn(), void callback(T value),
       {int framesToStabilize: 1, bool runInAngularZone: false}) {
     // TODO(google): Move layout checking into ruler service when landed.
     Function trackerCallback = callback;
@@ -503,7 +504,7 @@ class DomService {
     }
   }
 
-  /// Visible for testing only.
+  @visibleForTesting
   set rootZone(Zone value) {
     _rootZone = value;
   }

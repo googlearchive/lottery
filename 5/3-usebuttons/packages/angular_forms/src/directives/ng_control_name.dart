@@ -1,18 +1,6 @@
 import 'dart:async';
 
-import 'package:angular/angular.dart'
-    show
-        AfterChanges,
-        Directive,
-        Inject,
-        Input,
-        OnDestroy,
-        Optional,
-        Output,
-        Provider,
-        Self,
-        SkipSelf,
-        Visibility;
+import 'package:angular/angular.dart';
 
 import '../model.dart' show Control;
 import '../validators.dart' show NG_VALIDATORS;
@@ -21,16 +9,12 @@ import 'control_value_accessor.dart'
     show ControlValueAccessor, NG_VALUE_ACCESSOR;
 import 'form_interface.dart' show Form;
 import 'ng_control.dart' show NgControl;
-import 'shared.dart' show controlPath, composeValidators, selectValueAccessor;
-import 'validators.dart' show ValidatorFn;
-
-const controlNameBinding =
-    const Provider(NgControl, useExisting: NgControlName);
+import 'shared.dart' show controlPath;
 
 /// Creates and binds a control with a specified name to a DOM element.
 ///
 /// This directive can only be used as a child of [NgForm] or [NgFormModel].
-
+///
 /// ### Example
 ///
 /// In this example, we create the login and password controls.
@@ -82,14 +66,14 @@ const controlNameBinding =
 /// ```
 @Directive(
   selector: '[ngControl]',
-  providers: const [controlNameBinding],
+  providers: const [
+    const ExistingProvider(NgControl, NgControlName),
+  ],
   exportAs: 'ngForm',
-  // TODO(b/71710685): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
 class NgControlName extends NgControl implements AfterChanges, OnDestroy {
   final ControlContainer _parent;
-  final /* Array<Validator|Function> */ List<dynamic> _validators;
   final _update = new StreamController.broadcast();
   bool _modelChanged = false;
   dynamic _model;
@@ -109,13 +93,12 @@ class NgControlName extends NgControl implements AfterChanges, OnDestroy {
       @Optional()
       @Self()
       @Inject(NG_VALIDATORS)
-          this._validators,
+          List validators,
       @Optional()
       @Self()
       @Inject(NG_VALUE_ACCESSOR)
-          List<ControlValueAccessor> valueAccessors) {
-    valueAccessor = selectValueAccessor(this, valueAccessors);
-  }
+          List<ControlValueAccessor> valueAccessors)
+      : super(valueAccessors, validators);
 
   @Input('ngControl')
   @override
@@ -156,9 +139,6 @@ class NgControlName extends NgControl implements AfterChanges, OnDestroy {
   List<String> get path => controlPath(name, _parent);
 
   Form get formDirective => _parent.formDirective;
-
-  @override
-  ValidatorFn get validator => composeValidators(_validators);
 
   @override
   Control get control => formDirective.getControl(this);

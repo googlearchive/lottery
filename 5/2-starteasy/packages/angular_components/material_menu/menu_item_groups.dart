@@ -66,7 +66,7 @@ import 'package:angular_components/utils/id_generator/id_generator.dart';
   // TODO(google): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
-class MenuItemGroupsComponent implements OnInit, OnDestroy {
+class MenuItemGroupsComponent implements Focusable, OnInit, OnDestroy {
   final IdGenerator _idGenerator;
   final ChangeDetectorRef _changeDetector;
 
@@ -80,7 +80,7 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
   MenuModel menu;
 
   @ViewChildren(FocusableActivateItem)
-  QueryList<FocusableActivateItem> focusableItems;
+  List<FocusableActivateItem> focusableItems;
 
   List<RelativePosition> get preferredSubMenuPositions =>
       _preferredSubMenuPositions;
@@ -224,6 +224,10 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
     _subMenuOpener.cancel();
   }
 
+  void onSubMenuItemSelected(MenuItem item) {
+    _selected.add(item);
+  }
+
   void select(MenuItem item, MenuItemGroup group) {
     item.nullAwareActionHandler();
 
@@ -346,6 +350,13 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
     }
   }
 
+  /// Toggle the expansion of the group if it's collapsible.
+  void toggleExpansionIfCollapsible(MenuItemGroup group) {
+    if (group.isCollapsible) {
+      group.isExpanded = !group.isExpanded;
+    }
+  }
+
   @override
   void ngOnInit() {
     _createActiveMenuModelIfNone();
@@ -437,6 +448,11 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
         break;
       }
     }
+  }
+
+  @override
+  void focus() {
+    _focusActiveItem();
   }
 
   void _openSubMenuOnHover() {

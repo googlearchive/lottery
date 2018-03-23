@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -39,14 +37,15 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
   var _expr_2;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewScoresComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewScoresComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('scores-component');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ScoresComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.ScoresComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_0);
@@ -110,7 +109,7 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
   }
 }
 
-AppView<import2.ScoresComponent> viewFactory_ScoresComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScoresComponent> viewFactory_ScoresComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewScoresComponent0(parentView, parentIndex);
 }
 
@@ -118,24 +117,16 @@ const List<dynamic> styles$ScoresComponentHost = const [];
 
 class _ViewScoresComponentHost0 extends AppView<dynamic> {
   ViewScoresComponent0 _compView_0;
-  import2.ScoresComponent _ScoresComponent_0_4;
-  _ViewScoresComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.ScoresComponent _ScoresComponent_0_5;
+  _ViewScoresComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewScoresComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ScoresComponent_0_4 = new import2.ScoresComponent();
-    _compView_0.create(_ScoresComponent_0_4, projectableNodes);
+    _ScoresComponent_0_5 = new import2.ScoresComponent();
+    _compView_0.create(_ScoresComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.ScoresComponent>(0, this, rootEl, _ScoresComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.ScoresComponent) && (0 == nodeIndex))) {
-      return _ScoresComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import2.ScoresComponent>(0, this, rootEl, _ScoresComponent_0_5);
   }
 
   @override
@@ -149,7 +140,7 @@ class _ViewScoresComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_ScoresComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_ScoresComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScoresComponentHost0(parentView, parentIndex);
 }
 

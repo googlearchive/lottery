@@ -10,18 +10,21 @@
   <div group
        class="group"
        role="menu"
-       *ngFor="let group of menu.itemGroups; let i = index">
-    <div *ngIf="group.hasLabel" class="group-header">
+       *ngFor="let group of menu.itemGroups; let i = index"
+       [class.has-separator]="group.hasSeparator">
+    <div *ngIf="group.hasLabel"
+         buttonDecorator
+         class="group-header"
+         [class.is-collapsible]="group.isCollapsible"
+         (trigger)="toggleExpansionIfCollapsible(group)">
       <div class="group-label">
         {{group.uiDisplayName}}
       </div>
       <material-icon
           *ngIf="group.isCollapsible"
-          buttonDecorator
           class="expansion-icon"
           [class.expanded]="group.isExpanded"
-          [icon]="group.isExpanded ? 'expand_less' : 'expand_more'"
-          (trigger)="group.isExpanded = !group.isExpanded">
+          [icon]="group.isExpanded ? 'expand_less' : 'expand_more'">
       </material-icon>
     </div>
     <template [ngIf]="!group.isCollapsible || group.isExpanded">
@@ -97,6 +100,7 @@
               <menu-item-groups
                   autoFocus
                   [activateFirstItemOnInit]="isKeyboardOpenedSubmenu"
+                  (selected)="onSubMenuItemSelected($event)"
                   [menu]="item.subMenu">
               </menu-item-groups>
             </material-list>

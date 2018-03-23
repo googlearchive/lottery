@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -31,43 +29,44 @@ const List<dynamic> styles$HelpComponent = const [import0.styles];
 
 class ViewHelpComponent0 extends AppView<import2.HelpComponent> {
   import3.DivElement _el_0;
-  import4.NgSwitch _NgSwitch_0_4;
+  import4.NgSwitch _NgSwitch_0_5;
   ViewContainer _appEl_1;
-  import4.NgSwitchWhen _NgSwitchWhen_1_7;
+  import4.NgSwitchWhen _NgSwitchWhen_1_9;
   ViewContainer _appEl_2;
-  import4.NgSwitchWhen _NgSwitchWhen_2_7;
+  import4.NgSwitchWhen _NgSwitchWhen_2_9;
   ViewContainer _appEl_3;
-  import4.NgSwitchDefault _NgSwitchDefault_3_7;
+  import4.NgSwitchDefault _NgSwitchDefault_3_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHelpComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHelpComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('help-component');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HelpComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.HelpComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'help';
     addShimC(_el_0);
-    _NgSwitch_0_4 = new import4.NgSwitch();
+    _NgSwitch_0_5 = new import4.NgSwitch();
     var _anchor_1 = ngAnchor.clone(false);
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_HelpComponent1);
-    _NgSwitchWhen_1_7 = new import4.NgSwitchWhen(_appEl_1, _TemplateRef_1_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_HelpComponent1);
+    _NgSwitchWhen_1_9 = new import4.NgSwitchWhen(_appEl_1, _TemplateRef_1_8, _NgSwitch_0_5);
     var _anchor_2 = ngAnchor.clone(false);
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_HelpComponent2);
-    _NgSwitchWhen_2_7 = new import4.NgSwitchWhen(_appEl_2, _TemplateRef_2_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_HelpComponent2);
+    _NgSwitchWhen_2_9 = new import4.NgSwitchWhen(_appEl_2, _TemplateRef_2_8, _NgSwitch_0_5);
     var _anchor_3 = ngAnchor.clone(false);
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_HelpComponent3);
-    _NgSwitchDefault_3_7 = new import4.NgSwitchDefault(_appEl_3, _TemplateRef_3_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_HelpComponent3);
+    _NgSwitchDefault_3_9 = new import4.NgSwitchDefault(_appEl_3, _TemplateRef_3_8, _NgSwitch_0_5);
     init(const [], null);
     return null;
   }
@@ -75,7 +74,7 @@ class ViewHelpComponent0 extends AppView<import2.HelpComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import4.NgSwitch) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _NgSwitch_0_4;
+      return _NgSwitch_0_5;
     }
     return notFoundResult;
   }
@@ -86,14 +85,14 @@ class ViewHelpComponent0 extends AppView<import2.HelpComponent> {
     bool firstCheck = (this.cdState == 0);
     final currVal_0 = _ctx.content;
     if (!identical(_expr_0, currVal_0)) {
-      _NgSwitch_0_4.ngSwitch = currVal_0;
+      _NgSwitch_0_5.ngSwitch = currVal_0;
       _expr_0 = currVal_0;
     }
     if (firstCheck) {
-      (_NgSwitchWhen_1_7.ngSwitchWhen = 'help');
+      (_NgSwitchWhen_1_9.ngSwitchWhen = 'help');
     }
     if (firstCheck) {
-      (_NgSwitchWhen_2_7.ngSwitchWhen = 'about');
+      (_NgSwitchWhen_2_9.ngSwitchWhen = 'about');
     }
     _appEl_1.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
@@ -108,7 +107,7 @@ class ViewHelpComponent0 extends AppView<import2.HelpComponent> {
   }
 }
 
-AppView<import2.HelpComponent> viewFactory_HelpComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HelpComponent> viewFactory_HelpComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHelpComponent0(parentView, parentIndex);
 }
 
@@ -137,17 +136,17 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
   import3.Element _el_45;
   import3.Element _el_47;
   import12.ViewMaterialIconComponent0 _compView_47;
-  import13.MaterialIconComponent _MaterialIconComponent_47_4;
+  import13.MaterialIconComponent _MaterialIconComponent_47_5;
   import3.Element _el_48;
   import3.Element _el_50;
   import12.ViewMaterialIconComponent0 _compView_50;
-  import13.MaterialIconComponent _MaterialIconComponent_50_4;
+  import13.MaterialIconComponent _MaterialIconComponent_50_5;
   import3.Element _el_51;
   import3.Element _el_53;
   import3.Element _el_55;
   import12.ViewMaterialIconComponent0 _compView_55;
-  import13.MaterialIconComponent _MaterialIconComponent_55_4;
-  _ViewHelpComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import13.MaterialIconComponent _MaterialIconComponent_55_5;
+  _ViewHelpComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
   }
   @override
@@ -253,8 +252,8 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
     createAttr(_el_47, 'aria-label', 'image from the Pause button');
     createAttr(_el_47, 'icon', 'pause');
     addShimC(_el_47);
-    _MaterialIconComponent_47_4 = new import13.MaterialIconComponent(_el_47);
-    _compView_47.create(_MaterialIconComponent_47_4, []);
+    _MaterialIconComponent_47_5 = new import13.MaterialIconComponent(_el_47);
+    _compView_47.create(_MaterialIconComponent_47_5, []);
     _el_48 = createAndAppend(doc, 'br', _el_45);
     addShimE(_el_48);
     import3.Text _text_49 = new import3.Text('Then click the Step button to advance one phase (half a day):');
@@ -265,8 +264,8 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
     createAttr(_el_50, 'aria-label', 'image from the Step button');
     createAttr(_el_50, 'icon', 'skip_next');
     addShimC(_el_50);
-    _MaterialIconComponent_50_4 = new import13.MaterialIconComponent(_el_50);
-    _compView_50.create(_MaterialIconComponent_50_4, []);
+    _MaterialIconComponent_50_5 = new import13.MaterialIconComponent(_el_50);
+    _compView_50.create(_MaterialIconComponent_50_5, []);
     _el_51 = createAndAppend(doc, 'dt', _el_35);
     addShimE(_el_51);
     import3.Text _text_52 = new import3.Text('Want to start all over?');
@@ -281,8 +280,8 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
     createAttr(_el_55, 'aria-label', 'image from the Reset button');
     createAttr(_el_55, 'icon', 'replay');
     addShimC(_el_55);
-    _MaterialIconComponent_55_4 = new import13.MaterialIconComponent(_el_55);
-    _compView_55.create(_MaterialIconComponent_55_4, []);
+    _MaterialIconComponent_55_5 = new import13.MaterialIconComponent(_el_55);
+    _compView_55.create(_MaterialIconComponent_55_5, []);
     init0(_el_0);
     return null;
   }
@@ -293,7 +292,7 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
     bool firstCheck = (this.cdState == 0);
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_47_4.icon = 'pause';
+      _MaterialIconComponent_47_5.icon = 'pause';
       changed = true;
     }
     if (changed) {
@@ -301,7 +300,7 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
     }
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_50_4.icon = 'skip_next';
+      _MaterialIconComponent_50_5.icon = 'skip_next';
       changed = true;
     }
     if (changed) {
@@ -309,7 +308,7 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
     }
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_55_4.icon = 'replay';
+      _MaterialIconComponent_55_5.icon = 'replay';
       changed = true;
     }
     if (changed) {
@@ -328,7 +327,7 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
   }
 }
 
-AppView<import2.HelpComponent> viewFactory_HelpComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HelpComponent> viewFactory_HelpComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHelpComponent1(parentView, parentIndex);
 }
 
@@ -357,7 +356,7 @@ class _ViewHelpComponent2 extends AppView<import2.HelpComponent> {
   import3.Element _el_39;
   import3.AnchorElement _el_40;
   import3.Element _el_42;
-  _ViewHelpComponent2(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHelpComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
   }
   @override
@@ -467,7 +466,7 @@ class _ViewHelpComponent2 extends AppView<import2.HelpComponent> {
   }
 }
 
-AppView<import2.HelpComponent> viewFactory_HelpComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HelpComponent> viewFactory_HelpComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHelpComponent2(parentView, parentIndex);
 }
 
@@ -475,7 +474,7 @@ class _ViewHelpComponent3 extends AppView<import2.HelpComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewHelpComponent3(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHelpComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
   }
   @override
@@ -504,7 +503,7 @@ class _ViewHelpComponent3 extends AppView<import2.HelpComponent> {
   }
 }
 
-AppView<import2.HelpComponent> viewFactory_HelpComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HelpComponent> viewFactory_HelpComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHelpComponent3(parentView, parentIndex);
 }
 
@@ -512,24 +511,16 @@ const List<dynamic> styles$HelpComponentHost = const [];
 
 class _ViewHelpComponentHost0 extends AppView<dynamic> {
   ViewHelpComponent0 _compView_0;
-  import2.HelpComponent _HelpComponent_0_4;
-  _ViewHelpComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.HelpComponent _HelpComponent_0_5;
+  _ViewHelpComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHelpComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HelpComponent_0_4 = new import2.HelpComponent();
-    _compView_0.create(_HelpComponent_0_4, projectableNodes);
+    _HelpComponent_0_5 = new import2.HelpComponent();
+    _compView_0.create(_HelpComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.HelpComponent>(0, this, rootEl, _HelpComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.HelpComponent) && (0 == nodeIndex))) {
-      return _HelpComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import2.HelpComponent>(0, this, rootEl, _HelpComponent_0_5);
   }
 
   @override
@@ -543,7 +534,7 @@ class _ViewHelpComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HelpComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HelpComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHelpComponentHost0(parentView, parentIndex);
 }
 

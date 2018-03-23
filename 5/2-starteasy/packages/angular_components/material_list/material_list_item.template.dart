@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -42,7 +40,7 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
   bool _expr_3;
   bool _expr_4;
   static RenderComponentType _renderType;
-  ViewMaterialListItemComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialListItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import6.document.createElement('material-list-item');
     createAttr(rootEl, 'role', 'button');
     rootEl.className = 'item';
@@ -52,13 +50,14 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
   @override
   ComponentRef<import2.MaterialListItemComponent> build() {
     final import2.MaterialListItemComponent _ctx = ctx;
-    final import6.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import6.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     project(parentRenderNode, 0);
     init(const [], null);
-    rootEl.addEventListener('mouseenter', eventHandler0(_ctx.onMouseEnter));
-    rootEl.addEventListener('mouseleave', eventHandler0(_ctx.onMouseLeave));
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('mouseenter', eventHandler0(_ctx.onMouseEnter));
+    _rootEl.addEventListener('mouseleave', eventHandler0(_ctx.onMouseLeave));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
     return null;
   }
 
@@ -96,7 +95,7 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
   }
 }
 
-AppView<import2.MaterialListItemComponent> viewFactory_MaterialListItemComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialListItemComponent> viewFactory_MaterialListItemComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialListItemComponent0(parentView, parentIndex);
 }
 
@@ -104,22 +103,22 @@ const List<dynamic> styles$MaterialListItemComponentHost = const [];
 
 class _ViewMaterialListItemComponentHost0 extends AppView<dynamic> {
   ViewMaterialListItemComponent0 _compView_0;
-  import2.MaterialListItemComponent _MaterialListItemComponent_0_4;
-  _ViewMaterialListItemComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MaterialListItemComponent _MaterialListItemComponent_0_5;
+  _ViewMaterialListItemComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialListItemComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialListItemComponent_0_4 = new import2.MaterialListItemComponent(rootEl, this.injectorGet(import9.DomService, viewData.parentIndex), this.injectorGet(import10.DropdownHandle, viewData.parentIndex, null), null, null);
-    _compView_0.create(_MaterialListItemComponent_0_4, projectableNodes);
+    _MaterialListItemComponent_0_5 = new import2.MaterialListItemComponent(rootEl, this.injectorGet(import9.DomService, viewData.parentIndex), this.injectorGet(import10.DropdownHandle, viewData.parentIndex, null), null, null);
+    _compView_0.create(_MaterialListItemComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialListItemComponent>(0, this, rootEl, _MaterialListItemComponent_0_4);
+    return new ComponentRef<import2.MaterialListItemComponent>(0, this, rootEl, _MaterialListItemComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MaterialListItemComponent) && (0 == nodeIndex))) {
-      return _MaterialListItemComponent_0_4;
+      return _MaterialListItemComponent_0_5;
     }
     return notFoundResult;
   }
@@ -138,11 +137,11 @@ class _ViewMaterialListItemComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialListItemComponent_0_4.ngOnDestroy();
+    _MaterialListItemComponent_0_5.ngOnDestroy();
   }
 }
 
-AppView viewFactory_MaterialListItemComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialListItemComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialListItemComponentHost0(parentView, parentIndex);
 }
 

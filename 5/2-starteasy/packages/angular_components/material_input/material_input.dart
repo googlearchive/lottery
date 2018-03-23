@@ -106,6 +106,8 @@ const String materialInputErrorKey = 'material-input-error';
 ///   character counter panel.
 /// - `rows` -- If the input is multiline, how many lines there are.
 /// - `maxRows` -- If the input is multiline, the max number of lines.
+/// - `showCharacterCount` -- Force the character count to be displayed if
+///   maxCount is null.
 ///
 /// __Outputs:__
 ///

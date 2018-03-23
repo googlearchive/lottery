@@ -34,7 +34,9 @@ abstract class TreeSelectionMixin<T>
     Set<T> visited = new Set<T>();
 
     visited.add(e);
-    parentsToCheck.add(e);
+    if (hasChildren(e)) {
+      parentsToCheck.add(e);
+    }
 
     Map<T, List<OptionGroup<T>>> hierarchyMap = getHierarchyMap();
 
@@ -45,9 +47,9 @@ abstract class TreeSelectionMixin<T>
         optionGroup.toList().forEach((item) {
           if (!visited.contains(item)) {
             allChildren.add(item);
+            visited.add(item);
             if (hasChildren(item)) {
               parentsToCheck.add(item);
-              visited.add(item);
             }
           }
         });
@@ -63,6 +65,5 @@ abstract class TreeSelectionMixin<T>
       throw new UnimplementedError('getHierarchyMap() must be overriden.');
 
   /// Returns the parent of the given value
-  @visibleForTesting
   T getParent(T value) => null;
 }

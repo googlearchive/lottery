@@ -140,7 +140,7 @@ class Intl {
   ///
   /// The [args] repeats the arguments of the enclosing
   /// function, [desc] provides a description of usage,
-  /// [examples] is a Map of exmaples for each interpolated variable.
+  /// [examples] is a Map of examples for each interpolated variable.
   /// For example
   ///
   ///       hello(yourName) => Intl.message(
@@ -155,27 +155,38 @@ class Intl {
   /// particular, everything must be literal and cannot refer to variables
   /// outside the scope of the enclosing function. The [examples] map must be a
   /// valid const literal map. Similarly, the [desc] argument must be a single,
-  /// simple string. These two arguments will not be used at runtime but will be
-  /// extracted from the source code and used as additional data for
-  /// translators. For more information see the "Messages" section of the main
+  /// simple string and [skip] a boolean literal. These three arguments will not
+  /// be used at runtime but will be extracted from the source code and used as
+  /// additional data for translators. For more information see the "Messages"
+  /// section of the main
   /// [package documentation] (https://pub.dartlang.org/packages/intl).
   ///
-  /// The [name] and [args] arguments are required, and are used at runtime
-  /// to look up the localized version and pass the appropriate arguments to it.
-  /// We may in the future modify the code during compilation to make manually
-  /// passing those arguments unnecessary.
+  /// For messages without parameters, both [name] and [args] can be omitted.
+  /// Messages that supply [args] should also supply a unique [name]. The [name]
+  /// and [args] arguments used at runtime to look up the localized version and
+  /// pass the appropriate arguments to it. We may in the future modify the code
+  /// during compilation to make manually passing those arguments unnecessary in
+  /// more situations.
+  ///
+  /// The [skip] arg will still validate the message, but will be filtered from
+  /// the extracted message output. This can be useful to set up placeholder
+  /// messages during development whose text aren't finalized yet without having
+  /// the placeholder automatically translated.
   static String message(String message_str,
           {String desc: '',
           Map<String, dynamic> examples: const {},
           String locale,
           String name,
           List args,
-          String meaning}) =>
+          String meaning,
+          bool skip}) =>
       _message(message_str, locale, name, args, meaning);
 
   /// Omit the compile-time only parameters so dart2js can see to drop them.
-  static _message(String message_str, String locale, String name, List args, String meaning) {
-    return messageLookup.lookupMessage(message_str, locale, name, args, meaning);
+  static _message(String message_str, String locale, String name, List args,
+      String meaning) {
+    return messageLookup.lookupMessage(
+        message_str, locale, name, args, meaning);
   }
 
   /// Return the locale for this instance. If none was set, the locale will
@@ -262,38 +273,71 @@ class Intl {
   /// Selects the correct plural form from
   /// the provided alternatives. The [other] named argument is mandatory.
   static String plural(int howMany,
-      {zero,
-      one,
-      two,
-      few,
-      many,
-      other,
+      {String zero,
+      String one,
+      String two,
+      String few,
+      String many,
+      String other,
       String desc,
       Map<String, dynamic> examples,
       String locale,
       String name,
       List args,
+      String meaning,
+      bool skip}) {
+    // Call our internal method, dropping examples and desc because they're not
+    // used at runtime and we want them to be optimized away.
+    return _plural(howMany,
+        zero: zero,
+        one: one,
+        two: two,
+        few: few,
+        many: many,
+        other: other,
+        locale: locale,
+        name: name,
+        args: args,
+        meaning: meaning);
+  }
+
+  static String _plural(int howMany,
+      {String zero,
+      String one,
+      String two,
+      String few,
+      String many,
+      String other,
+      String locale,
+      String name,
+      List args,
       String meaning}) {
-    // If we are passed a name and arguments, then we are operating as a
-    // top-level message, so look up our translation by calling Intl.message
-    // with ourselves as an argument.
-    if (name != null) {
-      return message(
-          plural(howMany,
-              zero: zero,
-              one: one,
-              two: two,
-              few: few,
-              many: many,
-              other: other,
-              locale: locale),
-          name: name,
-          args: args,
-          locale: locale,
-          meaning: meaning);
-    }
+    // Look up our translation, but pass in a null message so we don't have to
+    // eagerly evaluate calls that may not be necessary.
+    var translated = _message(null, locale, name, args, meaning);
+
+    /// If there's a translation, return it, otherwise evaluate with our
+    /// original text.
+    return translated ??
+        pluralLogic(howMany,
+            zero: zero,
+            one: one,
+            two: two,
+            few: few,
+            many: many,
+            other: other,
+            locale: locale);
+  }
+
+  /// Internal: Implements the logic for plural selection - use [plural] for
+  /// normal messages.
+  static pluralLogic(int howMany,
+      {zero, one, two, few, many, other, String locale, String meaning}) {
     if (other == null) {
       throw new ArgumentError("The 'other' named argument must be provided");
+    }
+    if (howMany == null) {
+      throw new ArgumentError("The howMany argument to plural cannot be null");
     }
     // If there's an explicit case for the exact number, we use it. This is not
     // strictly in accord with the CLDR rules, but it seems to be the
@@ -342,11 +386,33 @@ class Intl {
     }
   }
 
-  /// Format a message differently depending on [targetGender]. Normally used as
-  /// part of an Intl.message message that is to be translated.
+  /// Format a message differently depending on [targetGender].
   static String gender(String targetGender,
-      {String male,
-      String female,
+      {String female,
+      String male,
+      String other,
+      String desc,
+      Map<String, dynamic> examples,
+      String locale,
+      String name,
+      List args,
+      String meaning,
+      bool skip}) {
+    // Call our internal method, dropping args and desc because they're not used
+    // at runtime and we want them to be optimized away.
+    return _gender(targetGender,
+        male: male,
+        female: female,
+        other: other,
+        locale: locale,
+        name: name,
+        args: args,
+        meaning: meaning);
+  }
+
+  static String _gender(String targetGender,
+      {String female,
+      String male,
       String other,
       String desc,
       Map<String, dynamic> examples,
@@ -354,18 +420,21 @@ class Intl {
       String name,
       List args,
       String meaning}) {
-    // If we are passed a name and arguments, then we are operating as a
-    // top-level message, so look up our translation by calling Intl.message
-    // with ourselves as an argument.
-    if (name != null) {
-      return message(
-          gender(targetGender, male: male, female: female, other: other),
-          name: name,
-          args: args,
-          locale: locale,
-          meaning: meaning);
-    }
+    // Look up our translation, but pass in a null message so we don't have to
+    // eagerly evaluate calls that may not be necessary.
+    var translated = _message(null, locale, name, args, meaning);
 
+    /// If there's a translation, return it, otherwise evaluate with our
+    /// original text.
+    return translated ??
+        genderLogic(targetGender,
+            female: female, male: male, other: other, locale: locale);
+  }
+
+  /// Internal: Implements the logic for gender selection - use [gender] for
+  /// normal messages.
+  static genderLogic(String targetGender,
+      {female, male, other, String locale}) {
     if (other == null) {
       throw new ArgumentError("The 'other' named argument must be specified");
     }
@@ -383,20 +452,34 @@ class Intl {
   /// of [choice] in [cases] and return the result, or an empty string if
   /// it is not found. Normally used as part
   /// of an Intl.message message that is to be translated.
-  static String select(String choice, Map<String, String> cases,
+  static String select(Object choice, Map<String, String> cases,
       {String desc,
       Map<String, dynamic> examples,
       String locale,
       String name,
       List args,
-      String meaning}) {
-    // If we are passed a name and arguments, then we are operating as a
-    // top-level message, so look up our translation by calling Intl.message
-    // with ourselves as an argument.
-    if (name != null) {
-      return message(select(choice, cases),
-          name: name, args: args, locale: locale);
-    }
+      String meaning,
+      bool skip}) {
+    return _select(choice, cases,
+        locale: locale, name: name, args: args, meaning: meaning);
+  }
+
+  static String _select(Object choice, Map<String, String> cases,
+      {String locale, String name, List args, String meaning}) {
+    // Look up our translation, but pass in a null message so we don't have to
+    // eagerly evaluate calls that may not be necessary.
+    var translated = _message(null, locale, name, args, meaning);
+
+    /// If there's a translation, return it, otherwise evaluate with our
+    /// original text.
+    return translated ?? selectLogic(choice, cases);
+  }
+
+  /// Internal: Implements the logic for select - use [select] for
+  /// normal messages.
+  static selectLogic(Object choice, Map<String, dynamic> cases) {
+    // Allow passing non-strings, e.g. enums to a select.
+    choice = "$choice";
     var exact = cases[choice];
     if (exact != null) return exact;
     var other = cases["other"];

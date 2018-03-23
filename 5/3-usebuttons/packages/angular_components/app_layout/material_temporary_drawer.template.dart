@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -32,7 +30,7 @@ class ViewMaterialTemporaryDrawerComponent0 extends AppView<import2.MaterialTemp
   bool _expr_0;
   bool _expr_1;
   static RenderComponentType _renderType;
-  ViewMaterialTemporaryDrawerComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialTemporaryDrawerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-drawer');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTemporaryDrawerComponent);
     setupComponentType(_renderType);
@@ -40,7 +38,8 @@ class ViewMaterialTemporaryDrawerComponent0 extends AppView<import2.MaterialTemp
   @override
   ComponentRef<import2.MaterialTemporaryDrawerComponent> build() {
     final import2.MaterialTemporaryDrawerComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'drawer-content';
@@ -48,7 +47,7 @@ class ViewMaterialTemporaryDrawerComponent0 extends AppView<import2.MaterialTemp
     project(_el_0, 0);
     _el_0.addEventListener('click', eventHandler1(_handle_click_0_0));
     init(const [], null);
-    rootEl.addEventListener('click', eventHandler0(_ctx.toggle));
+    _rootEl.addEventListener('click', eventHandler0(_ctx.toggle));
     return null;
   }
 
@@ -70,7 +69,7 @@ class ViewMaterialTemporaryDrawerComponent0 extends AppView<import2.MaterialTemp
   }
 }
 
-AppView<import2.MaterialTemporaryDrawerComponent> viewFactory_MaterialTemporaryDrawerComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTemporaryDrawerComponent> viewFactory_MaterialTemporaryDrawerComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTemporaryDrawerComponent0(parentView, parentIndex);
 }
 
@@ -78,22 +77,22 @@ const List<dynamic> styles$MaterialTemporaryDrawerComponentHost = const [];
 
 class _ViewMaterialTemporaryDrawerComponentHost0 extends AppView<dynamic> {
   ViewMaterialTemporaryDrawerComponent0 _compView_0;
-  import2.MaterialTemporaryDrawerComponent _MaterialTemporaryDrawerComponent_0_4;
-  _ViewMaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MaterialTemporaryDrawerComponent _MaterialTemporaryDrawerComponent_0_5;
+  _ViewMaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTemporaryDrawerComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTemporaryDrawerComponent_0_4 = new import2.MaterialTemporaryDrawerComponent();
-    _compView_0.create(_MaterialTemporaryDrawerComponent_0_4, projectableNodes);
+    _MaterialTemporaryDrawerComponent_0_5 = new import2.MaterialTemporaryDrawerComponent();
+    _compView_0.create(_MaterialTemporaryDrawerComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialTemporaryDrawerComponent>(0, this, rootEl, _MaterialTemporaryDrawerComponent_0_4);
+    return new ComponentRef<import2.MaterialTemporaryDrawerComponent>(0, this, rootEl, _MaterialTemporaryDrawerComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if (((identical(token, import2.MaterialTemporaryDrawerComponent) || identical(token, import9.DeferredContentAware)) && (0 == nodeIndex))) {
-      return _MaterialTemporaryDrawerComponent_0_4;
+      return _MaterialTemporaryDrawerComponent_0_5;
     }
     return notFoundResult;
   }
@@ -106,7 +105,7 @@ class _ViewMaterialTemporaryDrawerComponentHost0 extends AppView<dynamic> {
       _compView_0.markAsCheckOnce();
     }
     if (firstCheck) {
-      _MaterialTemporaryDrawerComponent_0_4.ngOnInit();
+      _MaterialTemporaryDrawerComponent_0_5.ngOnInit();
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -118,7 +117,7 @@ class _ViewMaterialTemporaryDrawerComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTemporaryDrawerComponentHost0(parentView, parentIndex);
 }
 

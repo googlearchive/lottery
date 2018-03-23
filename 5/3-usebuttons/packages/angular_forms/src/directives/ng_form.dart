@@ -1,20 +1,15 @@
 import 'dart:async';
-import 'dart:html' show Event;
 
 import 'package:meta/meta.dart';
-import 'package:angular/angular.dart'
-    show Directive, Inject, Optional, Output, Provider, Self, Visibility;
+import 'package:angular/angular.dart';
 
 import '../model.dart' show AbstractControl, ControlGroup, Control;
 import '../validators.dart' show NG_VALIDATORS;
+import 'abstract_form.dart' show AbstractForm;
 import 'control_container.dart' show ControlContainer;
-import 'form_interface.dart' show Form;
 import 'ng_control.dart' show NgControl;
 import 'ng_control_group.dart' show NgControlGroup;
 import 'shared.dart' show setUpControl, setUpControlGroup, composeValidators;
-
-const formDirectiveProvider =
-    const Provider(ControlContainer, useExisting: NgForm);
 
 /// If `NgForm` is bound in a component, `<form>` elements in that component
 /// will be upgraded to use the Angular form system.
@@ -73,35 +68,18 @@ const formDirectiveProvider =
 /// ```
 @Directive(
   selector: 'form:not([ngNoForm]):not([ngFormModel]),ngForm,[ngForm]',
-  providers: const [formDirectiveProvider],
-  host: const {'(submit)': 'onSubmit(\$event)'},
+  providers: const [
+    const ExistingProvider(ControlContainer, NgForm),
+  ],
   exportAs: 'ngForm',
-  // TODO(b/71710685): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
-class NgForm extends ControlContainer implements Form {
+class NgForm extends AbstractForm {
   ControlGroup form;
-  final _ngSubmit = new StreamController<ControlGroup>.broadcast(sync: true);
-  final _ngBeforeSubmit =
-      new StreamController<ControlGroup>.broadcast(sync: true);
 
   NgForm(@Optional() @Self() @Inject(NG_VALIDATORS) List<dynamic> validators) {
     form = new ControlGroup({}, null, composeValidators(validators));
   }
-
-  @Output()
-  Stream<ControlGroup> get ngSubmit => _ngSubmit.stream;
-  @Output()
-  Stream<ControlGroup> get ngBeforeSubmit => _ngBeforeSubmit.stream;
-
-  @override
-  Form get formDirective => this;
-
-  @override
-  ControlGroup get control => form;
-
-  @override
-  List<String> get path => [];
 
   Map<String, AbstractControl> get controls => form.controls;
 
@@ -115,9 +93,6 @@ class NgForm extends ControlContainer implements Form {
       ctrl.updateValueAndValidity(emitEvent: false);
     });
   }
-
-  @override
-  Control getControl(NgControl dir) => (form.find(dir.path) as Control);
 
   @override
   void removeControl(NgControl dir) {
@@ -153,26 +128,15 @@ class NgForm extends ControlContainer implements Form {
   }
 
   @override
-  ControlGroup getControlGroup(NgControlGroup dir) =>
-      (form.find(dir.path) as ControlGroup);
-
-  @override
   void updateModel(NgControl dir, dynamic value) {
     scheduleMicrotask(() {
-      Control ctrl = form.find(dir.path);
-      ctrl?.updateValue(value);
+      super.updateModel(dir, value);
     });
-  }
-
-  void onSubmit(Event event) {
-    _ngBeforeSubmit.add(form);
-    _ngSubmit.add(form);
-    event?.preventDefault();
   }
 
   @protected
   ControlGroup findContainer(List<String> path) {
     path.removeLast();
-    return path.isEmpty ? form : (form.find(path) as ControlGroup);
+    return path.isEmpty ? form : (form.findPath(path) as ControlGroup);
   }
 }

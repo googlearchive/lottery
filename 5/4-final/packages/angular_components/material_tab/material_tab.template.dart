@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -37,12 +35,12 @@ const List<dynamic> styles$MaterialTabComponent = const [import0.styles];
 
 class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   var _expr_1;
   var _expr_2;
   bool _expr_3;
   static RenderComponentType _renderType;
-  ViewMaterialTabComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-tab');
     createAttr(rootEl, 'role', 'tabpanel');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTabComponent);
@@ -50,12 +48,13 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   }
   @override
   ComponentRef<import2.MaterialTabComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTabComponent1);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTabComponent1);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     init(const [], null);
     return null;
   }
@@ -63,7 +62,7 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   @override
   void detectChangesInternal() {
     final import2.MaterialTabComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = _ctx.active;
+    _NgIf_0_9.ngIf = _ctx.active;
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -91,13 +90,13 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   }
 }
 
-AppView<import2.MaterialTabComponent> viewFactory_MaterialTabComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTabComponent> viewFactory_MaterialTabComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTabComponent0(parentView, parentIndex);
 }
 
 class _ViewMaterialTabComponent1 extends AppView<import2.MaterialTabComponent> {
   import8.DivElement _el_0;
-  _ViewMaterialTabComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTabComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTabComponent0._renderType;
   }
   @override
@@ -112,7 +111,7 @@ class _ViewMaterialTabComponent1 extends AppView<import2.MaterialTabComponent> {
   }
 }
 
-AppView<import2.MaterialTabComponent> viewFactory_MaterialTabComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTabComponent> viewFactory_MaterialTabComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTabComponent1(parentView, parentIndex);
 }
 
@@ -120,22 +119,22 @@ const List<dynamic> styles$MaterialTabComponentHost = const [];
 
 class _ViewMaterialTabComponentHost0 extends AppView<dynamic> {
   ViewMaterialTabComponent0 _compView_0;
-  import2.MaterialTabComponent _MaterialTabComponent_0_4;
-  _ViewMaterialTabComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MaterialTabComponent _MaterialTabComponent_0_5;
+  _ViewMaterialTabComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTabComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTabComponent_0_4 = new import2.MaterialTabComponent(rootEl, this.injectorGet(import12.IdGenerator, viewData.parentIndex, null));
-    _compView_0.create(_MaterialTabComponent_0_4, projectableNodes);
+    _MaterialTabComponent_0_5 = new import2.MaterialTabComponent(rootEl, this.injectorGet(import12.IdGenerator, viewData.parentIndex, null));
+    _compView_0.create(_MaterialTabComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialTabComponent>(0, this, rootEl, _MaterialTabComponent_0_4);
+    return new ComponentRef<import2.MaterialTabComponent>(0, this, rootEl, _MaterialTabComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((((identical(token, import2.MaterialTabComponent) || identical(token, import2.Tab)) || identical(token, import13.DeferredContentAware)) && (0 == nodeIndex))) {
-      return _MaterialTabComponent_0_4;
+      return _MaterialTabComponent_0_5;
     }
     return notFoundResult;
   }
@@ -153,7 +152,7 @@ class _ViewMaterialTabComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTabComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTabComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTabComponentHost0(parentView, parentIndex);
 }
 

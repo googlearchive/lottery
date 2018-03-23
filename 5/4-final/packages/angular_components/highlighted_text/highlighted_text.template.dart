@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -30,22 +28,23 @@ const List<dynamic> styles$HighlightedTextComponent = const [import0.styles];
 
 class ViewHighlightedTextComponent0 extends AppView<import2.HighlightedTextComponent> {
   ViewContainer _appEl_0;
-  import4.NgFor _NgFor_0_7;
+  import4.NgFor _NgFor_0_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHighlightedTextComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewHighlightedTextComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('highlighted-text');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HighlightedTextComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.HighlightedTextComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_HighlightedTextComponent1);
-    _NgFor_0_7 = new import4.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_HighlightedTextComponent1);
+    _NgFor_0_9 = new import4.NgFor(_appEl_0, _TemplateRef_0_8);
     init(const [], null);
     return null;
   }
@@ -55,10 +54,10 @@ class ViewHighlightedTextComponent0 extends AppView<import2.HighlightedTextCompo
     final import2.HighlightedTextComponent _ctx = ctx;
     final currVal_0 = _ctx.segments;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -68,7 +67,7 @@ class ViewHighlightedTextComponent0 extends AppView<import2.HighlightedTextCompo
   }
 }
 
-AppView<import2.HighlightedTextComponent> viewFactory_HighlightedTextComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HighlightedTextComponent> viewFactory_HighlightedTextComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHighlightedTextComponent0(parentView, parentIndex);
 }
 
@@ -77,7 +76,7 @@ class _ViewHighlightedTextComponent1 extends AppView<import2.HighlightedTextComp
   import8.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewHighlightedTextComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHighlightedTextComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHighlightedTextComponent0._renderType;
   }
   @override
@@ -108,7 +107,7 @@ class _ViewHighlightedTextComponent1 extends AppView<import2.HighlightedTextComp
   }
 }
 
-AppView<import2.HighlightedTextComponent> viewFactory_HighlightedTextComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HighlightedTextComponent> viewFactory_HighlightedTextComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHighlightedTextComponent1(parentView, parentIndex);
 }
 
@@ -116,22 +115,22 @@ const List<dynamic> styles$HighlightedTextComponentHost = const [];
 
 class _ViewHighlightedTextComponentHost0 extends AppView<dynamic> {
   ViewHighlightedTextComponent0 _compView_0;
-  import2.HighlightedTextComponent _HighlightedTextComponent_0_4;
-  _ViewHighlightedTextComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.HighlightedTextComponent _HighlightedTextComponent_0_5;
+  _ViewHighlightedTextComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHighlightedTextComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HighlightedTextComponent_0_4 = new import2.HighlightedTextComponent();
-    _compView_0.create(_HighlightedTextComponent_0_4, projectableNodes);
+    _HighlightedTextComponent_0_5 = new import2.HighlightedTextComponent();
+    _compView_0.create(_HighlightedTextComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.HighlightedTextComponent>(0, this, rootEl, _HighlightedTextComponent_0_4);
+    return new ComponentRef<import2.HighlightedTextComponent>(0, this, rootEl, _HighlightedTextComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.HighlightedTextComponent) && (0 == nodeIndex))) {
-      return _HighlightedTextComponent_0_4;
+      return _HighlightedTextComponent_0_5;
     }
     return notFoundResult;
   }
@@ -151,7 +150,7 @@ class _ViewHighlightedTextComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HighlightedTextComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HighlightedTextComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHighlightedTextComponentHost0(parentView, parentIndex);
 }
 

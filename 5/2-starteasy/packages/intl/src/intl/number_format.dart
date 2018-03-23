@@ -238,10 +238,18 @@ class NumberFormat {
   /// currency's default takes priority over the locale's default.
   ///       new NumberFormat.currency(locale: 'en_US')
   /// will format with two, which is the default for that locale.
+  ///
+  /// The [customPattern] parameter can be used to specify a particular
+  /// format. This is useful if you have your own locale data which includes
+  /// unsupported formats (e.g. accounting format for currencies.)
   // TODO(alanknight): Should we allow decimalDigits on other numbers.
   NumberFormat.currency(
-      {String locale, String name, String symbol, int decimalDigits})
-      : this._forPattern(locale, (x) => x.CURRENCY_PATTERN,
+      {String locale,
+      String name,
+      String symbol,
+      int decimalDigits,
+      String customPattern})
+      : this._forPattern(locale, (x) => customPattern ?? x.CURRENCY_PATTERN,
             name: name,
             currencySymbol: symbol,
             decimalDigits: decimalDigits,
@@ -488,6 +496,9 @@ class NumberFormat {
     this._currencySymbol = currencySymbol;
     this._decimalDigits = decimalDigits;
     _symbols = numberFormatSymbols[_locale];
+    _localeZero = _symbols.ZERO_DIGIT.codeUnitAt(0);
+    _zeroOffset = _localeZero - _zero;
+    _negativePrefix = _symbols.MINUS_SIGN;
     currencyName = name ?? _symbols.DEF_CURRENCY_CODE;
     if (this._currencySymbol == null && computeCurrencySymbol != null) {
       this._currencySymbol = computeCurrencySymbol(this);
@@ -515,7 +526,8 @@ class NumberFormat {
   /// of "$1,200,000", and which will automatically determine a currency symbol
   /// based on the currency name or the locale. See
   /// [NumberFormat.simpleCurrency].
-  factory NumberFormat.compactSimpleCurrency({String locale, String name}) {
+  factory NumberFormat.compactSimpleCurrency(
+      {String locale, String name, int decimalDigits}) {
     return new _CompactNumberFormat(
         locale: locale,
         formatType: _CompactFormatType.COMPACT_DECIMAL_SHORT_CURRENCY_PATTERN,
@@ -523,6 +535,7 @@ class NumberFormat {
         getPattern: (symbols) => symbols.CURRENCY_PATTERN,
         computeCurrencySymbol: (format) =>
             _simpleCurrencySymbols[format.currencyName] ?? format.currencyName,
+        decimalDigits: decimalDigits,
         isForCurrency: true);
   }
 
@@ -534,6 +547,8 @@ class NumberFormat {
         locale: locale,
         formatType: _CompactFormatType.COMPACT_DECIMAL_SHORT_CURRENCY_PATTERN,
         name: name,
+        getPattern: (symbols) => symbols.CURRENCY_PATTERN,
+        currencySymbol: symbol,
         decimalDigits: decimalDigits,
         isForCurrency: true);
   }
@@ -627,8 +642,10 @@ class NumberFormat {
     _pad(minimumExponentDigits, exponent.toString());
   }
 
-  /// Used to test if we have exceeded Javascript integer limits.
-  final _maxInt = pow(2, 52);
+  /// Used to test if we have exceeded integer limits.
+  // TODO(alanknight): Do we have a MaxInt constant we could use instead?
+  static final _maxInt = 1 is double ? pow(2, 52) : 1.0e300.floor();
+  static final _maxDigits = (log(_maxInt) / log(10)).ceil();
 
   /// Helpers to check numbers that don't conform to the [num] interface,
   /// e.g. Int64
@@ -660,7 +677,8 @@ class NumberFormat {
       // Not a normal number, but int-like, e.g. Int64
       return number;
     } else {
-      // TODO(alanknight): Do this more efficiently. If IntX  had floor and round we could avoid this.
+      // TODO(alanknight): Do this more efficiently. If IntX  had floor and
+      // round we could avoid this.
       var basic = _floor(number);
       var fraction = (number - basic).toDouble().round();
       return fraction == 0 ? number : number + fraction;
@@ -719,6 +737,13 @@ class NumberFormat {
       // integer pieces.
       integerPart = _floor(number);
       var fraction = number - integerPart;
+      if (fraction.toInt() != 0) {
+        // If the fractional part leftover is > 1, presumbly the number
+        // was too big for a fixed-size integer, so leave it as whatever
+        // it was - the obvious thing is a double.
+        integerPart = number;
+        fraction = 0;
+      }
 
       /// If we have significant digits, recalculate the number of fraction
       /// digits based on that.
@@ -756,7 +781,10 @@ class NumberFormat {
         fractionDigits > 0 && (minimumFractionDigits > 0 || fractionPart > 0);
 
     if (_hasIntegerDigits(integerDigits)) {
-      _pad(minimumIntegerDigits - digitLength);
+      // Add the padding digits to the regular digits so that we get grouping.
+      var padding = '0' * (minimumIntegerDigits - digitLength);
+      integerDigits = "$padding$integerDigits";
+      digitLength = integerDigits.length;
       for (var i = 0; i < digitLength; i++) {
         _addDigit(integerDigits.codeUnitAt(i));
         _group(digitLength, i);
@@ -773,14 +801,17 @@ class NumberFormat {
   /// Compute the raw integer digits which will then be printed with
   /// grouping and translated to localized digits.
   String _integerDigits(integerPart, extraIntegerDigits) {
-    // If the int part is larger than 2^52 and we're on Javascript (so it's
-    // really a float) it will lose precision, so pad out the rest of it
-    // with zeros. Check for Javascript by seeing if an integer is double.
+    // If the integer part is larger than the maximum integer size
+    // (2^52 on Javascript, 2^63 on the VM) it will lose precision,
+    // so pad out the rest of it with zeros.
     var paddingDigits = '';
-    if (1 is double && integerPart is num && integerPart > _maxInt) {
-      var howManyDigitsTooBig = (log(integerPart) / LN10).ceil() - 16;
-      var divisor = pow(10, howManyDigitsTooBig).round();
-      paddingDigits = symbols.ZERO_DIGIT * howManyDigitsTooBig.toInt();
+    if (integerPart is num && integerPart > _maxInt) {
+      var howManyDigitsTooBig = (log(integerPart) / LN10).ceil() - _maxDigits;
+      num divisor = pow(10, howManyDigitsTooBig).round();
+      // pow() produces 0 if the result is too large for a 64-bit int.
+      // If that happens, use a floating point divisor instead.
+      if (divisor == 0) divisor = pow(10.0, howManyDigitsTooBig);
+      paddingDigits = '0' * howManyDigitsTooBig.toInt();
       integerPart = (integerPart / divisor).truncate();
     }
 
@@ -809,14 +840,13 @@ class NumberFormat {
 
   /// Format the part after the decimal place in a fixed point number.
   void _formatFractionPart(String fractionPart) {
-    var fractionCodes = fractionPart.codeUnits;
     var fractionLength = fractionPart.length;
-    while (fractionCodes[fractionLength - 1] == _zero &&
+    while (fractionPart.codeUnitAt(fractionLength - 1) == _zero &&
         fractionLength > minimumFractionDigits + 1) {
       fractionLength--;
     }
     for (var i = 1; i < fractionLength; i++) {
-      _addDigit(fractionCodes[i]);
+      _addDigit(fractionPart.codeUnitAt(i));
     }
   }
 
@@ -845,16 +875,24 @@ class NumberFormat {
   }
 
   void _addDigit(int x) {
-    _buffer.writeCharCode(_localeZero + x - _zero);
+    _buffer.writeCharCode(x + _zeroOffset);
+  }
+
+  void _pad(int numberOfDigits, String basic) {
+    if (_zeroOffset == 0) {
+      _buffer.write(basic.padLeft(numberOfDigits, '0'));
+    } else {
+      _slowPad(numberOfDigits, basic);
+    }
   }
 
   /// Print padding up to [numberOfDigits] above what's included in [basic].
-  void _pad(int numberOfDigits, [String basic = '']) {
+  void _slowPad(int numberOfDigits, String basic) {
     for (var i = 0; i < numberOfDigits - basic.length; i++) {
       _add(symbols.ZERO_DIGIT);
     }
-    for (int i = 0; i < basic.codeUnits.length; i++) {
-      _addDigit(basic.codeUnits[i]);
+    for (int i = 0; i < basic.length; i++) {
+      _addDigit(basic.codeUnitAt(i));
     }
   }
 
@@ -875,15 +913,19 @@ class NumberFormat {
     }
   }
 
-  /// Returns the code point for the character '0'.
-  final _zero = '0'.codeUnits.first;
+  /// The code point for the character '0'.
+  static const _zero = 48;
 
-  /// Returns the code point for the locale's zero digit.
-  // Note that there is a slight risk of a locale's zero digit not fitting
-  // into a single code unit, but it seems very unlikely, and if it did,
-  // there's a pretty good chance that our assumptions about being able to do
-  // arithmetic on it would also be invalid.
-  get _localeZero => symbols.ZERO_DIGIT.codeUnits.first;
+  /// The code point for the locale's zero digit.
+  ///
+  ///  Initialized when the locale is set.
+  int _localeZero = 0;
+
+  /// The difference between our zero and '0'.
+  ///
+  /// In other words, a constant _localeZero - _zero. Initialized when
+  /// the locale is set.
+  int _zeroOffset = 0;
 
   /// Returns the prefix for [x] based on whether it's positive or negative.
   /// In en_US this would be '' and '-' respectively.
@@ -972,7 +1014,7 @@ class _NumberParser {
   String get _negativePrefix => format._negativePrefix;
   String get _positiveSuffix => format._positiveSuffix;
   String get _negativeSuffix => format._negativeSuffix;
-  int get _zero => format._zero;
+  int get _zero => NumberFormat._zero;
   int get _localeZero => format._localeZero;
 
   ///  Create a new [_NumberParser] on which we can call parse().
@@ -1044,26 +1086,27 @@ class _NumberParser {
   /// Check to see if the input begins with either the positive or negative
   /// prefixes. Set the [gotPositive] and [gotNegative] variables accordingly.
   void checkPrefixes({bool skip: false}) {
-    bool checkPrefix(String prefix, skip) {
-      var matched = prefix.isNotEmpty && input.startsWith(prefix);
-      if (skip && matched) input.read(prefix.length);
-      return matched;
-    }
+    bool checkPrefix(String prefix) =>
+        prefix.isNotEmpty && input.startsWith(prefix);
 
     // TODO(alanknight): There's a faint possibility of a bug here where
     // a positive prefix is followed by a negative prefix that's also a valid
     // part of the number, but that seems very unlikely.
-    if (checkPrefix(_positivePrefix, skip)) gotPositive = true;
-    if (checkPrefix(_negativePrefix, skip)) gotNegative = true;
+    if (checkPrefix(_positivePrefix)) gotPositive = true;
+    if (checkPrefix(_negativePrefix)) gotNegative = true;
 
-    // Copied from Closure. It doesn't seem to be necessary to pass the test
-    // suite, so I'm not sure it's really needed.
+    // The positive prefix might be a substring of the negative, in
+    // which case both would match.
     if (gotPositive && gotNegative) {
       if (_positivePrefix.length > _negativePrefix.length) {
         gotNegative = false;
       } else if (_negativePrefix.length > _positivePrefix.length) {
         gotPositive = false;
       }
+    }
+    if (skip) {
+      if (gotPositive) input.read(_positivePrefix.length);
+      if (gotNegative) input.read(_negativePrefix.length);
     }
   }
 

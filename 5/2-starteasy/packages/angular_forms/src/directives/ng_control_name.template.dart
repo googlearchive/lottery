@@ -1,22 +1,19 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
 import 'ng_control_name.dart';
 export 'ng_control_name.dart';
 import 'dart:async';
-import 'package:angular/angular.dart' show AfterChanges, Directive, Inject, Input, OnDestroy, Optional, Output, Provider, Self, SkipSelf, Visibility;
+import 'package:angular/angular.dart';
 import '../model.dart' show Control;
 import '../validators.dart' show NG_VALIDATORS;
 import 'control_container.dart' show ControlContainer;
 import 'control_value_accessor.dart' show ControlValueAccessor, NG_VALUE_ACCESSOR;
 import 'form_interface.dart' show Form;
 import 'ng_control.dart' show NgControl;
-import 'shared.dart' show controlPath, composeValidators, selectValueAccessor;
-import 'validators.dart' show ValidatorFn;
+import 'shared.dart' show controlPath;
 import '../model.template.dart' as _ref0;
 import '../validators.template.dart' as _ref1;
 import 'control_container.template.dart' as _ref2;
@@ -25,7 +22,6 @@ import 'form_interface.template.dart' as _ref4;
 import 'ng_control.template.dart' as _ref5;
 import 'package:angular/angular.template.dart' as _ref6;
 import 'shared.template.dart' as _ref7;
-import 'validators.template.dart' as _ref8;
 
 var _visited = false;
 void initReflector() {
@@ -42,5 +38,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ref8.initReflector();
 }
