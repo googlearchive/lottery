@@ -126,7 +126,7 @@ packages:
       name: build_runner
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.0"
+    version: "0.8.1"
   build_test:
     dependency: "direct dev"
     description:
@@ -154,7 +154,7 @@ packages:
       name: built_value
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.2.2"
+    version: "5.4.1"
   charcode:
     dependency: transitive
     description:
@@ -448,7 +448,7 @@ packages:
       name: sass
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0"
+    version: "1.1.1"
   sass_builder:
     dependency: transitive
     description:
@@ -539,7 +539,7 @@ packages:
       name: stream_transform
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.10"
+    version: "0.0.11"
   string_scanner:
     dependency: transitive
     description:
@@ -560,7 +560,7 @@ packages:
       name: test
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.12.32+2"
+    version: "0.12.33"
   tuple:
     dependency: transitive
     description:
@@ -611,4 +611,4 @@ packages:
     source: hosted
     version: "2.1.13"
 sdks:
-  dart: ">=2.0.0-dev.37 <=2.0.0-dev.42.0"
+  dart: ">=2.0.0-dev.37 <=2.0.0-dev.43.0"
