@@ -763,9 +763,6 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (((identical(token, import20.Clock) || identical(token, const import49.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'))) && (11 == nodeIndex))) {
       return _Clock_11_23;
     }
-    if ((identical(token, import22.MaterialProgressComponent) && (21 == nodeIndex))) {
-      return _MaterialProgressComponent_21_5;
-    }
     if ((identical(token, const import49.OpaqueToken<List<import51.RelativePosition>>('defaultPopupPositions')) && (40 == nodeIndex))) {
       return _defaultPopupPositions_40_6;
     }
@@ -820,26 +817,23 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (((identical(token, import20.Clock) || identical(token, const import49.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'))) && (40 == nodeIndex))) {
       return _Clock_40_23;
     }
-    if (((identical(token, import7.MaterialTabComponent) || identical(token, import53.DeferredContentAware)) && ((6 <= nodeIndex) && (nodeIndex <= 40)))) {
+    if ((identical(token, import53.DeferredContentAware) && ((6 <= nodeIndex) && (nodeIndex <= 40)))) {
       return _MaterialTabComponent_6_5;
     }
     if ((identical(token, import7.Tab) && ((6 <= nodeIndex) && (nodeIndex <= 40)))) {
       return _Tab_6_6;
     }
-    if (((identical(token, import7.MaterialTabComponent) || identical(token, import53.DeferredContentAware)) && ((41 <= nodeIndex) && (nodeIndex <= 42)))) {
+    if ((identical(token, import53.DeferredContentAware) && ((41 <= nodeIndex) && (nodeIndex <= 42)))) {
       return _MaterialTabComponent_41_5;
     }
     if ((identical(token, import7.Tab) && ((41 <= nodeIndex) && (nodeIndex <= 42)))) {
       return _Tab_41_6;
     }
-    if (((identical(token, import7.MaterialTabComponent) || identical(token, import53.DeferredContentAware)) && ((43 <= nodeIndex) && (nodeIndex <= 44)))) {
+    if ((identical(token, import53.DeferredContentAware) && ((43 <= nodeIndex) && (nodeIndex <= 44)))) {
       return _MaterialTabComponent_43_5;
     }
     if ((identical(token, import7.Tab) && ((43 <= nodeIndex) && (nodeIndex <= 44)))) {
       return _Tab_43_6;
-    }
-    if ((identical(token, import5.MaterialTabPanelComponent) && ((5 <= nodeIndex) && (nodeIndex <= 44)))) {
-      return _MaterialTabPanelComponent_5_5;
     }
     return notFoundResult;
   }

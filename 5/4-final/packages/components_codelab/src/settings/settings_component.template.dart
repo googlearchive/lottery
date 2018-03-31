@@ -368,9 +368,6 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     if (((identical(token, import6.MaterialExpansionPanel) || identical(token, import21.DeferredContentAware)) && ((31 <= nodeIndex) && (nodeIndex <= 42)))) {
       return _MaterialExpansionPanel_31_5;
     }
-    if ((identical(token, import4.MaterialExpansionPanelSet) && ((0 <= nodeIndex) && (nodeIndex <= 42)))) {
-      return _MaterialExpansionPanelSet_0_5;
-    }
     return notFoundResult;
   }
 

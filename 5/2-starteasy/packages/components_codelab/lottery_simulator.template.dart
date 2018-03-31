@@ -541,9 +541,6 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (((identical(token, import16.Clock) || identical(token, const import41.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'))) && (9 == nodeIndex))) {
       return _Clock_9_23;
     }
-    if ((identical(token, import18.MaterialProgressComponent) && (19 == nodeIndex))) {
-      return _MaterialProgressComponent_19_5;
-    }
     return notFoundResult;
   }
 
