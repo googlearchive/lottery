@@ -35,7 +35,7 @@ class ViewStatsComponent0 extends AppView<import2.StatsComponent> {
   bool _expr_0 = false;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewStatsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewStatsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('stats-component');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$StatsComponent);
     setupComponentType(_renderType);
@@ -47,9 +47,9 @@ class ViewStatsComponent0 extends AppView<import2.StatsComponent> {
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'ul', parentRenderNode);
     addShimC(_el_0);
-    _anchor_1 = ngAnchor.clone(false);
+    _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_StatsComponent2);
@@ -100,7 +100,7 @@ class _ViewStatsComponent2 extends AppView<import2.StatsComponent> {
   NgIf _NgIf_1_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewStatsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewStatsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewStatsComponent0._renderType;
   }
   @override
@@ -108,12 +108,12 @@ class _ViewStatsComponent2 extends AppView<import2.StatsComponent> {
     var doc = import3.document;
     _el_0 = doc.createElement('li');
     addShimE(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_StatsComponent3);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_StatsComponent4);
@@ -148,7 +148,7 @@ class _ViewStatsComponent3 extends AppView<import2.StatsComponent> {
   import3.Text _text_4;
   var _expr_0;
   var _expr_1;
-  _ViewStatsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewStatsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewStatsComponent0._renderType;
   }
   @override
@@ -199,7 +199,7 @@ class _ViewStatsComponent4 extends AppView<import2.StatsComponent> {
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewStatsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewStatsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewStatsComponent0._renderType;
   }
   @override
@@ -256,7 +256,7 @@ const List<dynamic> styles$StatsComponentHost = const [];
 class _ViewStatsComponentHost0 extends AppView<dynamic> {
   ViewStatsComponent0 _compView_0;
   import2.StatsComponent _StatsComponent_0_5;
-  _ViewStatsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewStatsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewStatsComponent0(this, 0);

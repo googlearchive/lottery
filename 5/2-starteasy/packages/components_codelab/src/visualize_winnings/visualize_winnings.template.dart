@@ -27,7 +27,7 @@ class ViewVisualizeWinningsComponent0 extends AppView<import2.VisualizeWinningsC
   import3.CanvasElement _el_1;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewVisualizeWinningsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewVisualizeWinningsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('visualize-winnings');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$VisualizeWinningsComponent);
     setupComponentType(_renderType);
@@ -68,7 +68,7 @@ const List<dynamic> styles$VisualizeWinningsComponentHost = const [];
 class _ViewVisualizeWinningsComponentHost0 extends AppView<dynamic> {
   ViewVisualizeWinningsComponent0 _compView_0;
   import2.VisualizeWinningsComponent _VisualizeWinningsComponent_0_5;
-  _ViewVisualizeWinningsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewVisualizeWinningsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewVisualizeWinningsComponent0(this, 0);

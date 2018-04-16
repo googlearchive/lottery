@@ -37,7 +37,7 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
   var _expr_2;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewScoresComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewScoresComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('scores-component');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ScoresComponent);
     setupComponentType(_renderType);
@@ -118,7 +118,7 @@ const List<dynamic> styles$ScoresComponentHost = const [];
 class _ViewScoresComponentHost0 extends AppView<dynamic> {
   ViewScoresComponent0 _compView_0;
   import2.ScoresComponent _ScoresComponent_0_5;
-  _ViewScoresComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewScoresComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewScoresComponent0(this, 0);

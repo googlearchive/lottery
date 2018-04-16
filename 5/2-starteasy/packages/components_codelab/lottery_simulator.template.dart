@@ -167,7 +167,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_10;
   var _expr_14;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import30.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import30.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('lottery-simulator');
     _renderType ??= import32.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
@@ -719,7 +719,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   import14.OverlayService __OverlayService_0_22;
   import15.DomPopupSourceFactory __DomPopupSourceFactory_0_23;
   import16.Clock __Clock_0_24;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import30.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import30.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<import7.RelativePosition> get _defaultPopupPositions_0_7 {
     if ((this.__defaultPopupPositions_0_7 == null)) {
       (__defaultPopupPositions_0_7 = const [const import7.RelativePosition(animationOrigin: 'top center'), const import7.RelativePosition(animationOrigin: 'top right', originX: const import7.Alignment('End', 'flex-end')), const import7.RelativePosition(animationOrigin: 'top left', originX: const import7.Alignment('Start', 'flex-start')), const import7.RelativePosition(animationOrigin: 'bottom center', originY: const import7.Alignment('End', 'flex-end')), const import7.RelativePosition(animationOrigin: 'bottom right', originX: const import7.Alignment('End', 'flex-end'), originY: const import7.Alignment('End', 'flex-end')), const import7.RelativePosition(animationOrigin: 'bottom left', originX: const import7.Alignment('Start', 'flex-start'), originY: const import7.Alignment('End', 'flex-end'))]);

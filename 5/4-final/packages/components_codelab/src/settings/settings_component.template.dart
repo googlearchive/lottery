@@ -143,7 +143,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
   String _expr_11;
   bool _expr_13;
   static RenderComponentType _renderType;
-  ViewSettingsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSettingsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('settings-component');
     _renderType ??= import16.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$SettingsComponent);
     setupComponentType(_renderType);
@@ -173,7 +173,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_2.append(_el_5);
     addShimC(_el_5);
     _MaterialRadioGroupComponent_5_5 = new import8.MaterialRadioGroupComponent(parentView.injectorGet(import18.NgZone, viewData.parentIndex), null);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     _appEl_6 = new ViewContainer(6, 5, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_SettingsComponent1);
     _NgFor_6_9 = new import10.NgFor(_appEl_6, _TemplateRef_6_8);
@@ -189,7 +189,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_2.append(_el_9);
     addShimC(_el_9);
     _MaterialRadioGroupComponent_9_5 = new import8.MaterialRadioGroupComponent(parentView.injectorGet(import18.NgZone, viewData.parentIndex), null);
-    var _anchor_10 = ngAnchor.clone(false);
+    final _anchor_10 = createViewContainerAnchor();
     _appEl_10 = new ViewContainer(10, 9, this, _anchor_10);
     TemplateRef _TemplateRef_10_8 = new TemplateRef(_appEl_10, viewFactory_SettingsComponent2);
     _NgFor_10_9 = new import10.NgFor(_appEl_10, _TemplateRef_10_8);
@@ -221,7 +221,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_12.append(_el_15);
     addShimC(_el_15);
     _MaterialRadioGroupComponent_15_5 = new import8.MaterialRadioGroupComponent(parentView.injectorGet(import18.NgZone, viewData.parentIndex), null);
-    var _anchor_16 = ngAnchor.clone(false);
+    final _anchor_16 = createViewContainerAnchor();
     _appEl_16 = new ViewContainer(16, 15, this, _anchor_16);
     TemplateRef _TemplateRef_16_8 = new TemplateRef(_appEl_16, viewFactory_SettingsComponent3);
     _NgFor_16_9 = new import10.NgFor(_appEl_16, _TemplateRef_16_8);
@@ -247,7 +247,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_12.append(_el_24);
     addShimC(_el_24);
     _MaterialRadioGroupComponent_24_5 = new import8.MaterialRadioGroupComponent(parentView.injectorGet(import18.NgZone, viewData.parentIndex), null);
-    var _anchor_25 = ngAnchor.clone(false);
+    final _anchor_25 = createViewContainerAnchor();
     _appEl_25 = new ViewContainer(25, 24, this, _anchor_25);
     TemplateRef _TemplateRef_25_8 = new TemplateRef(_appEl_25, viewFactory_SettingsComponent4);
     _NgFor_25_9 = new import10.NgFor(_appEl_25, _TemplateRef_25_8);
@@ -297,7 +297,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_32.append(_el_37);
     addShimC(_el_37);
     _MaterialRadioGroupComponent_37_5 = new import8.MaterialRadioGroupComponent(parentView.injectorGet(import18.NgZone, viewData.parentIndex), null);
-    var _anchor_38 = ngAnchor.clone(false);
+    final _anchor_38 = createViewContainerAnchor();
     _appEl_38 = new ViewContainer(38, 37, this, _anchor_38);
     TemplateRef _TemplateRef_38_8 = new TemplateRef(_appEl_38, viewFactory_SettingsComponent5);
     _NgFor_38_9 = new import10.NgFor(_appEl_38, _TemplateRef_38_8);
@@ -313,7 +313,7 @@ class ViewSettingsComponent0 extends AppView<import2.SettingsComponent> {
     _el_32.append(_el_41);
     addShimC(_el_41);
     _MaterialRadioGroupComponent_41_5 = new import8.MaterialRadioGroupComponent(parentView.injectorGet(import18.NgZone, viewData.parentIndex), null);
-    var _anchor_42 = ngAnchor.clone(false);
+    final _anchor_42 = createViewContainerAnchor();
     _appEl_42 = new ViewContainer(42, 41, this, _anchor_42);
     TemplateRef _TemplateRef_42_8 = new TemplateRef(_appEl_42, viewFactory_SettingsComponent6);
     _NgFor_42_9 = new import10.NgFor(_appEl_42, _TemplateRef_42_8);
@@ -630,7 +630,7 @@ class _ViewSettingsComponent1 extends AppView<import2.SettingsComponent> {
   import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -702,7 +702,7 @@ class _ViewSettingsComponent2 extends AppView<import2.SettingsComponent> {
   import3.Text _text_2;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -774,7 +774,7 @@ class _ViewSettingsComponent3 extends AppView<import2.SettingsComponent> {
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewSettingsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -847,7 +847,7 @@ class _ViewSettingsComponent4 extends AppView<import2.SettingsComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewSettingsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -927,7 +927,7 @@ class _ViewSettingsComponent5 extends AppView<import2.SettingsComponent> {
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
-  _ViewSettingsComponent5(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent5(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -1007,7 +1007,7 @@ class _ViewSettingsComponent6 extends AppView<import2.SettingsComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewSettingsComponent6(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSettingsComponent6(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSettingsComponent0._renderType;
   }
   @override
@@ -1101,7 +1101,7 @@ class _ViewSettingsComponentHost0 extends AppView<dynamic> {
   import34.OverlayService __OverlayService_0_21;
   import35.DomPopupSourceFactory __DomPopupSourceFactory_0_22;
   import36.Clock __Clock_0_23;
-  _ViewSettingsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewSettingsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<import27.RelativePosition> get _defaultPopupPositions_0_6 {
     if ((this.__defaultPopupPositions_0_6 == null)) {
       (__defaultPopupPositions_0_6 = const [const import27.RelativePosition(animationOrigin: 'top center'), const import27.RelativePosition(animationOrigin: 'top right', originX: const import27.Alignment('End', 'flex-end')), const import27.RelativePosition(animationOrigin: 'top left', originX: const import27.Alignment('Start', 'flex-start')), const import27.RelativePosition(animationOrigin: 'bottom center', originY: const import27.Alignment('End', 'flex-end')), const import27.RelativePosition(animationOrigin: 'bottom right', originX: const import27.Alignment('End', 'flex-end'), originY: const import27.Alignment('End', 'flex-end')), const import27.RelativePosition(animationOrigin: 'bottom left', originX: const import27.Alignment('Start', 'flex-start'), originY: const import27.Alignment('End', 'flex-end'))]);

@@ -57,7 +57,7 @@ class ViewScoresComponent0 extends AppView<import2.ScoresComponent> {
   String _expr_3;
   String _expr_5;
   static RenderComponentType _renderType;
-  ViewScoresComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewScoresComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('scores-component');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ScoresComponent);
     setupComponentType(_renderType);
@@ -174,7 +174,7 @@ class _ViewScoresComponentHost0 extends AppView<dynamic> {
   import20.OverlayService __OverlayService_0_21;
   import21.DomPopupSourceFactory __DomPopupSourceFactory_0_22;
   import22.Clock __Clock_0_23;
-  _ViewScoresComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewScoresComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<import13.RelativePosition> get _defaultPopupPositions_0_6 {
     if ((this.__defaultPopupPositions_0_6 == null)) {
       (__defaultPopupPositions_0_6 = const [const import13.RelativePosition(animationOrigin: 'top center'), const import13.RelativePosition(animationOrigin: 'top right', originX: const import13.Alignment('End', 'flex-end')), const import13.RelativePosition(animationOrigin: 'top left', originX: const import13.Alignment('Start', 'flex-start')), const import13.RelativePosition(animationOrigin: 'bottom center', originY: const import13.Alignment('End', 'flex-end')), const import13.RelativePosition(animationOrigin: 'bottom right', originX: const import13.Alignment('End', 'flex-end'), originY: const import13.Alignment('End', 'flex-end')), const import13.RelativePosition(animationOrigin: 'bottom left', originX: const import13.Alignment('Start', 'flex-start'), originY: const import13.Alignment('End', 'flex-end'))]);

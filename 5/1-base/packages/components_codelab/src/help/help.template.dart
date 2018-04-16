@@ -34,7 +34,7 @@ class ViewHelpComponent0 extends AppView<import2.HelpComponent> {
   import4.NgSwitchDefault _NgSwitchDefault_3_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHelpComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHelpComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('help-component');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HelpComponent);
     setupComponentType(_renderType);
@@ -48,17 +48,17 @@ class ViewHelpComponent0 extends AppView<import2.HelpComponent> {
     _el_0.className = 'help';
     addShimC(_el_0);
     _NgSwitch_0_5 = new import4.NgSwitch();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_HelpComponent1);
     _NgSwitchWhen_1_9 = new import4.NgSwitchWhen(_appEl_1, _TemplateRef_1_8, _NgSwitch_0_5);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_HelpComponent2);
     _NgSwitchWhen_2_9 = new import4.NgSwitchWhen(_appEl_2, _TemplateRef_2_8, _NgSwitch_0_5);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_HelpComponent3);
@@ -136,7 +136,7 @@ class _ViewHelpComponent1 extends AppView<import2.HelpComponent> {
   import3.Element _el_51;
   import3.Element _el_53;
   import3.Element _el_55;
-  _ViewHelpComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHelpComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
   }
   @override
@@ -294,7 +294,7 @@ class _ViewHelpComponent2 extends AppView<import2.HelpComponent> {
   import3.Element _el_39;
   import3.AnchorElement _el_40;
   import3.Element _el_42;
-  _ViewHelpComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHelpComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
   }
   @override
@@ -412,7 +412,7 @@ class _ViewHelpComponent3 extends AppView<import2.HelpComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewHelpComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHelpComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHelpComponent0._renderType;
   }
   @override
@@ -450,7 +450,7 @@ const List<dynamic> styles$HelpComponentHost = const [];
 class _ViewHelpComponentHost0 extends AppView<dynamic> {
   ViewHelpComponent0 _compView_0;
   import2.HelpComponent _HelpComponent_0_5;
-  _ViewHelpComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHelpComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHelpComponent0(this, 0);
