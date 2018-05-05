@@ -1,4 +1,0 @@
-library asset_components_codelab_lib_lottery_simulator.css.dart;
-
-
-const List<dynamic> styles = const [':host {\n  font-family: Roboto, Helvetica, Arial, sans-serif;\n  font-size: 15px;\n}\n\n:host h1, h2 {\n  font-weight: 500;\n}\n\n.clear-floats {\n  clear: both;\n}\n\n.scores-component {\n  margin-top: 4em;\n}\n\n.days {\n  padding-top: 1em;\n}\n\n.days__start-day {\n  float: left;\n}\n\n.days__end-day {\n  float: right;\n  text-align: right;\n}\n\n.life-progress {\n  margin: 1em 0;\n}\n\n.controls__fabs {\n  float: left;\n}\n\n.controls__faster-button {\n  float: right;\n}\n\n.history {\n  padding-top: 2em;\n}\n\n.history__stats {\n  float: left;\n}\n\n.history__vis {\n  float: right;\n}\n\n#play-button {\n  color: white;\n  background: #F44336;\n}\n\n#play-button.is-disabled {\n  background: #EF9A9A;\n}\n'];
