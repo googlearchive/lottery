@@ -35,7 +35,6 @@ http_multi_server:packages/http_multi_server/
 http_parser:packages/http_parser/
 intl:packages/intl/
 io:packages/io/
-isolate:packages/isolate/
 js:packages/js/
 json_annotation:packages/json_annotation/
 kernel:packages/kernel/

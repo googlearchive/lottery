@@ -8,11 +8,9 @@ angular_forms:packages/angular_forms/
 archive:packages/archive/
 args:packages/args/
 async:packages/async/
-barback:packages/barback/
 bazel_worker:packages/bazel_worker/
 boolean_selector:packages/boolean_selector/
 build:packages/build/
-build_barback:packages/build_barback/
 build_config:packages/build_config/
 build_modules:packages/build_modules/
 build_resolvers:packages/build_resolvers/
@@ -24,7 +22,6 @@ built_value:packages/built_value/
 charcode:packages/charcode/
 cli_util:packages/cli_util/
 code_builder:packages/code_builder/
-code_transformers:packages/code_transformers/
 collection:packages/collection/
 convert:packages/convert/
 crypto:packages/crypto/
@@ -42,7 +39,6 @@ http_multi_server:packages/http_multi_server/
 http_parser:packages/http_parser/
 intl:packages/intl/
 io:packages/io/
-isolate:packages/isolate/
 js:packages/js/
 json_annotation:packages/json_annotation/
 kernel:packages/kernel/
@@ -83,7 +79,6 @@ test:packages/test/
 tuple:packages/tuple/
 typed_data:packages/typed_data/
 utf:packages/utf/
-uuid:packages/uuid/
 watcher:packages/watcher/
 web_socket_channel:packages/web_socket_channel/
 yaml:packages/yaml/
