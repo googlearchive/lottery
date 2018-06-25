@@ -15,6 +15,7 @@ build_config:packages/build_config/
 build_modules:packages/build_modules/
 build_resolvers:packages/build_resolvers/
 build_runner:packages/build_runner/
+build_runner_core:packages/build_runner_core/
 build_test:packages/build_test/
 build_web_compilers:packages/build_web_compilers/
 built_collection:packages/built_collection/
@@ -27,7 +28,6 @@ collection:packages/collection/
 convert:packages/convert/
 crypto:packages/crypto/
 csslib:packages/csslib/
-dart2_constant:packages/dart2_constant/
 dart_internal:packages/dart_internal/
 dart_style:packages/dart_style/
 fixnum:packages/fixnum/
@@ -42,6 +42,7 @@ intl:packages/intl/
 io:packages/io/
 js:packages/js/
 json_annotation:packages/json_annotation/
+json_rpc_2:packages/json_rpc_2/
 kernel:packages/kernel/
 logging:packages/logging/
 matcher:packages/matcher/
@@ -58,6 +59,7 @@ plugin:packages/plugin/
 pool:packages/pool/
 protobuf:packages/protobuf/
 pub_semver:packages/pub_semver/
+pubspec_parse:packages/pubspec_parse/
 quiver:packages/quiver/
 quiver_hashcode:packages/quiver_hashcode/
 sass:packages/sass/
@@ -80,6 +82,7 @@ test:packages/test/
 tuple:packages/tuple/
 typed_data:packages/typed_data/
 utf:packages/utf/
+vm_service_client:packages/vm_service_client/
 watcher:packages/watcher/
 web_socket_channel:packages/web_socket_channel/
 yaml:packages/yaml/
