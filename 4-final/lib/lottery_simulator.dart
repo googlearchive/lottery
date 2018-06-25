@@ -14,9 +14,9 @@ import 'src/stats/stats.dart';
 import 'src/visualize_winnings/visualize_winnings.dart';
 import 'package:intl/intl.dart';
 
-const _fastPulse = const Duration(milliseconds: 5);
+const _fastPulse = Duration(milliseconds: 5);
 
-const _normalPulse = const Duration(milliseconds: 200);
+const _normalPulse = Duration(milliseconds: 200);
 
 @Component(
   selector: 'lottery-simulator',
@@ -32,7 +32,7 @@ const _normalPulse = const Duration(milliseconds: 200);
   ],
   providers: [
     materialProviders,
-    const ClassProvider(Settings),
+    ClassProvider(Settings),
   ],
 )
 class AppComponent implements OnInit {
@@ -64,16 +64,16 @@ class AppComponent implements OnInit {
   /// value there were.
   ///
   /// In other words, `winningsMap[value] = occurrencesCount`.
-  final Map<int, int> winningsMap = new Map<int, int>();
+  final Map<int, int> winningsMap = Map<int, int>();
 
   bool _fastEnabled = false;
 
-  final _dateFormat = new DateFormat.yMMMMd();
+  final _dateFormat = DateFormat.yMMMMd();
 
   AppComponent(this._settings);
 
   String get currentDay {
-    var date = settings.now.add(new Duration(days: day));
+    var date = settings.now.add(Duration(days: day));
     return _dateFormat.format(date);
   }
 
@@ -179,7 +179,7 @@ class AppComponent implements OnInit {
 
   void _reconfigurePulse() {
     _pulse?.cancel();
-    _pulse = new Timer.periodic(
-        _fastEnabled ? _fastPulse : _normalPulse, (_) => step());
+    _pulse =
+        Timer.periodic(_fastEnabled ? _fastPulse : _normalPulse, (_) => step());
   }
 }
