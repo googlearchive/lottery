@@ -1,8 +1,8 @@
 ## Lottery Simulator
 
 Welcome to the example app used in the
-[Lottery Simulator](https://webdev-dartlang-org-dev.firebaseapp.com/codelabs/angular_components) page
-of [Dart for the web](https://webdev-dartlang-org-dev.firebaseapp.com).
+[Lottery Simulator](https://webdev.dartlang.org/codelabs/angular_components) page
+of [Dart for the web](https://webdev.dartlang.org).
 3. Get the webdev tool: `pub global activate webdev`
 4. Launch a development server: `webdev serve`
 5. In a browser, open [http://localhost:8080](http://localhost:8080)
