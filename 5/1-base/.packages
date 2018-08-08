@@ -55,7 +55,6 @@ protobuf:packages/protobuf/
 pub_semver:packages/pub_semver/
 pubspec_parse:packages/pubspec_parse/
 quiver:packages/quiver/
-quiver_hashcode:packages/quiver_hashcode/
 scratch_space:packages/scratch_space/
 shelf:packages/shelf/
 shelf_packages_handler:packages/shelf_packages_handler/
@@ -71,7 +70,6 @@ stream_transform:packages/stream_transform/
 string_scanner:packages/string_scanner/
 term_glyph:packages/term_glyph/
 test:packages/test/
-tuple:packages/tuple/
 typed_data:packages/typed_data/
 utf:packages/utf/
 vm_service_client:packages/vm_service_client/

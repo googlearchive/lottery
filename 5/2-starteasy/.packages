@@ -28,6 +28,7 @@ collection:packages/collection/
 convert:packages/convert/
 crypto:packages/crypto/
 csslib:packages/csslib/
+dart2_constant:packages/dart2_constant/
 dart_internal:packages/dart_internal/
 dart_style:packages/dart_style/
 fixnum:packages/fixnum/
@@ -54,14 +55,12 @@ observable:packages/observable/
 package_config:packages/package_config/
 package_resolver:packages/package_resolver/
 path:packages/path/
-perf_api:packages/perf_api/
 plugin:packages/plugin/
 pool:packages/pool/
 protobuf:packages/protobuf/
 pub_semver:packages/pub_semver/
 pubspec_parse:packages/pubspec_parse/
 quiver:packages/quiver/
-quiver_hashcode:packages/quiver_hashcode/
 sass:packages/sass/
 sass_builder:packages/sass_builder/
 scratch_space:packages/scratch_space/
