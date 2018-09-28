@@ -25,6 +25,9 @@ packages/$sdk/dev_compiler/web/ddc_web_compiler.js
 packages/analyzer/src/summary/format.fbs
 packages/angular/src/di/README.md
 packages/build_modules/src/analysis_options.default.yaml
+packages/build_runner/src/server/README.md
+packages/build_runner/src/server/build_updates_client/hot_reload_client.dart.js
+packages/build_runner/src/server/build_updates_client/live_reload_client.js
 packages/build_runner/src/server/graph_viz.html
 packages/build_runner/src/server/graph_viz.js
 packages/build_runner/src/server/graph_viz_main.dart.js
@@ -276,6 +279,7 @@ packages/kernel/text/readme.md
 packages/node_preamble/preamble.js
 packages/node_preamble/preamble.min.js
 packages/package_resolver/src/test_package_config
+packages/pedantic/analysis_options.yaml
 packages/test/dart.js
 packages/test/src/runner/browser/static/favicon.ico
 packages/test/src/runner/browser/static/host.css
