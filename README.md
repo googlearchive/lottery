@@ -3,9 +3,10 @@
 Welcome to the example app used in the
 [Lottery Simulator](https://webdev.dartlang.org/codelabs/angular_components) page
 of [Dart for the web](https://webdev.dartlang.org).
-3. Get the webdev tool: `pub global activate webdev`
-4. Launch a development server: `webdev serve`
-5. In a browser, open [http://localhost:8080](http://localhost:8080)
+
+1. Get the webdev tool: `pub global activate webdev`
+1. Launch a development server: `webdev serve`
+1. In a browser, open [http://localhost:8080](http://localhost:8080)
 
 ---
 
