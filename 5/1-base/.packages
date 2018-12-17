@@ -71,6 +71,8 @@ stream_transform:packages/stream_transform/
 string_scanner:packages/string_scanner/
 term_glyph:packages/term_glyph/
 test:packages/test/
+test_api:packages/test_api/
+test_core:packages/test_core/
 timing:packages/timing/
 typed_data:packages/typed_data/
 utf:packages/utf/
